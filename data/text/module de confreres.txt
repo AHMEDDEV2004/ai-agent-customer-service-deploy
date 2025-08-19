@@ -1,0 +1,297 @@
+## **Partie 1 : Gestion des Confrères et des Transactions de Sortie**
+
+### **1. Gestion des Transactions avec les Confrères**
+
+#### **1.1. Introduction à la Rubrique Confrères**
+
+*   **Objectif :** Cette rubrique permet de gérer l'ensemble des transactions (entrées, sorties de produits, paiements) et des relations avec d'autres officines.
+*   **Fonctionnalités Clés :**
+    *   Suivi des mouvements d'entrée et de sortie.
+    *   Vérification des soldes (débiteurs/créditeurs).
+    *   Génération de relevés de transactions détaillés.
+*   **Utilité :** Particulièrement utile pour la gestion des échanges saisonniers, comme lors de la saison de la grippe (novembre-février), afin de garantir la transparence et un suivi rigoureux.
+*   **Accès :**
+    1.  Depuis la page d’accueil de Sobrus, naviguez vers la barre principale.
+    2.  Cliquez sur l'onglet **Confrères** pour accéder à l'interface principale.
+
+#### **1.2. Consultation de la Liste des Confrères**
+
+*   **Objectif :** Visualiser, filtrer et trier l'ensemble des confrères, qu'ils soient actifs ou archivés.
+*   **Procédure :**
+    1.  Accédez à la rubrique **Confrères**. La liste des confrères actifs s'affiche par défaut.
+    2.  Pour voir les confrères inactifs, cliquez sur le bouton **Archives**.
+    3.  Utilisez le champ **Rechercher** pour trouver rapidement un confrère par son nom.
+    4.  Cliquez sur les en-têtes de colonnes (Nom, E-mail, Téléphone, Solde) pour trier la liste.
+    5.  Le bouton **Rafraîchir** permet de mettre à jour l'affichage après une modification.
+*   **Bonnes Pratiques :**
+    *   Triez la colonne **Solde** pour identifier immédiatement les confrères débiteurs (solde en rouge) ou créditeurs (solde en vert).
+
+#### **1.3. Création d'un Nouveau Confrère**
+
+*   **Objectif :** Enregistrer une nouvelle officine partenaire pour démarrer les échanges de produits ou les transactions financières.
+*   **Procédure :**
+    1.  Dans la rubrique **Confrères**, cliquez sur le bouton **Créer**.
+    2.  Remplissez les **Informations générales** (champs obligatoires) :
+        *   Nom de l'officine
+        *   E-mail
+        *   Téléphone
+        *   Adresse, Ville, Pays
+        *   Gestionnaire associé
+    3.  (Optionnel) Ajoutez des **Informations descriptives** (CIN, CNSS, Description).
+    4.  Cliquez sur **Sauvegarder** pour finaliser. Utilisez **Sauvegarder & nouveau** pour en créer un autre dans la foulée.
+
+#### **1.4. Modification et Archivage d'un Confrère**
+
+*   **Objectif :** Maintenir à jour les informations d'un confrère ou le désactiver s'il n'y a plus de collaboration.
+*   **Modifier un confrère :**
+    1.  Dans la liste, trouvez le confrère et cliquez sur l'icône **Crayon** ou sélectionnez-le et choisissez **Modifier**.
+    2.  Mettez à jour les champs nécessaires dans le formulaire.
+    3.  Cliquez sur **Sauvegarder**.
+*   **Archiver un confrère :**
+    1.  Ouvrez la fiche du confrère concerné.
+    2.  Cliquez sur le bouton **Archiver**. Le confrère est déplacé dans la liste des archives.
+*   **Restaurer un confrère :**
+    1.  Accédez à l'onglet **Archives**.
+    2.  Ouvrez la fiche du confrère à réactiver.
+    3.  Cliquez sur le bouton **Restaurer**.
+
+#### **1.5. Suivi du Solde d'un Confrère**
+
+*   **Objectif :** Contrôler l'état financier des échanges pour maintenir des relations équilibrées.
+*   **Lecture du solde :**
+    *   **Solde rouge :** Le confrère est débiteur (il vous doit de l'argent).
+    *   **Solde vert :** Le confrère est créditeur (vous lui devez de l'argent).
+*   **Procédure :**
+    1.  La colonne **Solde** dans la liste des confrères donne un aperçu rapide.
+    2.  Pour une vue détaillée, cliquez sur le nom du confrère pour ouvrir sa fiche et consulter l'historique des transactions (entrées, sorties, paiements) qui ont influencé ce solde.
+
+### **2. Enregistrement et Gestion des Sorties Confrères**
+
+#### **2.1. Introduction aux Sorties Confrères**
+
+*   **Objectif :** Enregistrer et suivre toutes les transactions où votre officine fournit des produits ou effectue un paiement à un confrère.
+*   **Accès :**
+    1.  Allez dans la rubrique **Confrères**.
+    2.  Cliquez sur l'onglet **Sorties confrères** pour afficher la liste de toutes les sorties.
+
+#### **2.2. Création d'une Sortie Confrère**
+
+*   **Objectif :** Enregistrer une nouvelle transaction de sortie (envoi de produits).
+*   **Procédure :**
+    1.  **Méthode de création :**
+        *   **Option 1 :** Depuis la fiche du confrère, cliquez sur **Créer une sortie confrère**.
+        *   **Option 2 :** Depuis l'onglet **Sorties confrères**, cliquez sur le bouton **Créer**.
+    2.  **Méthode d'échange :** Choisissez entre :
+        *   **PPH (Prix d’Achat Hors taxe) :** Pour les échanges basés sur le prix d'achat, typiquement sur les marchés.
+        *   **PPV (Prix Public de Vente) :** Pour les échanges standards basés sur le prix de vente.
+    3.  Sélectionnez le **confrère** concerné.
+    4.  Ajoutez les **produits** en les saisissant ou en les scannant.
+    5.  (Optionnel) Ajustez les détails : Prix, Remise, Unités gratuites, Date de péremption, etc.
+    6.  **Validation :**
+        *   **Approuver :** Finalise la transaction (le statut passe à "Complété").
+        *   **Sauvegarder :** Enregistre la sortie comme un brouillon modifiable.
+*   **Avertissement :** Une sortie finalisée ("Complétée") ne peut plus être modifiée. Il faut l'annuler puis la dupliquer pour corriger une erreur.
+
+#### **2.3. Modification, Annulation et Duplication d'une Sortie**
+
+*   **Modifier une sortie (uniquement les brouillons) :**
+    1.  Localisez la sortie avec le statut **Brouillon**.
+    2.  Ouvrez-la et cliquez sur **Modifier**.
+    3.  Apportez les changements et cliquez sur **Approuver** ou **Sauvegarder**.
+*   **Annuler une sortie (complétée) :**
+    1.  Ouvrez la sortie concernée.
+    2.  Cliquez sur **Annuler**.
+    3.  Saisissez le **code de sécurité** pour confirmer.
+*   **Dupliquer une sortie :**
+    1.  Ouvrez la sortie (complétée ou annulée) que vous souhaitez copier.
+    2.  Cliquez sur **Dupliquer**. Une nouvelle sortie en brouillon est créée avec les mêmes informations.
+    3.  Modifiez ce qui est nécessaire et cliquez sur **Approuver**.
+
+#### **2.4. Impression d'une Facture de Sortie**
+
+*   **Objectif :** Générer un document PDF récapitulatif d'une transaction de sortie.
+*   **Procédure :**
+    1.  Ouvrez la fiche de la sortie concernée.
+    2.  Cliquez sur **Générer au PDF**.
+    3.  Un aperçu du document s'affiche en haut de la page.
+    4.  Cliquez sur **Télécharger** pour sauvegarder le fichier ou **Imprimer** pour l'éditer.
+
+### **3. Enregistrement et Gestion des Entrées Confrères**
+
+#### **3.1. Introduction aux Entrées Confrères**
+
+*   **Objectif :** Suivre les transactions où votre officine reçoit des produits d'un confrère ou est payée en retour. Essentiel pour la gestion des approvisionnements.
+*   **Cas d'usage :** Réception de vitamines avant la rentrée scolaire.
+*   **Accès :**
+    1.  Allez dans la rubrique **Confrères**.
+    2.  Cliquez sur l'onglet **Entrées confrères**.
+
+#### **3.2. Création d'une Entrée Confrère**
+
+*   **Objectif :** Enregistrer la réception de produits d'un confrère.
+*   **Procédure :**
+    1.  **Méthode de création :**
+        *   **Option 1 :** Depuis la fiche du confrère, cliquez sur **Créer une entrée confrère**.
+        *   **Option 2 :** Depuis l'onglet **Entrées confrères**, cliquez sur **Créer**.
+    2.  Sélectionnez la **Méthode d’échange** (PPH ou PPV).
+    3.  Choisissez le **confrère**.
+    4.  Ajoutez les **produits** reçus.
+    5.  Ajustez les détails si nécessaire (Prix, Remise, etc.).
+    6.  Cliquez sur **Compléter** pour finaliser ou **Sauvegarder** pour créer un brouillon.
+
+#### **3.3. Modification, Annulation et Duplication d'une Entrée**
+
+*   **Objectif :** Gérer une transaction d'entrée après sa création.
+*   **Processus :**
+    *   **Modification :** Possible uniquement sur les entrées en statut **Brouillon**.
+    *   **Annulation :** Requiert un **code de sécurité** pour les entrées complétées.
+    *   **Duplication :** Crée une copie modifiable de l'entrée originale, en conservant la méthode d'échange.
+
+#### **3.4. Impression d'une Facture d'Entrée**
+
+*   **Objectif :** Obtenir un document PDF récapitulant une réception de produits.
+*   **Procédure :**
+    1.  Ouvrez la transaction d'entrée concernée.
+    2.  Cliquez sur **Générer un PDF**.
+    3.  **Téléchargez** ou **imprimez** le document généré.
+
+## **Partie 2 : Suivi, Analyse et Ajustements des Transactions**
+
+### **4. Suivi et Analyse des Transactions avec un Confrère**
+
+#### **4.1. Consultation de l'Historique des Produits et Transactions**
+
+*   **Objectif :** Obtenir une vue détaillée de tous les mouvements de produits (entrées et sorties) échangés avec un confrère spécifique.
+*   **Procédure :**
+    1.  Accédez à la rubrique **Confrères** et ouvrez la fiche du confrère concerné.
+    2.  Consultez les onglets suivants pour une analyse complète :
+        *   **Historique des produits confrère :** Affiche une liste de tous les produits échangés, avec les quantités, dates et méthodes d'échange (PPH/PPV).
+        *   **Sorties confrère :** Liste toutes les transactions de sortie effectuées avec ce confrère.
+        *   **Entrées confrère :** Liste toutes les transactions d'entrée reçues de ce confrère.
+
+#### **4.2. Gestion des Encaissements et Décaissements**
+
+*   **Objectif :** Enregistrer les transactions purement financières (paiements effectués ou reçus) qui ne sont pas liées à un échange de produits direct, afin d'équilibrer les soldes.
+*   **Procédure :**
+    1.  Ouvrez la fiche du confrère concerné.
+    2.  **Pour enregistrer un paiement reçu (Encaissement) :**
+        *   Allez à l'onglet **Encaissements confrères**.
+        *   Cliquez sur **Créer**.
+        *   Saisissez le montant reçu et cliquez sur **Sauvegarder**.
+    3.  **Pour enregistrer un paiement effectué (Décaissement) :**
+        *   Allez à l'onglet **Décaissements confrères**.
+        *   Cliquez sur **Créer**.
+        *   Saisissez le montant versé et cliquez sur **Sauvegarder**.
+
+#### **4.3. Comprendre le Total par Méthode d'Échange (PPH/PPV)**
+
+*   **Définition :** Cette section de la fiche confrère affiche le total des échanges de produits, ventilé par méthode (PPH ou PPV).
+    *   **PPH (Prix d’Achat Hors taxe) :** Utilisé pour les échanges sur les marchés, basé sur le prix d’achat.
+    *   **PPV (Prix Public de Vente) :** Utilisé pour les échanges standards, basé sur le prix de vente public.
+*   **Avertissement Important :** Le total affiché ici (basé sur PPH/PPV) peut ne pas correspondre au **solde global** du confrère. Ce total reflète uniquement la valeur des produits échangés et n'inclut pas les transactions financières comme les encaissements, les décaissements ou autres ajustements manuels.
+
+#### **4.4. Impression d'un Relevé de Transactions**
+
+*   **Objectif :** Générer un rapport PDF synthétisant toutes les transactions (entrées, sorties, paiements) avec un confrère pour une période donnée.
+*   **Procédure :**
+    1.  Ouvrez la fiche du confrère.
+    2.  Localisez et cliquez sur l'option **Relevé confrère**.
+    3.  Sélectionnez la période souhaitée pour le rapport.
+    4.  Cliquez sur **Télécharger** pour consulter le relevé généré.
+    5.  Vous pouvez ensuite l'imprimer ou le sauvegarder.
+
+#### **4.5. Vérification des Informations de Traçabilité et Commentaires**
+
+*   **Objectif :** Assurer un suivi complet des actions et des communications relatives à un confrère.
+*   **Procédure :**
+    1.  Ouvrez la fiche du confrère.
+    2.  **Pour l'historique des modifications :**
+        *   Allez à l'onglet **Informations de traçabilité confrères**.
+        *   Consultez la date de création, la date de la dernière mise à jour et le gestionnaire responsable.
+    3.  **Pour les notes :**
+        *   Allez à l'onglet **Commentaires confrères**.
+        *   Visualisez l'historique de tous les commentaires saisis.
+
+### **5. Ajustement Manuel du Solde d’un Confrère**
+
+#### **5.1. Introduction à l'Ajustement de Solde**
+
+*   **Objectif :** Corriger manuellement le solde d'un confrère pour résoudre un désaccord, rectifier une erreur ou effectuer une régularisation (par exemple, avant un inventaire).
+
+#### **5.2. Effectuer un Ajustement de Solde**
+
+*   **Procédure (Méthode de contournement) :** L'ajustement se fait via une transaction fictive.
+    1.  Créez une nouvelle **entrée** ou **sortie** confrère.
+    2.  Utilisez un produit non inventoriable ou fictif (ex : "Frais de livraison", "Ajustement de solde").
+    3.  Définissez le **prix** de ce produit pour qu'il corresponde exactement au montant de l'ajustement souhaité.
+    4.  Validez la transaction. Cette opération modifiera le solde du confrère du montant spécifié.
+
+#### **5.3. Précautions à Prendre**
+
+*   **Impact sur l'inventaire :** Soyez conscient que cette méthode peut affecter les données d'inventaire si un produit réel est utilisé.
+*   **Recommandation :** Il est conseillé de réaliser ces ajustements **avant** de lancer un inventaire physique pour éviter les écarts. Si un produit fictif est utilisé, assurez-vous de pouvoir l'exclure de vos rapports de stock.
+
+
+## **Partie 3 : Gestion des Groupements de Confrères**
+
+### **6. Gestion des Groupements de Confrères**
+
+#### **6.1. Introduction aux Groupements**
+
+*   **Objectif :** Organiser plusieurs confrères (pharmacies) en groupes distincts. Cette fonctionnalité est conçue pour faciliter la gestion des commandes groupées, comme les "marchés", afin de négocier et d'obtenir des conditions commerciales avantageuses (remises, unités gratuites, etc.).
+*   **Cas d'usage :** Créer un groupement pour gérer les commandes de produits solaires à l'approche de l'été ou pour des événements spécifiques comme le Ramadan.
+*   **Accès :**
+    1.  Depuis la barre de navigation, allez dans la rubrique **Confrères**.
+    2.  Cliquez sur l'onglet **Listes des groupements**.
+
+#### **6.2. Consultation de la Liste des Groupements**
+
+*   **Objectif :** Visualiser tous les groupements que vous avez créés ou rejoints, qu'ils soient actifs ou archivés.
+*   **Procédure :**
+    1.  Accédez à l'onglet **Listes des groupements**.
+    2.  La liste des groupements **actifs** s'affiche par défaut.
+    3.  Pour voir les groupements désactivés, consultez la section **Groupements archivés**.
+    4.  Cliquez sur le nom d'un groupement pour accéder à ses détails, notamment la liste des membres.
+
+#### **6.3. Création d'un Nouveau Groupement**
+
+*   **Objectif :** Créer un nouveau groupe pour y associer des confrères.
+*   **Procédure :**
+    1.  Dans l'onglet **Listes des groupements**, cliquez sur le bouton **Créer un groupement** ou **Ajouter**.
+    2.  Remplissez le formulaire de création :
+        *   **Nom (obligatoire) :** Donnez un nom clair et descriptif (ex. : "Marché Hiver 2025").
+        *   **Description (optionnel) :** Ajoutez des détails sur l'objectif du groupement.
+    3.  Cliquez sur **Sauvegarder**.
+    4.  L'étape suivante consiste à ajouter des membres au groupement nouvellement créé.
+
+#### **6.4. Gestion des Membres d'un Groupement**
+
+*   **Objectif :** Ajouter ou retirer des confrères d'un groupement existant et désigner des administrateurs.
+*   **Procédure :**
+    1.  Ouvrez les détails du groupement en cliquant sur son nom dans la liste.
+    2.  **Pour ajouter des membres :**
+        *   Cliquez sur **Ajouter des membres**.
+        *   Sélectionnez les confrères souhaités depuis la liste ou utilisez la recherche.
+        *   Cliquez sur **Sauvegarder** pour valider l'ajout.
+    3.  **Pour désigner un administrateur :**
+        *   Dans la liste des membres du groupement, cochez la case **Admin** à côté du nom du confrère.
+        *   Un administrateur dispose de droits étendus : ajout/retrait de membres, modification des informations du groupe, et gestion de la balance.
+        *   Il est possible de nommer plusieurs administrateurs.
+
+#### **6.5. Archivage et Restauration d'un Groupement**
+
+*   **Objectif :** Gérer le cycle de vie d'un groupement en le désactivant lorsqu'il n'est plus utilisé (archivage) et en le réactivant si besoin (restauration).
+*   **Archiver un groupement :**
+    1.  Ouvrez la fiche du groupement concerné.
+    2.  Cliquez sur le bouton **Archiver**.
+    3.  Le groupement est alors déplacé vers la section **Groupements archivés**.
+*   **Restaurer un groupement :**
+    1.  Allez dans la section **Groupements archivés**.
+    2.  Ouvrez la fiche du groupement à réactiver.
+    3.  Cliquez sur le bouton **Restaurer**. Le groupement redevient actif.
+*   **Traçabilité :** Aucune donnée n'est supprimée lors de l'archivage. La traçabilité de toutes les actions et transactions passées est conservée.
+
+#### **Fonctionnalités Additionnelles**
+
+*   **Définir un solde initial ("Balance") :**
+    *   Lors de la création d'un groupement ou suite à une migration de données, il est possible de définir un solde de départ via le module **Paramètres**. Cela permet de refléter une situation financière préexistante avant l'utilisation de la fonctionnalité dans Sobrus.

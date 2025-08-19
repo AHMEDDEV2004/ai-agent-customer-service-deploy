@@ -1,0 +1,322 @@
+### **Partie 1 : Fondamentaux du Module Stock**
+
+---
+
+**Titre : Module Stock - Introduction**
+
+**ID : STOCK_INTRO_001**
+
+**Contenu :**
+
+*   **Présentation du module :** Le Module Stock de Sobrus Pharma est un outil de gestion centralisé pour les niveaux de stock en officine. Il permet de suivre les quantités de produits, de réaliser des inventaires et d'importer des données de stock.
+*   **Objectifs et bénéfices :**
+    *   Maintenir un stock à jour.
+    *   Éviter les ruptures de stock et les surstocks.
+    *   Optimiser la gestion quotidienne.
+    *   Améliorer la traçabilité des mouvements de stock.
+*   **Quand l'utiliser :**
+    *   Pour vérifier les niveaux de stock, notamment avant des périodes à forte demande (ex: saison grippale).
+    *   Pour réaliser des inventaires périodiques ou complets.
+    *   Pour corriger des anomalies de stock.
+
+---
+
+**Titre : Module Stock - Consultation et Gestion des Niveaux de Stock**
+
+**ID : STOCK_CONSULT_002**
+
+**Contenu :**
+
+*   **Introduction :** Cette fonctionnalité permet de connaître en temps réel la disponibilité des produits. Elle est essentielle pour planifier les commandes et répondre aux besoins des clients. Elle offre une vue détaillée des quantités en magasin, en réserve, et disponibles.
+*   **Procédure pour consulter le stock :**
+    1.  Cliquer sur **Stock** dans le menu principal.
+    2.  La liste des produits s'affiche.
+*   **Informations affichées (colonnes) :**
+    *   Quantité en magasin
+    *   Quantité en réserve
+    *   Quantité disponible
+    *   Quantité en commande
+    *   Total en PPV (Prix Public de Vente)
+    *   Total en PPH (Prix Public Hospitalier)
+    *   Zone
+    *   Date de péremption
+    *   Codes à barres 1 et 2
+*   **Actions possibles :**
+    *   **Trier :** Cliquer sur l'en-tête d'une colonne.
+    *   **Rechercher :** Utiliser le champ "Rechercher" pour trouver un produit par nom ou code à barres.
+    *   **Imprimer :** Cliquer sur "Imprimer".
+*   **Bonne Pratique :** Triez les produits par **zone** pour faciliter leur localisation physique dans l'officine.
+*   **Points importants à savoir :**
+    *   **Quantité réservée :** Produits vendus mais non encore livrés. Ils sont physiquement en stock mais non disponibles à la vente. Pour gérer la livraison, aller dans le module **Ventes** et filtrer par "Livré = Non".
+    *   **Stock disponible vs. Stock en magasin :** Le stock disponible est le stock en magasin moins la quantité réservée.
+    *   **Gestion des dates de péremption :** Il est recommandé de filtrer par date pour identifier les produits proches de l'expiration et faciliter leur écoulement.
+
+---
+
+**Titre : Module Stock - Réinitialiser le Stock (Remise à Zéro)**
+
+**ID : STOCK_RESET_003**
+
+**Contenu :**
+
+*   **Introduction :** La remise à zéro (RAZ) du stock réinitialise toutes les quantités de produits à zéro. Elle est utile pour corriger des erreurs majeures ou repartir sur une base saine. Un nouvel inventaire est automatiquement créé pour tracer cette action.
+*   **Procédure de remise à zéro :**
+    1.  Aller dans **Stock** depuis le menu principal.
+    2.  Cliquer sur **Remise à zéro du stock**.
+    3.  Saisir le code de sécurité fourni par l'administrateur dans la fenêtre de confirmation.
+    4.  Cliquer sur **Confirmer**.
+*   **Traçabilité :** Un nouvel inventaire est créé automatiquement pour documenter l'opération.
+*   **Annulation :** Il est possible d'annuler l'opération depuis l'inventaire concerné en saisissant à nouveau le code de sécurité.
+*   **Mises en garde importantes :**
+    *   **Perte de données :** La RAZ supprime toutes les quantités et les dates de péremption.
+    *   **Absence d'écarts :** Le prochain inventaire ne montrera aucun écart, car la quantité précédente est fixée à zéro, empêchant toute comparaison avant/après.
+    *   **Risques liés à l'annulation :** Si des mouvements de stock (ventes, réceptions) ont eu lieu entre la RAZ et son annulation, les quantités restaurées peuvent être incorrectes. Une vérification manuelle est alors nécessaire.
+    *   **Dates de péremption :** Les dates de péremption supprimées ne sont pas restaurées après une annulation et doivent être ressaisies manuellement.
+
+---
+
+**Titre : Module Stock - Gérer les Inventaires**
+
+**ID : STOCK_INVENTORY_MANAGE_004**
+
+**Contenu :**
+
+*   **Introduction :** La gestion des inventaires est cruciale pour suivre et ajuster les quantités de produits. La section "Liste des inventaires" offre une vue d'ensemble de tous les inventaires (passés et en cours).
+*   **Procédure pour accéder à la liste :**
+    1.  Aller dans **Stock** > **Liste des inventaires**.
+*   **Informations affichées (colonnes) :**
+    *   Statut (brouillon, complété, annulé)
+    *   Numéro de transaction
+    *   Date d’inventaire
+    *   Méthode (ex: code à barres, critères)
+    *   Forme galénique
+    *   Zone
+*   **Actions possibles :**
+    *   **Trier et rechercher :** Utiliser les en-têtes de colonnes et le champ de recherche.
+    *   **Annuler un inventaire :** Sélectionner un inventaire avec le statut "brouillon" et cliquer sur **Annuler**.
+    *   **Créer un inventaire :** Cliquer sur **Créer**.
+*   **Statuts d'inventaire :**
+    *   **Brouillon :** L'inventaire est en cours et peut être modifié. Il n'impacte pas les niveaux de stock.
+    *   **Complété :** L'inventaire est finalisé, non modifiable, et les niveaux de stock sont mis à jour.
+    *   **Annulé :** L'inventaire a été annulé et n'a aucun effet.
+*   **Conseils et bonnes pratiques :**
+    *   **[Conseil] :** Annulez les inventaires en **brouillon** de plus de 24 heures pour éviter les erreurs.
+    *   **[Bonne Pratique] :** Avant de démarrer un nouvel inventaire, vérifiez et annulez les brouillons inutiles pour éviter les doublons.
+*   **Mise en garde :**
+    *   **[Avertissement] :** N'annulez pas un inventaire **complété**. Pour corriger une erreur, créez un nouvel inventaire correctif.
+
+---
+
+
+### **Partie 2 : Méthodes d'Inventaire**
+
+---
+
+**Titre : Module Stock - Réaliser un Inventaire par Code à Barres**
+
+**ID : STOCK_INVENTORY_BARCODE_005**
+
+**Contenu :**
+
+*   **Introduction :** L'inventaire par code à barres est la méthode la plus fréquente pour ajuster les stocks. Elle permet de scanner les produits rapidement sans interrompre l'activité de l'officine, assurant une mise à jour précise et traçable.
+*   **Prérequis :**
+    *   Configurer les zones dans les paramètres (facultatif).
+    *   Disposer d'une douchette pour scanner les codes à barres (recommandé).
+*   **Procédure :**
+    1.  Aller dans **Stock** > **Liste des inventaires** > **Créer**.
+    2.  Choisir la méthode **Code à barres** (sélectionnée par défaut).
+    3.  Cliquer sur **Suivant**.
+    4.  Sélectionner une **zone** pour un inventaire ciblé ou laisser vide pour un inventaire global.
+    5.  Scanner le code à barres de chaque produit ou le saisir manuellement.
+    6.  Comparer la quantité affichée à la quantité réelle et ajuster si nécessaire.
+    7.  Répéter l'opération pour tous les produits concernés.
+    8.  Cliquer sur **Sauvegarder**, puis sur **Approuver** et confirmer avec **Oui**.
+*   **Points importants à savoir :**
+    *   Un inventaire en **brouillon** reste modifiable.
+    *   Un inventaire **complété** est validé et ne peut plus être modifié.
+    *   En cas d'erreur sur un inventaire **complété**, il faut créer un nouvel inventaire correctif.
+
+---
+
+**Titre : Module Stock - Réaliser un Inventaire par Critères**
+
+**ID : STOCK_INVENTORY_CRITERIA_006**
+
+**Contenu :**
+
+*   **Introduction :** L'inventaire par critères est utilisé pour un contrôle complet d'une sélection de produits (par zone, forme galénique) ou de tous les produits. Cette méthode nécessite l'arrêt de l'activité de l'officine.
+*   **Prérequis :**
+    *   **Arrêter toutes les transactions** (ventes, livraisons, etc.) pendant la durée de l'inventaire.
+    *   S'assurer que tous les produits sont affectés à une zone.
+*   **Procédure :**
+    1.  Aller dans **Stock** > **Liste des inventaires** > **Créer**.
+    2.  Choisir la méthode **Critères**.
+    3.  Sélectionner un critère (ex : zone, forme galénique) ou laisser vide pour inventorier tous les produits.
+    4.  Cocher "Inclure les produits non utilisés" pour afficher toute la base de données produits par ordre alphabétique.
+    5.  Cliquer sur **Suivant**.
+    6.  La liste des produits s'affiche par ordre alphabétique. Comparer la quantité affichée avec la quantité réelle et ajuster.
+    7.  Appliquer une date de péremption si nécessaire.
+    8.  Cliquer sur **Sauvegarder et continuer** pour passer aux pages suivantes.
+    9.  À la fin, cliquer sur **Approuver** et confirmer avec **Oui**.
+*   **Points importants à savoir :**
+    *   **Produit manquant :** Si un produit n'apparaît pas dans l'inventaire par critère (pour une zone donnée), cela signifie qu'il n'est pas affecté à cette zone.
+    *   **Correction pour produit manquant :**
+        1.  Compléter l'inventaire de la zone.
+        2.  Créer un nouvel inventaire par **code-barres** pour ajouter manuellement le produit manquant et lui affecter la bonne zone.
+    *   **Reprise de l'inventaire :** Si vous arrêtez et reprenez un inventaire par critère sur la même zone, la liste redémarrera toujours au début (lettre A).
+
+---
+
+**Titre : Module Stock - Corriger les Stocks Négatifs**
+
+**ID : STOCK_INVENTORY_NEGATIVE_007**
+
+**Contenu :**
+
+*   **Introduction :** Un stock négatif signale une incohérence (ex: transaction non saisie, erreur de vente). L'inventaire des stocks négatifs est une méthode rapide pour corriger ces anomalies. C'est aussi une étape clé de l'inventaire de fin d'année.
+*   **Procédure :**
+    1.  Aller dans **Stock** > **Liste des inventaires** > **Créer**.
+    2.  Choisir la méthode **Stock négatif**.
+    3.  Cliquer sur **Suivant**.
+    4.  La liste des produits avec un stock négatif s'affiche.
+    5.  Comparer avec la quantité physique réelle et ajuster la quantité dans le système.
+    6.  Utiliser **Sauvegarder et continuer** pour naviguer entre les pages.
+    7.  À la fin, cliquer sur **Approuver** et confirmer avec **Oui**.
+
+---
+
+**Titre : Module Stock - Rectifier les Stocks des Produits Vendus**
+
+**ID : STOCK_INVENTORY_SOLD_008**
+
+**Contenu :**
+
+*   **Introduction :** L'inventaire des produits vendus permet de vérifier et d'ajuster les quantités des produits écoulés sur une période définie. Il est utile après une période de garde ou pour mettre à jour le stock vendu la veille. C'est également une étape de l'inventaire complet de fin d'année.
+*   **Procédure :**
+    1.  Aller dans **Stock** > **Liste des inventaires** > **Créer**.
+    2.  Choisir la méthode **Vendu**.
+    3.  Saisir la **date de début** et la **date de fin** de la période à vérifier.
+    4.  Cliquer sur **Suivant**.
+    5.  La liste des produits vendus sur cette période s'affiche.
+    6.  Comparer avec le stock réel et ajuster la quantité.
+    7.  Utiliser **Sauvegarder et continuer** pour naviguer entre les pages.
+    8.  À la fin, cliquer sur **Approuver** et confirmer avec **Oui**.
+
+---
+
+**Titre : Module Stock - Gérer les Produits Non Sondés**
+
+**ID : STOCK_INVENTORY_UNSCANNED_009**
+
+**Contenu :**
+
+*   **Introduction :** L'inventaire des produits "non sondés" identifie les articles qui ont une quantité en stock dans le système mais n'ont été comptés dans aucun autre inventaire récent. Cela permet de repérer des oublis ou des erreurs de stock. C'est une étape essentielle pour finaliser un inventaire complet (ex: fin d'année).
+*   **Attention :** Cette méthode affiche également les produits réceptionnés (via bons de livraison, échanges) pendant la période d'inventaire. Il faut donc vérifier attentivement toutes les quantités positives affichées.
+*   **Procédure :**
+    1.  Aller dans **Stock** > **Liste des inventaires** > **Créer**.
+    2.  Choisir la méthode **Non sondé**.
+    3.  Saisir la **date de début** et la **date de fin** de la période d'inventaire.
+    4.  Cocher "Seulement produits avec stock différent de zéro" si nécessaire.
+    5.  Cliquer sur **Suivant**.
+    6.  La liste des produits non sondés s'affiche.
+    7.  Vérifier la quantité physique et ajuster la quantité dans le système.
+    8.  Utiliser **Sauvegarder et continuer** pour naviguer.
+    9.  À la fin, cliquer sur **Approuver** et confirmer avec **Oui**.
+
+---
+
+### **Partie 3 : Analyse, Importation et Inventaire Complet**
+
+---
+
+**Titre : Module Stock - Analyser les Écarts d'Inventaire**
+
+**ID : STOCK_ANALYSIS_010**
+
+**Contenu :**
+
+*   **Introduction :** L'analyse des écarts permet de comprendre les différences entre le stock théorique (informatique) et le stock réel (physique). C'est une étape essentielle après un inventaire pour identifier les erreurs, les pertes ou les vols. Pour une vue globale des écarts sur une période, le rapport "Stock inventaire par période" est disponible.
+*   **Procédure pour consulter les écarts :**
+    1.  Aller dans **Stock** > **Liste des inventaires**.
+    2.  Cliquer sur un inventaire avec le statut **complété** pour afficher ses détails.
+    3.  Consulter les informations détaillées, notamment les colonnes "quantité en stock", "quantité réelle" et "écart".
+    4.  Pour une analyse globale, accéder au **Rapport de stock (inventaires par période)**.
+*   **Informations affichées dans les détails d'un inventaire :**
+    *   Date de création et de mise à jour
+    *   Statut (brouillon, complété, etc.)
+    *   Détails par produit : prix, quantité en stock (avant inventaire), quantité réelle (comptée), écart.
+    *   Valeurs totales de l'écart en PPV et PPH.
+*   **Actions possibles :**
+    *   **Rechercher** un produit spécifique dans la liste.
+    *   **Imprimer** le détail de l'inventaire.
+*   **Points importants à savoir :**
+    *   **Calcul de l'écart :** La formule est : `Écart = Quantité réelle – Quantité en stock`.
+    *   Les écarts ne sont calculés que pour les inventaires **complétés**. Les brouillons n'impactent ni le stock, ni les écarts.
+    *   Ne jamais modifier une quantité sans une vérification physique préalable.
+    *   Pour les inventaires de type "vendu" et "non sondé", il est impératif de définir une date de début et de fin pour la période d'analyse.
+
+---
+
+**Titre : Module Stock - Importer le Stock**
+
+**ID : STOCK_IMPORT_011**
+
+**Contenu :**
+
+*   **Introduction :** La fonction d'importation permet de mettre à jour en masse les quantités de stock à partir d'un fichier externe (Excel/CSV). L'importation peut se baser sur l'ID du produit ou son code à barres. Chaque import crée automatiquement un inventaire pour assurer une traçabilité complète.
+*   **Prérequis :**
+    *   Préparer un fichier d'importation conforme au modèle fourni par Sobrus Pharma.
+    *   Sauvegarder (exporter) le stock actuel avant toute importation pour prévenir la perte de données.
+    *   Si l'import se fait par zone, s'assurer que les zones ont été créées au préalable dans Sobrus.
+    *   Disposer des droits administrateur.
+*   **Procédure d'importation par ID de produit (fiable de Sobrus à Sobrus) :**
+    1.  Exporter le stock actuel depuis Sobrus.
+    2.  Dans le fichier Excel, supprimer toutes les colonnes **sauf "ID" et "Quantité du stock"**.
+    3.  Ouvrir le fichier avec le Bloc-notes, utiliser la fonction "Remplacer" pour substituer tous les points-virgules (`;`) par des virgules (`,`). Enregistrer.
+    4.  Dans Sobrus, aller à **Stock** > **Liste des imports** > **Importer**.
+    5.  Choisir la méthode **Basée sur les ID des produits**.
+    6.  Déposer le fichier préparé.
+    7.  Choisir l'action : **"Nouvelle quantité actuelle"** (remplace le stock existant) ou **"Ajouter aux quantités existantes"**.
+    8.  Sélectionner une zone si l'import est par zone, sinon laisser "aucune".
+    9.  Cliquer sur **Importer**.
+    10. Vérifier l'inventaire généré pour voir les lignes acceptées et rejetées.
+*   **Procédure d'importation par Code à barres (obligatoire depuis un autre logiciel) :**
+    1.  Exporter le stock depuis Sobrus (pour obtenir le format).
+    2.  Dans le fichier Excel, conserver uniquement les colonnes **"Stock" et "Code à barres 1"**.
+    3.  Formater la colonne "Code à barres 1" en **Nombre** avec zéro décimale. Enregistrer en format CSV (séparateur : point-virgule).
+    4.  Ouvrir le fichier CSV avec le Bloc-notes et remplacer les points-virgules (`;`) par des virgules (`,`).
+    5.  Suivre les étapes 4 à 10 de la procédure d'importation par ID, mais en choisissant la méthode **basée sur les codes à barres**.
+*   **Mises en garde :**
+    *   **Compatibilité :** Seuls les fichiers exportés depuis Sobrus Pharma sont garantis d'être 100% compatibles. L'import depuis un autre logiciel doit **obligatoirement** se faire par code à barres.
+    *   **Codes à barres :** L'import par code à barres peut échouer si des produits ont des codes non valides ou manquants.
+    *   **Import par zone :** Un produit non affecté à une zone ne sera pas inclus dans un import ciblant cette zone.
+
+---
+
+**Titre : Module Stock - Réaliser un Inventaire Complet et Efficace**
+
+**ID : STOCK_COMPLETE_012**
+
+**Contenu :**
+
+*   **Introduction :** Un inventaire complet et efficace est une procédure structurée qui combine quatre méthodes d'inventaire distinctes pour garantir une précision maximale du stock. Il est généralement réalisé pour la clôture comptable de fin d'année.
+*   **Les 4 étapes de l'inventaire complet :**
+    1.  **Inventaire par code à barres :** Pour compter physiquement la majorité des produits.
+    2.  **Inventaire négatif :** Pour corriger les quantités incohérentes (en dessous de zéro).
+    3.  **Inventaire vendu :** Pour ajuster le stock des produits vendus durant la période d'inventaire.
+    4.  **Inventaire non sondé :** Pour identifier et traiter les produits qui ont du stock informatique mais n'ont été comptés dans aucune des étapes précédentes (oublis, erreurs).
+*   **Prérequis :**
+    *   S'assurer que toutes les transactions (ventes, achats, retours) sont saisies dans Sobrus.
+    *   Annuler tous les inventaires en état "brouillon".
+    *   S'assurer que les produits réservés ont été livrés ou que les réservations ont été annulées.
+*   **Procédure recommandée :**
+    1.  **Réaliser l'inventaire par code à barres** pour l'ensemble de l'officine (voir ID: STOCK_INVENTORY_BARCODE_005).
+    2.  **Lancer et compléter l'inventaire des stocks négatifs** (voir ID: STOCK_INVENTORY_NEGATIVE_007).
+    3.  **Lancer et compléter l'inventaire des produits vendus** sur la période concernée (voir ID: STOCK_INVENTORY_SOLD_008).
+    4.  **Lancer et compléter l'inventaire des produits non sondés** pour finaliser (voir ID: STOCK_INVENTORY_UNSCANNED_009).
+*   **Conseils et bonnes pratiques :**
+    *   **[Conseil] :** Commencer par l'inventaire par code à barres, car il peut être réalisé en parallèle de l'activité.
+    *   **[Bonne Pratique] :** Saisir toutes les nouvelles transactions en temps réel pendant le processus pour minimiser les écarts.
+*   **Mises en garde :**
+    *   **[Avertissement] :** Ne jamais dupliquer ou annuler un inventaire déjà **complété**, car cela fausse l'historique et la traçabilité.
+    *   **[Avertissement] :** Si plusieurs collaborateurs participent, une seule personne doit être responsable de l'approbation finale de chaque étape pour garantir la cohérence.

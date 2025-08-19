@@ -1,0 +1,284 @@
+### **Partie 1 : Introduction et Premiers Pas**
+
+**Titre : Introduction au Module Produits de Sobrus Pharma**
+**Contenu :** Le module Produits de Sobrus Pharma est un outil conçu pour simplifier et optimiser la gestion de votre pharmacie. Il permet de centraliser les informations sur les produits, de suivre leurs mouvements et de maintenir un stock organisé pour répondre aux besoins des clients.
+**Mots-clés :** gestion des produits, Sobrus Pharma, pharmacie, introduction, centralisation
+
+---
+
+**Titre : Utilité du Module Produits pour une Pharmacie**
+**Contenu :** La gestion efficace des produits est un atout majeur pour une officine. Le module Produits aide à :
+*   **Assurer la disponibilité des produits :** Suivre les niveaux de stock pour éviter les ruptures.
+*   **Optimiser les commandes :** Analyser les mouvements des produits pour anticiper les besoins et commander au bon moment.
+*   **Améliorer la satisfaction client :** S'assurer que les produits demandés par les clients réguliers sont toujours en stock pour renforcer leur fidélité.
+**Mots-clés :** utilité, pourquoi utiliser, disponibilité produits, optimisation commandes, satisfaction client, gestion de stock
+
+---
+
+**Titre : Fonctionnalités Clés du Module Produits**
+**Contenu :** Le module Produits de Sobrus Pharma offre les fonctionnalités suivantes :
+1.  **Création et modification de fiches produits :** Enregistrer et mettre à jour les informations comme le prix, la zone, et les dates de péremption.
+2.  **Gestion des stocks :** Suivre les niveaux de stock.
+3.  **Suivi des mouvements :** Consulter l’historique des entrées et sorties des produits.
+4.  **Désactivation et restauration :** Gérer les produits obsolètes ou en rupture prolongée, avec la possibilité de les restaurer.
+**Mots-clés :** fonctionnalités, fiches produits, gestion des stocks, suivi des mouvements, désactivation, restauration
+
+---
+
+**Titre : Différence entre un Produit Actif et un Produit Inactif**
+**Contenu :**
+*   **Produit actif :** Un produit actuellement en stock ou fréquemment utilisé, disponible pour les ventes et les préparations.
+*   **Produit inactif :** Un produit qui a été désactivé car il n'est plus utilisé ou est en rupture prolongée. Il peut être restauré si nécessaire.
+**Mots-clés :** produit actif, produit inactif, statut produit, différence
+
+---
+
+**Titre : Accéder au Tableau de Bord des Produits**
+**Contenu :** Pour accéder au module Produits :
+1.  Connectez-vous à votre compte Sobrus Pharma.
+2.  Sur la page d’accueil, repérez la barre de navigation supérieure.
+3.  Cliquez sur l'onglet **Produits**.
+4.  Un sous-menu s'affiche. Cliquez sur l'option **Produits** pour ouvrir le tableau de bord.
+**Mots-clés :** accéder, tableau de bord, module produits, navigation, étapes
+
+---
+
+**Titre : Description de l'Interface de la Liste des Produits**
+**Contenu :** L'interface de la liste des produits est composée d'un tableau où chaque ligne représente un produit. Les colonnes affichées sont : Nom du produit, Catégorie, Forme galénique, Prix PPV, Prix PPH, Code de barre, Zone, Est actif.
+**Mots-clés :** interface, liste des produits, tableau, colonnes, description
+
+---
+
+**Titre : Boutons d'Action Principaux sur la Page Produits**
+**Contenu :** Les boutons d'action principaux, situés en haut à droite de la page, sont :
+1.  **Suggérer un nouveau produit :** Pour suggérer un nouveau produit.
+2.  **Historique des suggestions :** Pour voir l'historique des suggestions de produits.
+3.  **Afficher plus d’informations :** Pour obtenir plus de détails sur les produits.
+**Mots-clés :** boutons, actions principaux, suggérer produit, historique suggestions
+
+---
+
+**Titre : Boutons d'Action Secondaires sur la Page Produits**
+**Contenu :** Les boutons d'action secondaires, situés juste en dessous des boutons principaux, sont :
+1.  **Rafraîchir :** Pour actualiser la liste des produits et voir les modifications récentes.
+2.  **Rechercher :** Pour trouver un produit par son nom ou son code de barre.
+**Mots-clés :** boutons, actions secondaires, rafraîchir, rechercher produit
+
+---
+
+**Titre : Suggérer une Nouvelle Fiche Produit**
+**Contenu :** La suggestion d'une nouvelle fiche produit permet de proposer l'ajout d'un produit à la base de données. C'est utile pour les produits non encore référencés.
+**Mots-clés :** suggérer, nouvelle fiche produit, ajouter produit, proposition
+
+---
+
+**Titre : Étapes pour Suggérer un Nouveau Produit**
+**Contenu :**
+1.  Depuis le tableau de bord, cliquez sur la rubrique **Produits** dans la barre de navigation, puis sur le bouton **Suggérer un nouveau produit**.
+2.  Remplissez les champs obligatoires : Nom, Catégorie, Prix PPV, Prix PPH, TVA sur achat, TVA sur vente.
+3.  Cliquez sur **Sauvegarder**.
+4.  Le produit apparaît dans la liste des suggestions avec le statut "En attente".
+5.  Après validation par la modération, le produit est ajouté à la base de données ou rejeté avec un motif.
+**Mots-clés :** étapes, suggérer produit, création, validation, modération
+
+---
+
+**Titre : Types de Modification d'une Fiche Produit**
+**Contenu :** Il existe deux types de modification :
+*   **Modification interne (directe) :** Concerne les champs que l'utilisateur peut modifier directement sans validation, comme le prix, la catégorie, le stock, ou la zone.
+*   **Modification externe (suggestion) :** Concerne les champs sensibles qui nécessitent une validation par la modération (ex: désignation, taux de TVA, code-barres). L'utilisateur doit soumettre une "suggestion de modification".
+**Mots-clés :** modification interne, modification externe, suggestion de modification, validation, types
+
+---
+
+**Titre : Étapes pour Modifier Directement une Fiche Produit (Modification Interne)**
+**Contenu :**
+1.  Depuis le tableau de bord, trouvez le produit à modifier dans la liste (via la recherche si besoin).
+2.  Cliquez sur l'icône **Crayon** à droite de la ligne du produit.
+3.  Mettez à jour les informations souhaitées (prix, catégorie, zone, etc.).
+4.  Cliquez sur **Sauvegarder**.
+**Mots-clés :** étapes, modifier produit, modification interne, mise à jour
+
+---
+
+**Titre : Étapes pour Suggérer une Modification de Fiche Produit (Modification Externe)**
+**Contenu :**
+1.  Depuis le tableau de bord, identifiez le produit à modifier.
+2.  Sélectionnez le produit et choisissez l'option **Suggérer une modification**.
+3.  Mettez à jour les informations souhaitées (Nom, Code barre, etc.).
+4.  Cliquez sur **Sauvegarder** pour soumettre la suggestion à la modération.
+**Mots-clés :** étapes, suggérer modification, modification externe, soumettre
+
+---
+
+### **Partie 2 : Gestion des Statuts, Prix, et Historiques**
+
+**Titre : Gérer les Statuts des Produits (Actif/Inactif)**
+**Contenu :** La gestion des statuts dans Sobrus Pharma permet d'organiser les produits en séparant ceux qui sont activement utilisés de ceux qui ne le sont plus. Cela aide à désencombrer la liste principale tout en conservant la possibilité de réactiver une fiche si le produit redevient pertinent.
+**Mots-clés :** gérer les statuts, produit actif, produit inactif, organiser, désencombrer
+
+---
+
+**Titre : Comment Désactiver un Produit**
+**Contenu :** La désactivation d'un produit le rend inactif et le déplace de la liste des produits actifs vers la section "Inactif". C'est utile pour les produits saisonniers hors période ou ceux en rupture prolongée.
+**Étapes :**
+1.  Depuis le tableau de bord des produits, identifiez le produit à désactiver.
+2.  Cliquez sur la ligne du produit pour ouvrir sa fiche détaillée.
+3.  Sur la fiche produit, cliquez sur le bouton **Désactiver**.
+4.  Le statut du produit passe de "Actif" à "Inactif".
+**Mots-clés :** désactiver produit, rendre inactif, archiver produit, statut, étapes
+
+---
+
+**Titre : Comment Restaurer un Produit Désactivé**
+**Contenu :** Si un produit inactif redevient nécessaire, vous pouvez le restaurer pour le réintégrer dans la liste des produits actifs.
+**Étapes :**
+1.  Accédez à la liste des produits inactifs.
+2.  Identifiez le produit à restaurer (en utilisant la recherche si nécessaire).
+3.  Ouvrez sa fiche produit.
+4.  Cliquez sur le bouton **Réactiver**.
+5.  Le statut du produit passe de "Inactif" à "Actif" et il réapparaît dans la liste principale.
+**Mots-clés :** restaurer produit, réactiver produit, produit actif, statut, étapes
+
+---
+
+**Titre : Comment Ajouter un Deuxième Prix à un Produit**
+**Contenu :** Cette fonctionnalité est utilisée lorsqu'un produit en stock a deux prix différents (par exemple, suite à une baisse de prix alors qu'il reste de l'ancien stock). Lors d'une transaction, le système affichera une fenêtre pour choisir entre les deux prix, assurant une facturation correcte.
+**Étapes :**
+1.  Dans la barre de navigation, allez à **Prix de produit**.
+2.  Cliquez sur **Créer** pour ouvrir le formulaire d'ajout.
+3.  Renseignez les champs avec les nouveaux montants (PPH et PPV).
+4.  Cliquez sur **Sauvegarder**.
+**Mots-clés :** ajouter prix, deuxième prix, nouveau prix, variation de prix, facturation, PPH, PPV
+
+---
+
+**Titre : Comment Supprimer un Prix de Produit**
+**Contenu :** Pour supprimer un prix existant d'une fiche produit.
+**Étapes :**
+1.  Accédez à la section **Prix de produit** depuis la barre de navigation.
+2.  Sélectionnez le prix que vous souhaitez supprimer.
+3.  Cliquez sur l'icône en forme de croix (✖) associée à ce prix.
+4.  Confirmez la suppression lorsque le message s'affiche.
+**Mots-clés :** supprimer prix, enlever prix, gestion des prix, étapes
+
+---
+
+**Titre : Comment Imprimer une Étiquette de Produit**
+**Contenu :** Cette fonction permet d'imprimer une étiquette contenant le code-barres, le prix et les informations du produit. L'étiquette peut ensuite être collée sur l'article pour faciliter son identification et sa recherche, une pratique courante dans certaines régions comme l'Afrique.
+**Mots-clés :** imprimer étiquette, code-barres, prix produit, identification
+
+---
+
+**Titre : Comment Ajouter ou Modifier une Date de Péremption**
+**Contenu :** Vous pouvez associer plusieurs dates de péremption à un produit.
+**Pour ajouter une date :**
+1.  Depuis la fiche produit, allez dans **Dates de péremption du produit** et cliquez sur **Créer**. (Alternativement, ajoutez-la lors d'une transaction comme un bon de livraison).
+2.  Indiquez la date et validez.
+**Pour modifier une date :**
+1.  Depuis la fiche produit, cliquez sur **Autres actions**, puis sur **Modifier date de péremption**.
+2.  Indiquez la nouvelle date et sauvegardez.
+**Important :** Si le stock d'un produit tombe à 0, toutes ses dates de péremption sont automatiquement supprimées. Il faut les saisir à nouveau lors du prochain approvisionnement.
+**Mots-clés :** date de péremption, DDP, ajouter date, modifier date, gestion des péremptions
+
+---
+
+**Titre : Alerte de Date de Péremption Proche**
+**Contenu :** Si une date de péremption est inférieure ou égale à 6 mois, une fenêtre pop-up s'affiche automatiquement lors de la saisie d'une transaction. Cette fenêtre liste toutes les dates de péremption enregistrées pour le produit et offre la possibilité de les supprimer directement.
+**Mots-clés :** alerte péremption, date proche, pop-up, notification, gestion des stocks
+
+---
+
+**Titre : Comment Consulter l'Historique d'un Produit**
+**Contenu :** L'historique permet de suivre toutes les transactions (Vente, Retour, Bon de livraison, Inventaire, etc.) pour un produit spécifique.
+**Étapes :**
+1.  Ouvrez la fiche du produit concerné.
+2.  Dans le menu latéral de la fiche, sélectionnez l'onglet **Historique des produits**.
+3.  Une liste de toutes les transactions s'affiche, avec des options de filtre et de recherche. Les colonnes incluent la Date, le Type de transaction et la Quantité.
+**Mots-clés :** historique produit, suivi des mouvements, transactions, traçabilité
+
+---
+
+**Titre : Traçabilité des Modifications d'une Fiche Produit**
+**Contenu :** La section "Informations et traçabilité" de la fiche produit permet de savoir qui a créé ou modifié la fiche, et à quelle date. La section "Commentaires" affiche un historique des remarques internes ajoutées au produit.
+**Mots-clés :** traçabilité, suivi des modifications, historique des modifications, utilisateur, date, commentaires
+
+---
+
+### **Partie 3 : Glossaire**
+
+**Titre : Définition : Désactivation produit**
+**Contenu :** Il s'agit du processus qui permet de désactiver temporairement la fiche d’un produit inactif sans la supprimer définitivement. Par exemple, un sirop contre le rhume hors de la saison hivernale. Voir section 5.1 du manuel.
+**Mots-clés :** glossaire, définition, désactivation produit, produit inactif, archiver, statut produit
+
+---
+
+**Titre : Définition : DCI (Dénomination Commune Internationale)**
+**Contenu :** Nom standardisé d’une substance active, utilisé au niveau international pour identifier un médicament sans se référer à une marque. La DCI est affichée dans la liste des produits.
+**Mots-clés :** glossaire, définition, DCI, dénomination commune internationale, substance active, médicament
+
+---
+
+**Titre : Définition : Forme galénique**
+**Contenu :** Décrit la forme physique sous laquelle un produit est présenté (par exemple : comprimé, gélule, sirop, crème).
+**Mots-clés :** glossaire, définition, forme galénique, présentation physique, comprimé, sirop
+
+---
+
+**Titre : Définition : Produit actif**
+**Contenu :** Un produit actuellement disponible dans l'inventaire de la pharmacie, marqué comme "Oui" (généralement en vert) dans la liste des produits. Il est disponible pour la vente.
+**Mots-clés :** glossaire, définition, produit actif, statut, disponible, en stock, inventaire
+
+---
+
+**Titre : Définition : Produit inactif**
+**Contenu :** Un produit qui a été temporairement désactivé, marqué comme "Non" (généralement en rouge) ou déplacé vers une liste de produits inactifs. Il peut être réactivé si nécessaire.
+**Mots-clés :** glossaire, définition, produit inactif, statut, désactivé, archivé
+
+---
+
+**Titre : Définition : Suggestion de produit**
+**Contenu :** Une proposition d'ajout d'un nouveau produit à la base de données, soumise via l'interface "Suggestions des produits". La suggestion est ensuite examinée et peut être validée ou rejetée par une équipe de modération.
+**Mots-clés :** glossaire, définition, suggestion de produit, proposer, ajouter produit, validation
+
+---
+
+**Titre : Définition : PPH (Prix d'Achat)**
+**Contenu :** Le prix auquel la pharmacie achète un produit auprès de son fournisseur. Ce prix est utilisé pour les calculs de marge et de valorisation du stock.
+**Mots-clés :** glossaire, définition, PPH, prix d'achat, coût, fournisseur, prix d'achat hors taxe
+
+---
+
+**Titre : Définition : PPV (Prix Public de Vente)**
+**Contenu :** Le prix de vente final du produit affiché pour le client, incluant les taxes comme la TVA.
+**Mots-clés :** glossaire, définition, PPV, prix public de vente, prix de vente, client, taxe
+
+---
+
+**Titre : Définition : Stock min / Stock max**
+**Contenu :**
+*   **Stock min :** Quantité minimale d'un produit en stock. Atteindre ce seuil déclenche une alerte de réapprovisionnement.
+*   **Stock max :** Quantité maximale recommandée pour un produit afin d'éviter le surstockage.
+Ces valeurs sont configurables dans la fiche produit.
+**Mots-clés :** glossaire, définition, stock min, stock max, stock minimum, stock maximum, seuil, alerte, réapprovisionnement, surstockage
+
+---
+
+**Titre : Définition : Menu latéral**
+**Contenu :** Barre de navigation verticale, généralement située à gauche de l'écran dans une fiche produit, qui permet d'accéder rapidement aux différentes sections : Informations générales, Historique du produit, Dates de péremption, etc.
+**Mots-clés :** glossaire, définition, menu latéral, interface, navigation, fiche produit
+
+---
+
+**Titre : Définition : Classe thérapeutique**
+**Contenu :** Classification d'un produit selon son usage thérapeutique ou son action pharmacologique (par exemple : antalgique, antibiotique, anti-inflammatoire).
+**Mots-clés :** glossaire, définition, classe thérapeutique, classification, usage, indication
+
+---
+
+**Titre : Définition : Contre-indications et Posologie**
+**Contenu :**
+*   **Contre-indications :** Informations sur les restrictions d'utilisation du produit (conduite, allaitement, grossesse).
+*   **Posologie :** Instructions de dosage recommandées pour les adultes et/ou les enfants.
+Ces informations sont renseignées dans la section descriptive de la fiche produit.
+**Mots-clés :** glossaire, définition, contre-indication, posologie, dosage, restriction, sécurité, informations descriptives

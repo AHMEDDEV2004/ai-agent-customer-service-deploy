@@ -1,0 +1,32 @@
+# Exclude large, local-only, or generated files from Vercel upload
+# This greatly speeds up the "Deploying outputs" step
+
+# VCS / editor / cache
+.git/
+.vscode/
+__pycache__/
+*.pyc
+*.pyo
+*.log
+.env
+/ai-agent-customer-service/
+# Local binaries and archives
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.tgz
+
+# Generated media and temp files
+myfirstproject/
+tmp/
+*.wav
+
+ffmpeg-bin/
+
+# Test artifacts
+integration_test.mp3
+
+# Keep knowledge base text files (data/text) INCLUDED
+# Do NOT ignore `data/text/**` as it is needed at runtime
+.vercel

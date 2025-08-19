@@ -1,0 +1,477 @@
+### **Partie 1 : Gestion des Achats et Commandes**
+
+#### **1. Gérer vos Achats avec Sobrus : Vue d’Ensemble**
+
+*   **Introduction**
+    *   Le module Achats de Sobrus est conçu pour gérer efficacement toutes les étapes du processus d'approvisionnement d'une officine, de la recherche d'offres à la réception des produits. Il vise à simplifier les commandes, optimiser les stocks, et réduire les erreurs, permettant ainsi de libérer du temps pour le conseil client. Ce module est particulièrement utile pour la planification des achats, notamment en prévision de périodes chargées ou de jours de garde.
+
+*   **Sous-modules Disponibles**
+    *   **Sobrus Marketplace :** Permet de consulter et de commander des offres publiées par les laboratoires et les grossistes.
+    *   **Propositions de commande :** Aide à générer des suggestions de commandes basées sur l'analyse des ventes, des niveaux de stock ou des prévisions.
+    *   **Bons de commande :** Outil pour la création et la gestion des commandes.
+    *   **Bons de livraison :** Assure le suivi des réceptions de produits et la gestion des paiements associés.
+    *   **Avoirs fournisseurs émis :** Module pour enregistrer les retours de produits aux fournisseurs.
+    *   **Avoirs fournisseurs reçus :** Permet de gérer les remboursements ou les échanges avec les fournisseurs.
+    *   **Dépenses :** Outil pour le suivi quotidien des charges de l'officine.
+
+*   **Contextes d’utilisation de chaque sous-module**
+    *   **Sobrus Marketplace :** Idéal pour bénéficier des remises saisonnières.
+    *   **Propositions de commande :** Utile pour anticiper les besoins, par exemple avant les jours de garde.
+    *   **Bons de commande/livraison :** Recommandé pour un contrôle précis et détaillé des achats.
+    *   **Avoirs :** Indispensable pour la gestion des retours ou des remboursements.
+    *   **Dépenses :** Essentiel pour le suivi des charges fixes, comme le loyer.
+
+*   **Astuces d’Intégration**
+    *   **Quotidiennement :** Consacrer 15 minutes chaque matin à la consultation des nouvelles offres sur la Sobrus Marketplace.
+    *   **Hebdomadairement :** Planifier une vérification des bons de livraison pour s'assurer de la conformité des réceptions avec les commandes.
+    *   **Mensuellement :** Utiliser le module Dépenses en fin de mois pour enregistrer toutes les sorties financières et préparer l'arrêté de caisse.
+
+---
+
+#### **2. Passer une Commande via les Offres de la Marketplace**
+
+*   **2.1 Rechercher et Consulter les Offres Disponibles**
+    *   **Introduction :** La Marketplace de Sobrus centralise les offres des laboratoires et grossistes, permettant de trouver des promotions sur des produits essentiels et d'optimiser les coûts d'achat.
+    *   **Procédure :**
+        1.  Accéder au module **Achats** depuis la barre de navigation ou via le raccourci **Sobrus MarketPlace** sur le tableau de bord.
+        2.  Cliquer sur l'onglet **Sobrus Marketplace** pour voir la liste des offres.
+        3.  Utiliser la barre de recherche et les filtres pour trouver une offre par produit, nom de l'offre, fournisseur ou DCI.
+        4.  Parcourir les offres pour examiner les détails : durée de validité, remises, et conditions.
+        5.  Consulter les offres d'un laboratoire spécifique via la section "Laboratoires à la une".
+
+*   **2.2 Commander une Offre en Ligne**
+    *   **Introduction :** Commander via la Marketplace simplifie le processus d'achat et permet de bénéficier de remises, garantissant un approvisionnement rapide et économique.
+    *   **Procédure :**
+        1.  Dans la liste des offres, cliquer sur **Commander** pour l'offre choisie.
+        2.  Consulter les détails de l'offre : délai, conditions de paiement et de livraison, quantité minimale, paliers, et packs.
+        3.  Vérifier les informations des produits : prix (PPH, PPV), stock officinal disponible, prix d'achat remisé.
+        4.  Saisir la **Quantité** à commander pour chaque produit.
+        5.  Cliquer sur le cercle à droite d'un produit pour voir le détail des prix (initial, après réduction, etc.).
+        6.  Vérifier le récapitulatif de la commande en bas de page (quantité totale, unités gratuites, montant économisé, total).
+        7.  Cliquer sur **Commander**.
+        8.  Sur la page suivante, vérifier les informations du pharmacien, sélectionner le mode de paiement et ajouter un commentaire si besoin.
+        9.  Cocher les cases pour recevoir la facture et autoriser l'accès du fournisseur à vos documents si nécessaire.
+        10. Vérifier le récapitulatif final (quantité, total avant remise, etc.).
+        11. Cliquer sur **Passer la commande** pour valider.
+        12. Une page de confirmation apparaît avec des options pour afficher, imprimer ou créer un nouveau bon de commande.
+    *   **Conseil :** Toujours vérifier le stock disponible en officine avant de commander pour éviter le surstockage.
+
+*   **2.3 Suivre et Gérer vos Commandes Marketplace**
+    *   **Procédure :**
+        1.  Accéder à la sous-rubrique **Bon de Commande** dans le module Achats.
+        2.  La liste des bons de commande créés automatiquement suite à une commande Marketplace s'affiche.
+        3.  Identifier la commande grâce à son numéro de transaction, fournisseur, date, total et statut (ex: "Traité par fournisseur").
+        4.  Cliquer sur une commande pour en voir les détails (produits, quantités, etc.).
+        5.  Une fois la commande livrée, cliquer sur **"Convertir en bon de livraison"** pour confirmer la réception et mettre à jour le stock.
+
+*   **2.4 Annuler une Offre Marketplace**
+    *   **Introduction :** Cette option permet de corriger une commande en cas d'erreur ou de changement de besoin.
+    *   **Prérequis :**
+        *   La commande doit avoir été passée via la Marketplace.
+        *   La commande ne doit pas encore avoir été confirmée ou expédiée par le fournisseur.
+    *   **Procédure :**
+        1.  Accéder à la sous-rubrique **Bon de Commande**.
+        2.  Localiser la commande Marketplace à annuler dans la liste.
+        3.  Cliquer sur la commande pour ouvrir ses détails.
+        4.  Cliquer sur le bouton **Annuler**.
+        5.  Confirmer l'annulation en saisissant le code de sécurité.
+        6.  Le statut de la commande passe à "Annulé".
+    *   **Avertissement :** L'annulation peut ne plus être possible si la commande est déjà en cours de traitement par le fournisseur. Dans ce cas, il faut contacter directement le fournisseur.
+
+---
+
+#### **3. Générer des Propositions de Commande**
+
+*   **3.1 Comprendre les Méthodes de Proposition de Commande**
+    *   **Introduction :** Le sous-module **Propositions de commande** aide à anticiper les besoins en générant des suggestions d'achat basées sur diverses analyses (ventes, stocks, prévisions) pour optimiser les commandes et éviter les ruptures ou le surstockage.
+    *   **Prérequis :**
+        *   Compte Sobrus actif.
+        *   Historique de ventes et de stocks suffisant pour des calculs précis.
+        *   Paramètres de stock (minimum/maximum) à jour.
+    *   **Méthodes Disponibles :**
+        *   **Consommation d’une période :** Basée sur la formule : `(Quantités vendues - (Quantités achetées + Quantités des commandes en attente))`.
+        *   **Stock maximum :** Calcule la quantité nécessaire pour atteindre le stock maximum défini. Formule : `Stock maximum - (Quantité disponible en stock + Quantité des commandes en attente)`.
+        *   **Couverture du stock :** Suggère des produits pour couvrir une période définie. Formule : `(((Quantité vendue / Période) × Stock à couvrir) - (Stock disponible + Quantité des commandes en attente))`.
+        *   **Prévisionnelle :** Basée sur les ventes, le stock disponible et les commandes en cours. Formule : `(Quantités vendues - (Stock disponible + Quantités des commandes en attente))`.
+        *   **Intelligente boostée par l’IA :** Analyse avancée incluant la saisonnalité, les jours de garde et les risques de rupture. Nécessite au moins 2 ans d'historique de données pour être fiable.
+
+*   **3.2 Générer une Proposition selon la Consommation d’une Période**
+    *   **Introduction :** Idéale pour identifier les produits les plus demandés sur une période donnée, sans tenir compte du stock actuel.
+    *   **Procédure :**
+        1.  Accéder au sous-module **Propositions de commande**.
+        2.  Sélectionner **Générer selon la consommation d’une période**.
+        3.  Définir la **période d'analyse** (date de début et de fin).
+        4.  Appliquer des filtres si nécessaire (Laboratoire, Catégorie, ordre de tri).
+        5.  Cliquer sur **Suivant**.
+        6.  Consulter la liste des produits suggérés.
+        7.  Modifier la proposition : ajouter/supprimer des produits, ajuster les quantités, sélectionner le fournisseur.
+        8.  Cliquer sur **Approuver** pour valider ou **Brouillon** pour sauvegarder.
+
+*   **3.3 Générer une Proposition selon le Stock Maximum**
+    *   **Introduction :** Aide à maintenir les niveaux de stock optimaux en évitant les ruptures de produits essentiels.
+    *   **Prérequis :** Niveaux de stock minimum et maximum définis pour les produits.
+    *   **Procédure :**
+        1.  Accéder au sous-module **Propositions de commande**.
+        2.  Sélectionner **Générer selon le stock max**.
+        3.  Appliquer des filtres si nécessaire (Laboratoire, Catégorie, ordre de tri).
+        4.  Cliquer sur **Suivant**.
+        5.  Consulter la liste des produits ayant atteint leur stock minimum.
+        6.  Modifier la proposition si besoin.
+        7.  Sélectionner le fournisseur.
+        8.  Cliquer sur **Approuver** ou **Brouillon**.
+    *   **À Savoir :**
+        *   Une seule proposition par fournisseur. Pour plusieurs fournisseurs, créer des propositions distinctes.
+        *   Ne pas confondre laboratoire (producteur) et grossiste (distributeur).
+        *   Seuls les produits en dessous de leur stock minimum sont inclus.
+
+*   **3.4 Générer une Proposition selon la Couverture du Stock**
+    *   **Introduction :** Utile pour planifier les besoins sur une période spécifique en équilibrant les stocks.
+    *   **Procédure :**
+        1.  Accéder au sous-module **Propositions de commande**.
+        2.  Sélectionner **Générer selon la couverture du stock**.
+        3.  Définir la **période d'analyse** et les **jours à couvrir**.
+        4.  Appliquer des filtres si nécessaire.
+        5.  Cliquer sur **Suivant**.
+        6.  Ajuster la proposition générée.
+        7.  Sélectionner le fournisseur et cliquer sur **Approuver** ou **Brouillon**.
+
+*   **3.5 Générer une Proposition Prévisionnelle**
+    *   **Introduction :** Méthode simple pour des réapprovisionnements rapides basés sur les ventes et le stock.
+    *   **Procédure :**
+        1.  Accéder au sous-module **Propositions de commande**.
+        2.  Sélectionner **Méthode prévisionnelle**.
+        3.  Définir la **période d'analyse**.
+        4.  Appliquer des filtres si nécessaire.
+        5.  Cliquer sur **Suivant**.
+        6.  Ajuster la proposition.
+        7.  Sélectionner le fournisseur et cliquer sur **Approuver** ou **Brouillon**.
+
+*   **3.6 Utiliser la Proposition de Commande Intelligente Boostée par l’IA**
+    *   **Introduction :** Méthode avancée pour des commandes précises et optimisées, réduisant les surstocks et sous-stocks.
+    *   **Prérequis :** Historique d'achats et de ventes d'au moins deux ans dans Sobrus. Données à jour.
+    *   **Procédure :**
+        1.  Cliquer sur **Proposition de commande intelligente Boostée par l’intelligence Artificielle**. (Fonctionnalité en cours de test).
+
+*   **3.7 Valider et Suivre une Proposition de Commande**
+    *   **Introduction :** Permet de finaliser les achats et de suivre leur statut après validation.
+    *   **Procédure :**
+        1.  Après approbation d'une proposition, une page de confirmation s'affiche avec plusieurs options (afficher, imprimer, etc.).
+        2.  Pour suivre l'historique, aller dans la sous-rubrique **Bon de Commande**.
+        3.  Consulter la liste des bons de commande créés à partir des propositions.
+
+---
+
+#### **4. Passer une Commande en Ligne avec les Fournisseurs Partenaires**
+
+*   **4.1 Passer une Commande en Ligne**
+    *   **Avantages :**
+        *   Disponibilité 24h/24 et 7j/7.
+        *   Réduction des erreurs de saisie.
+        *   Visibilité en temps réel sur la disponibilité du stock.
+        *   Moins de dépendance téléphonique.
+    *   **Prérequis :**
+        *   Avoir généré une proposition ou créé un bon de commande.
+        *   Le fournisseur sélectionné doit être un partenaire Sobrus (identifié par l'alerte verte "Accepte les commandes en ligne").
+    *   **Procédure :**
+        1.  Après avoir préparé une proposition ou un bon de commande, vérifier que le fournisseur est partenaire.
+        2.  Cliquer sur le bouton **Commander en Ligne**.
+        3.  Un message de confirmation de la commande en ligne s'affiche.
+
+*   **4.2 Suivre une Commande en Ligne**
+    *   **Procédure de suivi :**
+        1.  Accéder à la sous-rubrique **Bon de Commande**.
+        2.  Localiser la commande en ligne dans la liste.
+        3.  Identifier la commande par son numéro, fournisseur, date, et statut.
+        4.  Cliquer sur la commande pour voir les détails, y compris les informations de suivi du fournisseur (Envoyé, Reçu, Traité).
+        5.  **Information clé :** Un produit en rouge n'est pas reconnu par le fournisseur. Une quantité à 0 signifie une rupture de stock chez le fournisseur.
+        6.  En cas de produit non reconnu, contacter le support Sobrus pour configuration.
+    *   **Réception de la commande :**
+        1.  Une fois la commande reçue, accéder au bon de commande correspondant.
+        2.  Cliquer sur **"Convertir en bon de livraison"** pour mettre à jour le statut des produits et le stock.
+        3.  Valider le bon de livraison pour finaliser l'intégration en stock.
+    *   **Annulation d'une commande en ligne :**
+        *   L'annulation n'est pas possible directement depuis le logiciel.
+        *   Il est nécessaire de contacter le fournisseur par téléphone pour annuler.
+
+### **Partie 2 : Commandes Spécifiques et Gestion des Réceptions**
+
+#### **5. La Commande Consolidée (Multi-Fournisseurs)**
+
+*   **Introduction**
+    *   La fonctionnalité de commande consolidée permet de passer une commande unique qui est automatiquement répartie entre plusieurs grossistes en fonction de la disponibilité de leurs produits. Elle a pour but principal d'éviter la gestion manuelle des commandes lorsque des produits sont en rupture de stock chez le fournisseur principal.
+
+*   **Avantages**
+    *   Gain de temps significatif dans la gestion des commandes.
+    *   Réduction des erreurs humaines liées à la ressaisie.
+    *   Autonomie accrue, sans nécessité de contacter les fournisseurs par téléphone.
+    *   Flexibilité pour passer des commandes 24h/24 et 7j/7.
+
+*   **Prérequis**
+    *   Le service de Commande en Ligne (CEL) doit être activé sur le compte.
+    *   Disposer de plusieurs fournisseurs partenaires actifs pour la commande en ligne.
+    *   Avoir configuré une liste de fournisseurs favoris, classés par ordre de préférence.
+
+*   **5.1 Passer une Commande Consolidée**
+    *   **Depuis une Proposition de Commande :**
+        1.  Accéder au menu **Proposition de commande** et choisir une méthode de génération.
+        2.  En bas de la page, activer l'option **"Commande multi-fournisseurs"**.
+        3.  Cliquer sur **"Modifier les préférences"** pour classer les fournisseurs favoris. Cet ordre déterminera la priorité d'envoi des commandes.
+        4.  Lancer la génération de la proposition.
+        5.  Vérifier et ajuster les produits et quantités si nécessaire.
+        6.  Cliquer sur **"Passer la commande"**.
+    *   **Depuis un Bon de Commande :**
+        1.  Cliquer sur **Commande Multi-Fournisseurs**.
+        2.  Ajuster le classement des fournisseurs directement dans le champ fournisseur.
+        3.  Saisir les produits désirés.
+        4.  Lancer la commande en ligne consolidée.
+    *   **Logique du système :**
+        *   La commande est d'abord envoyée au fournisseur n°1.
+        *   Si un produit est indisponible, la commande pour ce produit est automatiquement transférée au fournisseur n°2, et ainsi de suite selon l'ordre de préférence établi.
+
+*   **5.2 Suivi d’une Commande Consolidée**
+    *   Après la validation, un message récapitulatif s'affiche (ex: "18 sur 20 produits commandés avec succès").
+    *   Le statut de chaque ligne de produit peut être suivi individuellement depuis le tableau de bord.
+    *   Si des produits restent indisponibles après avoir interrogé tous les fournisseurs, un nouveau bon de commande peut être créé pour les articles restants.
+
+---
+
+#### **6. Créer et Gérer vos Bons de Commande**
+
+*   **6.1 Créer un Bon de Commande Manuellement**
+    *   **Introduction :** La création manuelle d'un bon de commande offre un contrôle total et est idéale pour les commandes spécifiques, comme des produits rares, ou pour des besoins urgents non couverts par les propositions automatiques.
+    *   **Procédure :**
+        1.  Dans le module **Achats**, aller à la sous-rubrique **Bon de Commande**.
+        2.  Cliquer sur **Créer** (ou utiliser le raccourci clavier **F10**).
+        3.  Sélectionner le **Fournisseur** dans le menu déroulant.
+        4.  Ajouter les produits en les saisissant manuellement ou en les scannant, puis indiquer la **Quantité**.
+        5.  Vérifier le **Total** du bon de commande.
+        6.  Cliquer sur **Approuver** pour valider ou sur **Brouillon** pour enregistrer et modifier plus tard.
+        7.  La page de confirmation offre plusieurs options : afficher, imprimer, passer une commande en ligne (si partenaire), ou consulter la liste des bons.
+    *   **Vérifier la disponibilité d’un produit :**
+        *   Un bouton **"Vérifier la disponibilité"** apparaît sur la page du bon de commande après la saisie d'un produit.
+        *   En cliquant sur ce bouton, le système interroge en temps réel la disponibilité du produit chez les fournisseurs partenaires.
+
+*   **6.2 Modifier ou Annuler un Bon de Commande**
+    *   **Modifier un Bon de Commande :**
+        1.  Localiser le bon de commande dans la liste.
+        2.  Seuls les bons avec le statut **"Brouillon"** peuvent être modifiés directement en cliquant sur l'icône crayon.
+        3.  Pour modifier un bon déjà validé, il faut d'abord l'annuler, puis le dupliquer.
+    *   **Annuler un Bon de Commande :**
+        1.  Ouvrir le bon de commande concerné.
+        2.  Cliquer sur le bouton **Annuler**.
+        3.  Confirmer l'annulation avec le code de sécurité.
+        *   **Avertissement :** Une commande en ligne ou une commande Marketplace avec le statut "traité par fournisseur" ne peut pas être annulée via Sobrus. Il faut contacter directement le fournisseur.
+    *   **Dupliquer un Bon de Commande :**
+        *   Cette fonction permet de créer une copie modifiable à partir d'un bon de commande existant (annulé ou complété), ce qui est utile pour réitérer une commande similaire.
+
+*   **6.3 Imprimer ou Exporter un Bon de Commande**
+    *   **Imprimer :**
+        1.  Trouver le bon de commande dans la liste.
+        2.  Cliquer sur l'icône **Imprimante** ou ouvrir le bon et sélectionner **Imprimer**.
+    *   **Exporter :**
+        1.  Ouvrir le bon de commande souhaité.
+        2.  Cliquer sur l'option **Exporter en CSV**.
+        3.  Le fichier est téléchargé sur votre ordinateur.
+
+*   **6.4 Consulter l’Historique de vos Bons de Commande**
+    *   **Bons de commandes standards :**
+        *   La liste des bons de commande affiche le numéro de transaction, le fournisseur, la date, le total et le statut (Livré, Annulé, Brouillon, etc.).
+        *   Des filtres et des options de tri sont disponibles pour faciliter la recherche.
+        *   Le détail d'un bon montre les produits, quantités, prix, et la traçabilité.
+    *   **Commandes groupées :**
+        *   Accessible via un bouton dédié, cette liste concerne les commandes des marchés groupés de la Marketplace.
+        *   Les statuts spécifiques sont : **Ouvert** (modifiable), **Annulé**, **Fermé** (clôturé et comptabilisé).
+    *   **Droits d’accès pour les commandes groupées :**
+        *   **Non-gestionnaire :** Peut consulter et imprimer le bon tant qu'il est "Ouvert".
+        *   **Gestionnaire :** Dispose de droits étendus pour modifier les quantités (globales ou par pharmacie), voir tous les détails, générer des bons par pharmacie, changer de gestionnaire et envoyer la commande au fournisseur.
+
+*   **6.5 Liste des Grossistes Partenaires "Commande en Ligne"**
+    *   **Casablanca :** Recamed, Sophadim, Cooper, MD5, CDP (Parapharmaceutique), GPM
+    *   **Agadir :** Sorepha
+    *   **Marrakech :** Globaldis, Cooper Pharma Tensift, SERP, Lodimed
+    *   **Kénitra :** Kenipharma
+    *   **Rabat :** Sophacentre, Sophacentre Marché, Pharmacoop, UPM
+    *   **Témara :** Sophatem Temara
+    *   **Salé :** Sophasale Marché, Sophasalé
+    *   **Tamesna :** Dawamaghreb
+    *   **Tanger :** Bumagego Tanger
+    *   **Tétouan :** Sophacentre succursale (UNIFARMA)
+    *   **Fès :** GPF, Sophasais
+    *   **CPRE :** En cours
+
+---
+
+#### **7. Gérer vos Bons de Livraison**
+
+*   **7.1 Créer un Bon de Livraison**
+    *   **Introduction :** La création d'un bon de livraison (BL) est l'étape qui permet d'enregistrer la réception physique des produits commandés et de mettre à jour les stocks.
+    *   **Procédure :**
+        1.  Accéder à la sous-rubrique **Bons de livraison** (ou utiliser le raccourci clavier **F6**).
+        2.  Cliquer sur **Créer**.
+        3.  Renseigner le **Fournisseur**, la **Référence du bon** et la **Date de livraison**.
+        4.  Ajouter les produits reçus (saisie manuelle ou scan) et leur **Quantité**.
+        5.  Personnaliser les détails si nécessaire : prix, remise, unités gratuites, date de péremption, zone de stockage.
+        6.  Appliquer une remise globale si besoin.
+        7.  Cliquer sur **Approuver** pour valider ou **Brouillon** pour sauvegarder.
+        8.  Rectifier le total si un décalage de centimes existe avec le BL papier du fournisseur.
+
+*   **7.2 Modifier ou Annuler un Bon de Livraison**
+    *   **Modifier un Bon de Livraison :** Seuls les bons en statut **"Brouillon"** sont modifiables. Les bons validés doivent être annulés puis dupliqués pour être corrigés.
+    *   **Annuler un Bon de Livraison :**
+        1.  Ouvrir le bon de livraison concerné.
+        2.  Cliquer sur le bouton **Annuler** et confirmer avec le code de sécurité.
+    *   **Saisie Automatique – Sobrus Magic:**
+        *   **Fonctionnement :** Permet de scanner un bon de livraison papier. La technologie OCR (Reconnaissance Optique de Caractères) extrait automatiquement les produits et quantités.
+        *   **Avantages :** Gain de temps considérable, réduction des erreurs de saisie.
+    *   **Saisie Automatique – Code Sobrus (Groupes) :**
+        *   **Fonctionnement :** Conçu pour les commandes via Sobrus Groups, il suffit de scanner le code-barres présent sur le bon de commande généré pour charger automatiquement tous les produits, quantités et remises dans un nouveau bon de livraison.
+
+*   **7.3 Gérer les Paiements Associés à un Bon de Livraison**
+    *   **Introduction :** Cette fonction permet de suivre et d'enregistrer les paiements effectués pour un bon de livraison spécifique, garantissant une comptabilité précise.
+    *   **Note :** Pour un paiement global couvrant plusieurs BL d'un fournisseur, utiliser l'option "Paiement par période" dans le module Fournisseur.
+    *   **Procédure :**
+        1.  Ouvrir le bon de livraison concerné.
+        2.  Cliquer sur **Ajouter un paiement**.
+        3.  Saisir la date, le montant et le mode de paiement.
+        4.  Pour annuler un paiement, le sélectionner dans la liste et cliquer sur **Annuler le paiement**.
+        *   **Info Clé :** Un paiement ne peut pas être modifié. Il doit être annulé et recréé.
+
+*   **7.4 Imprimer un Bon de Livraison**
+    *   **Procédure :**
+        1.  Trouver le bon de livraison dans la liste.
+        2.  Cliquer sur l'icône **Imprimante** ou ouvrir le bon et sélectionner **Imprimer**.
+
+*   **7.5 Consulter l’Historique des Bons de Livraison**
+    *   **Introduction :** L'historique offre une vue complète de toutes les réceptions (complétées, annulées, en attente de paiement) et est crucial pour le suivi des stocks.
+    *   **Procédure :**
+        1.  Accéder à la sous-rubrique **Bons de livraison**.
+        2.  La liste affiche le numéro de transaction, le fournisseur, les dates, le statut, et le total.
+        *   **Info Clé :** La "Date de création" est fixe, tandis que la "Date du bon de livraison" peut être modifiée.
+        3.  Utiliser les filtres et le tri pour naviguer dans l'historique.
+        4.  Cliquer sur un bon pour voir tous les détails : produits, prix, remises, TVA, historique des commentaires et des paiements.
+        5.  Depuis cette vue, il est possible d'imprimer, annuler, ou ajouter un paiement au bon de livraison.
+
+
+### **Partie 3 : Avoirs et Dépenses**
+
+#### **8. Créer et Gérer les Avoirs Fournisseurs Émis**
+
+*   **Introduction**
+    *   La création d'un avoir fournisseur émis est le processus par lequel l'officine formalise un retour de produits à un fournisseur (par exemple, pour cause de péremption proche ou de produits endommagés). Cette action est cruciale car elle impacte directement le stock et crée une trace officielle de la demande de retour, en vue d'obtenir un remboursement ou un échange.
+
+*   **8.1 Créer un Avoir Fournisseur Émis**
+    *   **Procédure :**
+        1.  Dans le module **Achats**, accéder à la sous-rubrique **Avoirs fournisseurs émis**.
+        2.  Cliquer sur **Créer**.
+        3.  Renseigner les informations de l'avoir :
+            *   **Produit :** Ajouter les produits à retourner.
+            *   **Quantité :** Indiquer la quantité à retourner.
+            *   **Raison :** Spécifier le motif du retour pour chaque produit.
+            *   **Fournisseur :** Sélectionner le fournisseur concerné.
+        4.  Ajuster les détails si nécessaire (prix, date de péremption) en cliquant sur l'icône crayon.
+        5.  Vérifier le total de l'avoir.
+        6.  Cliquer sur **Approuver** pour valider et envoyer, ou sur **Sauvegarder** pour le conserver en brouillon.
+        7.  La page de confirmation propose des actions rapides (afficher, imprimer, créer un nouvel avoir).
+
+*   **8.2 Modifier ou Annuler un Avoir Fournisseur Émis**
+    *   **Modifier un Avoir :**
+        *   Seuls les avoirs avec le statut **"Brouillon"** peuvent être modifiés directement.
+        *   Pour un avoir déjà validé, il faut l'annuler puis le dupliquer pour apporter des corrections.
+    *   **Annuler un Avoir :**
+        1.  Ouvrir l'avoir à annuler depuis la liste.
+        2.  Cliquer sur l'icône **Annuler** en haut de la page.
+        3.  Confirmer l'opération avec le code de sécurité.
+        *   **Info Clé :** Si un avoir fournisseur *reçu* a déjà été validé en contrepartie de cet avoir émis, il est impératif d'annuler d'abord l'avoir reçu avant de pouvoir annuler l'avoir émis.
+
+*   **8.3 Imprimer un Avoir Fournisseur Émis**
+    *   **Procédure :**
+        1.  Localiser l'avoir dans la liste des avoirs émis.
+        2.  Cliquer sur l'icône **Imprimante** ou ouvrir l'avoir et sélectionner **Imprimer**.
+
+*   **8.4 Consulter l’Historique des Avoirs Fournisseurs Émis**
+    *   **Introduction :** L'historique permet de suivre toutes les demandes de retour et leur statut (complété, brouillon, annulé).
+    *   **Procédure :**
+        1.  Accéder à la sous-rubrique **Avoirs fournisseurs émis**.
+        2.  La liste affiche le numéro de transaction, les dates, le total émis, le fournisseur et le statut.
+        3.  Utiliser les filtres et le tri pour rechercher un avoir spécifique.
+        4.  Cliquer sur un avoir pour consulter les détails, notamment les quantités (acceptées, refusées, en attente) et la traçabilité.
+
+---
+
+#### **9. Gérer les Avoirs Fournisseurs Reçus**
+
+*   **Introduction**
+    *   La création d'un avoir fournisseur reçu est l'action qui confirme la validation d'un retour par le fournisseur. Elle permet de finaliser la demande d'avoir émis et de mettre à jour la comptabilité. L'impact de cette validation varie :
+        *   **Avoir accepté :** Impacte la facturation (crédit sur le compte fournisseur).
+        *   **Avoir refusé :** Impacte uniquement le stock (les produits sont réintégrés).
+        *   **Échange :** N'impacte ni le stock, ni la facturation (géré par des remises à 100%).
+
+*   **9.1 Créer un Avoir Fournisseur Reçu**
+    *   **Procédure :**
+        1.  Dans le module **Achats**, accéder à la sous-rubrique **Avoirs fournisseurs reçus**.
+        2.  Cliquer sur **Créer**.
+        3.  Sélectionner la **période** de l'avoir émis correspondant et le **fournisseur**.
+        4.  Cliquer sur **Suivant**.
+        5.  Dans la liste des produits retournés, indiquer la **Quantité acceptée** et/ou la **Quantité refusée**.
+        6.  Choisir le **Mode de paiement** :
+            *   **Espèces :** Pour un remboursement direct.
+            *   **Avoir :** Pour un crédit à déduire des prochaines factures du fournisseur.
+        7.  Cliquer sur **Approuver** pour valider.
+
+*   **9.2 Gérer un Avoir Fournisseur Reçu en Cas d’Échange**
+    *   **Procédure :**
+        1.  Créer un avoir fournisseur reçu en suivant la procédure normale.
+        2.  Sur les produits concernés, appliquer une **remise de 100%**. L'avoir est validé avec un montant de 0.
+        3.  Créer un **Bon de livraison** distinct pour les nouveaux produits reçus en échange.
+        4.  Sur ce bon de livraison, appliquer également une **remise de 100%** pour que l'entrée en stock se fasse sans impact financier.
+
+*   **9.3 Modifier ou Annuler un Avoir Fournisseur Reçu**
+    *   **Modifier :** Il n'est pas possible de modifier ou de dupliquer un avoir reçu validé. Il faut l'annuler et le recréer.
+    *   **Annuler :**
+        1.  Ouvrir l'avoir reçu concerné.
+        2.  Cliquer sur l'icône **Annuler** et confirmer avec le code de sécurité.
+        *   **Info Clé :** Si l'avoir est lié à un paiement (mode "Avoir"), il faut d'abord annuler le paiement associé dans l'historique de paiement du fournisseur avant de pouvoir annuler l'avoir lui-même.
+
+*   **9.4 Imprimer un Avoir Fournisseur Reçu**
+    *   **Procédure :**
+        1.  Trouver l'avoir dans la liste des avoirs reçus.
+        2.  Cliquer sur l'icône **Imprimante** ou ouvrir l'avoir et sélectionner **Imprimer**.
+
+*   **9.5 Consulter l’Historique des Avoirs Fournisseurs Reçus**
+    *   **Introduction :** L'historique permet de suivre tous les remboursements et échanges confirmés par les fournisseurs.
+    *   **Procédure :**
+        1.  Accéder à la sous-rubrique **Avoirs fournisseurs reçus**.
+        2.  La liste affiche toutes les informations pertinentes : numéro de transaction, référence, dates, totaux (accepté, refusé), fournisseur et mode de remboursement.
+        3.  Utiliser les filtres et le tri pour la recherche.
+        4.  Cliquer sur un avoir pour voir le détail des produits et la traçabilité.
+
+---
+
+#### **10. Suivre et Gérer vos Dépenses**
+
+*   **Introduction**
+    *   Le module Dépenses permet de suivre toutes les sorties financières de l'officine qui ne sont pas des achats de marchandises (ex: loyer, salaires, factures d'électricité). Cette fonctionnalité est essentielle pour une comptabilité rigoureuse.
+    *   **Impact :** Chaque dépense enregistrée est automatiquement déduite de l'arrêté de caisse du jour correspondant.
+
+*   **10.1 Enregistrer une Nouvelle Dépense**
+    *   **Procédure :**
+        1.  Dans le module **Achats**, accéder à la sous-rubrique **Dépenses**.
+        2.  Cliquer sur **Créer**.
+        3.  Remplir les champs : **Catégorie**, **Libellé** (description claire), **Date** et **Montant**.
+        *   **Info Clé :** Pour ajouter une nouvelle catégorie de dépense, une demande doit être envoyée à support@sobrus.com.
+        4.  Cliquer sur **Sauvegarder**.
+
+*   **10.2 Modifier ou Annuler une Dépense**
+    *   **Prérequis :** La dépense ne doit pas avoir été intégrée dans un arrêté de caisse déjà clôturé.
+    *   **Procédure :**
+        1.  Localiser la dépense dans la liste et cliquer dessus pour ouvrir les détails.
+        2.  **Pour modifier :** Cliquer sur **Modifier**, ajuster les champs nécessaires, puis **Sauvegarder**.
+        3.  **Pour annuler :** Cliquer sur **Annuler** et confirmer avec le code de sécurité. L'annulation change le statut de la dépense mais conserve une trace dans l'historique.
+
+*   **10.3 Consulter l’Historique de vos Dépenses**
+    *   **Procédure :**
+        1.  Accéder à la sous-rubrique **Dépenses**.
+        2.  La liste affiche toutes les dépenses avec leur catégorie, libellé, date, montant et statut (Complété, Annulé).
+        3.  Utiliser les outils de recherche et de tri pour naviguer.
+        4.  Cliquer sur une dépense pour voir ses détails complets, y compris l'historique de traçabilité des modifications.
+        5.  Depuis cette vue, il est possible de modifier, annuler ou imprimer la dépense.

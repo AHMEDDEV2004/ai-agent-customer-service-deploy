@@ -1,0 +1,74 @@
+
+### **Titre : Gestion des Communications par SMS en Pharmacie via Sobrus**
+
+#### **Sujet : Consultation de l'historique des communications clients**
+
+**Question :** Comment consulter l'historique des SMS envoyés aux clients dans le logiciel Sobrus ?
+
+**Réponse :**
+La fonctionnalité "Historique des communications" permet de suivre tous les SMS envoyés aux clients de l'officine. Elle est utile pour vérifier les messages, leur statut, et retracer les rappels de soldes ou les messages personnalisés.
+
+**Procédure :**
+1.  **Connexion :** Connectez-vous au logiciel Sobrus.
+2.  **Accès au module :** Dans le menu principal, cliquez sur l'onglet **Communications**.
+3.  **Visualisation :** La page s'affiche automatiquement et liste les communications avec les détails suivants :
+    *   Date de création du SMS
+    *   Gestionnaire ayant initié l'envoi
+    *   Type de communication (ex: SMS)
+    *   Statut de l'envoi
+    *   Contenu du message envoyé
+    *   Destinataire du message
+4.  **Trier les données :** Pour organiser la liste, cliquez sur l'en-tête d'une colonne (par exemple, "Date de création").
+5.  **Rechercher une communication :** Pour trouver un envoi spécifique, utilisez la barre de **Recherche** en y saisissant un mot-clé.
+
+---
+
+#### **Sujet : Envoi d'une communication groupée par SMS**
+
+**Question :** Comment envoyer un SMS groupé à plusieurs clients, par exemple pour un rappel de solde ou une promotion ?
+
+**Réponse :**
+La fonctionnalité "Communication groupée" sert à envoyer un même SMS à plusieurs clients simultanément. Cela permet d'optimiser la gestion des relances pour soldes impayés ou de diffuser des messages personnalisés (ex: promotions sur les crèmes solaires).
+
+**Prérequis :**
+*   Avoir des identifiants valides pour le logiciel Sobrus.
+*   Disposer des autorisations nécessaires pour envoyer des SMS.
+*   S'assurer que les numéros de téléphone des clients sont corrects et à jour dans Sobrus.
+*   Avoir préalablement configuré un ou plusieurs modèles de message dans le module **Paramètres**.
+
+**Procédure :**
+1.  **Connexion :** Connectez-vous à Sobrus.
+2.  **Accès au module :** Allez dans l'onglet **Communications**.
+3.  **Lancer l'envoi :** Cliquez sur le bouton **Envoyer une communication groupée**.
+4.  **Type de communication :** La page s'ouvre par défaut sur le type **SMS**.
+5.  **Choisir l'objectif :** Sélectionnez le type de message :
+    *   **Rappel de solde client :** Pour relancer les clients ayant des paiements en attente.
+    *   **Modèle personnalisé :** Pour envoyer un message spécifique comme une promotion.
+6.  **Sélection du modèle :** Si vous avez choisi "Modèle personnalisé", sélectionnez le modèle de message souhaité dans la liste déroulante.
+7.  **Sélection des destinataires :**
+    *   Cochez les noms des clients à qui vous souhaitez envoyer le message.
+    *   **Attention :** Si aucun client n'est sélectionné, le SMS sera envoyé à **tous les clients** de la liste.
+8.  **Vérification :** Contrôlez l'aperçu du message qui s'affiche sur la droite pour vous assurer que le contenu est correct.
+9.  **Modification (Facultatif) :** Si le message nécessite un ajustement, cliquez sur **Modifier modèle**, apportez les changements, puis cliquez sur **Sauvegarder**.
+10. **Envoi final :** Cliquez sur le bouton **Envoyer** pour diffuser le SMS.
+
+**Conseils et avertissements :**
+*   **[Conseil]** Avant un envoi important, faites un test sur un petit groupe de 2 ou 3 personnes pour valider la clarté et le ton du message.
+*   **[Avertissement]** Assurez-vous que les numéros de téléphone sont corrects pour ne pas envoyer de SMS aux mauvais destinataires.
+
+---
+
+#### **Sujet : Alimentation du solde SMS du compte Pharma**
+
+**Question :** Comment recharger le solde de SMS sur mon compte Pharma dans Sobrus ?
+
+**Réponse :**
+Pour ajouter des crédits SMS à votre compte, vous devez suivre une procédure d'achat et d'activation.
+
+**Procédure :**
+1.  **Prise de contact :** Adressez une demande de recharge au **service commercial**. Un agent vous contactera pour vous présenter les packs SMS disponibles et leurs tarifs.
+2.  **Sélection du pack :** Choisissez le pack qui correspond à vos besoins.
+3.  **Paiement :** Effectuez le paiement par virement bancaire pour le pack sélectionné.
+4.  **Confirmation :** Envoyez la preuve ou l'avis de virement à votre interlocuteur commercial.
+5.  **Activation :** Votre pack SMS sera activé dès que le paiement sera réceptionné et la demande traitée.
+6.  **Suivi du solde :** Vous pouvez vérifier à tout moment le solde SMS qu'il vous reste en vous rendant dans la section **Paramètres** de votre compte Pharma.

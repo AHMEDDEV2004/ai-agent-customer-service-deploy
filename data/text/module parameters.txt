@@ -1,0 +1,524 @@
+### **Partie 1**
+
+---
+
+### **1. Introduction au Module Paramètres de Sobrus Pharma**
+
+*   **Objectif :** Ce module permet de personnaliser et d’optimiser la gestion de l'officine en configurant l'abonnement, les profils utilisateurs, les transactions, et d'autres fonctionnalités pour répondre aux besoins spécifiques de la pharmacie.
+*   **Quand utiliser ce module :**
+    *   **Gestion administrative :** Configurer les documents pour les fournisseurs et gérer les factures.
+    *   **Opérations saisonnières :** Ajuster les heures d’ouverture (gardes, Ramadan) et configurer les points de fidélité.
+    *   **Sécurité :** Définir des codes de sécurité et des restrictions d’accès pour protéger les données.
+    *   **Expérience client :** Personnaliser les communications (e-mails, SMS) et partager des informations via My Sobrus.
+*   **Prérequis :**
+    *   **Accès :** Compte "gestionnaire admin" ou "admin" pour la plupart des paramètres.
+    *   **Connexion Internet :** Requise pour la sauvegarde des modifications (sauf pour le mode hors ligne).
+    *   **Informations de l’officine :** Logo, coordonnées, etc.
+*   **Procédure générale :**
+    1.  Connectez-vous à Sobrus Pharma avec un compte administrateur.
+    2.  Cliquez sur **Paramètres** dans le menu principal.
+    3.  Sélectionnez la sous-catégorie souhaitée (ex. : Mon abonnement, Mes paramètres).
+    4.  Suivez les instructions spécifiques à chaque section.
+    5.  Cliquez sur **Sauvegarder** après chaque modification. Un message de confirmation vert apparaîtra.
+
+---
+
+### **2. Mon Abonnement**
+
+#### **2.1. Licence et Facture**
+
+*   **Description :** Cette section offre une vue détaillée de votre licence Sobrus Pharma. Elle est utile pour anticiper le renouvellement et vérifier le solde SMS.
+*   **Informations disponibles :**
+    *   **Reste à payer :** Solde dû pour l'abonnement.
+    *   **Date d’expiration :** Date de fin de validité de la licence.
+    *   **Solde SMS :** Nombre de SMS restants pour les communications.
+*   **Procédure :**
+    1.  Accédez à **Paramètres > Mon abonnement > Licence et facture**.
+    2.  Consultez les informations affichées.
+
+---
+
+#### **2.2. Moyens de Paiement**
+
+*   **Description :** Permet d'accéder aux informations pour le paiement de votre abonnement, que ce soit par virement, prélèvement automatique ou carte bancaire.
+*   **Procédure :**
+    1.  Accédez à **Paramètres > Mon abonnement > Moyens de paiement**.
+    2.  **Pour un virement bancaire :** Consultez le numéro de RIB affiché.
+    3.  **Pour le prélèvement automatique :**
+        *   Cliquez sur **Télécharger** pour obtenir les documents.
+        *   Suivez les instructions des documents.
+    4.  **Pour payer en ligne :**
+        *   Cliquez sur l'option **"Cliquez ici pour continuer"**.
+        *   Saisissez les informations de votre carte bancaire et validez.
+    5.  Si le montant n'apparaît pas, contactez le service client.
+
+---
+
+#### **2.3. Mes Factures**
+
+*   **Description :** Permet de télécharger toutes vos factures Sobrus Pharma au format PDF. Essentiel pour la comptabilité et les audits.
+*   **Informations sur la facture :** Numéro de transaction, date, période de licence, total, statut.
+*   **Procédure :**
+    1.  Accédez à **Paramètres > Mon abonnement > Mes factures**.
+    2.  Consultez la liste des factures.
+    3.  Cliquez sur l'icône **Télécharger** à côté de la facture souhaitée.
+    4.  Pour imprimer, cliquez sur l'icône d'impression dans le PDF ouvert.
+
+---
+
+### **3. Mes Paramètres**
+
+#### **3.1. Profil**
+
+*   **Description :** Section pour gérer vos informations personnelles, changer votre mot de passe, et configurer la langue ou le fuseau horaire.
+*   **Prérequis :**
+    *   Le mot de passe doit contenir au moins 8 caractères, avec des lettres, chiffres et caractères spéciaux.
+    *   Le code de sécurité doit contenir au moins 4 caractères.
+*   **Procédure - Mettre à jour les informations et le mot de passe :**
+    1.  Accédez à **Paramètres > Mes paramètres > Profil**.
+    2.  Sélectionnez **Gérer mon compte Sobrus**.
+    3.  **Pour modifier les informations :** Cliquez sur **Modifier**, changez les données, puis cliquez sur **Sauvegarder**.
+    4.  **Pour changer le mot de passe :**
+        *   Cliquez sur **Mot de passe et sécurité**.
+        *   Cliquez sur **Changer le mot de passe**.
+        *   Saisissez l'ancien mot de passe, puis le nouveau deux fois.
+        *   Cliquez sur **Enregistrer le nouveau mot de passe**.
+*   **Procédure - Configurer la langue et le fuseau horaire :**
+    1.  Contactez le service client au 05 30 500 500 ou par e-mail.
+    2.  Spécifiez la langue et le fuseau horaire souhaités.
+    3.  Attendez la confirmation du support pour l'application du changement.
+
+---
+
+#### **3.2. Code de Sécurité**
+
+*   **Description :** Le code de sécurité est utilisé pour valider des opérations sensibles comme les annulations. Cette section permet de le créer ou de le modifier.
+*   **Procédure :**
+    1.  Accédez à **Paramètres > Mes paramètres > Changer mon code de sécurité**.
+    2.  Saisissez votre **mot de passe** actuel.
+    3.  Entrez un nouveau code de sécurité (minimum 4 caractères).
+    4.  Confirmez le nouveau code.
+    5.  Cliquez sur **Sauvegarder**.
+
+---
+
+#### **3.3. Thème et Préférences**
+
+*   **Description :** Permet de personnaliser l'apparence de l'interface (thème et taille du texte) pour un meilleur confort visuel, notamment pendant les gardes de nuit.
+*   **Procédure :**
+    1.  Accédez à **Paramètres > Mes paramètres > Thème et préférences**.
+    2.  Sélectionnez un thème : **classique, sombre ou clair**.
+    3.  Ajustez la taille de lecture à l'aide du curseur.
+
+---
+
+#### **3.4. Documents Administratifs**
+
+*   **Description :** Permet de télécharger et de soumettre les documents administratifs (ex: registre de commerce) requis par les fournisseurs pour créer un compte client via la marketplace de Sobrus.
+*   **Prérequis :**
+    *   Accès "gestionnaire admin" ou "admin".
+    *   Documents numérisés prêts à être téléchargés.
+    *   Une autorisation explicite est requise pour partager les documents avec les fournisseurs.
+*   **Procédure :**
+    1.  Accédez à **Paramètres > Mes paramètres > Documents administratifs**.
+    2.  Consultez l'état de votre dossier (ex: en attente, validé).
+    3.  Cliquez sur **Ajouter un document** pour téléverser un fichier.
+    4.  *Information manquante dans le document source : Formats de fichiers acceptés.*
+    5.  Répétez pour chaque document requis.
+    6.  Cliquez sur **Sauvegarder** pour soumettre le dossier à validation.
+
+---
+
+#### **3.5. Mode Hors Ligne**
+
+*   **Description :** Permet de continuer à utiliser Sobrus Pharma pour des opérations de base sans connexion Internet.
+*   **Conditions d'activation :**
+    1.  La base de données (produits et clients) doit avoir été synchronisée au préalable.
+    2.  Une connexion au système doit avoir été effectuée avant la coupure.
+    3.  Une vente doit avoir été réalisée au moins une fois.
+*   **Limitations en mode hors ligne :** Seules les ventes simples et la consultation du solde client sont possibles.
+*   **Synchronisation :** Les données sont automatiquement synchronisées dès que la connexion Internet est rétablie.
+
+---
+
+### **4. Utilisateurs**
+
+#### **4.1. Liste des Utilisateurs**
+
+*   **Description :** Permet aux administrateurs de créer, modifier, activer/désactiver les comptes des employés et de gérer leurs droits d'accès.
+*   **Prérequis :**
+    *   Accès "gestionnaire admin" ou "admin".
+    *   Informations des employés : nom, e-mail valide, numéro de téléphone.
+*   **Procédure :**
+    1.  Accédez à **Paramètres > Utilisateurs > Liste des utilisateurs**.
+    2.  **Pour créer un utilisateur :**
+        *   Cliquez sur **Nouvel utilisateur**.
+        *   Remplissez les informations (nom, e-mail, téléphone, mot de passe).
+        *   Cochez **Est Admin** si nécessaire pour donner un accès complet.
+        *   Cliquez sur **Sauvegarder**.
+    3.  **Pour modifier un utilisateur (normal uniquement) :**
+        *   Cliquez sur l'icône **crayon** à côté de l'utilisateur.
+        *   Ajustez les accès ou le statut (Actif/Inactif).
+        *   Cliquez sur **Sauvegarder**.
+    4.  **Pour désactiver un compte :** Modifiez son statut à **Inactif** ou cliquez sur la croix rouge. La suppression définitive est impossible pour préserver l'historique.
+
+---
+
+#### **4.2. Historiques de Connexions**
+
+*   **Description :** Affiche un journal détaillé de toutes les connexions au système, crucial pour la surveillance de la sécurité et la détection d'accès non autorisés.
+*   **Informations affichées :** Heure, utilisateur, adresse IP, type d'appareil.
+*   **Procédure :**
+    1.  Accédez à **Paramètres > Utilisateurs > Historiques de connexions**.
+    2.  Consultez la liste pour identifier toute activité suspecte.
+
+---
+
+### **5. Paramètres de l'Application**
+
+#### **5.1. Paramètres de l'Entreprise**
+
+*   **Description :** Permet de modifier les informations de votre officine (nom, adresse, N° ICE, identifiant fiscal, CNSS) qui apparaissent sur les documents officiels comme les factures clients.
+*   **Procédure :**
+    1.  Accédez à **Paramètres > Paramètres de l’application > Paramètres de l’entreprise**.
+    2.  Cliquez sur **Modifier**.
+    3.  Mettez à jour les informations requises.
+    4.  Cliquez sur **Sauvegarder**.
+
+---
+
+#### **5.2. Préférences**
+
+*   **Description :** Permet de configurer divers comportements de l'application pour les adapter aux flux de travail de l'officine.
+*   **Procédure :**
+    1.  Accédez à **Paramètres > Paramètres de l’application > Préférences**.
+    2.  **Paramètres du PDF :** Configurez l'affichage du logo, de l'en-tête/pied de page, de la TVA, et l'impression automatique des tickets.
+    3.  **Paramètres d’affichage :** Choisissez le mode de recherche par défaut et la position du curseur lors des ventes.
+    4.  **Options de vente :** Activez/désactivez la validation des produits avant la vente, les frais de timbre, ou le pré-remplissage du montant reçu.
+    5.  Cliquez sur **Sauvegarder**.
+
+---
+
+### **Partie 2**
+
+---
+
+### **6. Heures d'Ouverture**
+
+*   **Description :** Configurez les horaires d'ouverture de votre officine, à la fois pour les jours normaux et pour les périodes de garde exceptionnelles.
+
+#### **6.1. Heures d'Ouverture par Défaut**
+
+*   **Objectif :** Définir les horaires de fonctionnement réguliers de la pharmacie pour chaque jour de la semaine.
+*   **Procédure :**
+    1.  Accédez à **Paramètres > Heures d'Ouverture > Heures d'Ouverture par Défaut**.
+    2.  Cliquez sur **Modifier**.
+    3.  Sélectionnez les jours et définissez les heures d'ouverture et de fermeture.
+    4.  Cliquez sur **Sauvegarder**.
+
+---
+
+#### **6.2. Garde - Ouvertures Exceptionnelles**
+
+*   **Objectif :** Créer des plages horaires spécifiques pour les jours de garde ou autres ouvertures inhabituelles.
+*   **Procédure :**
+    1.  Accédez à **Paramètres > Heures d'Ouverture > Garde - Ouvertures Exceptionnelles**.
+    2.  **Pour créer une journée de garde :**
+        *   Cliquez sur **Créer**.
+        *   Saisissez un nom pour l'événement (ex : "Garde de nuit").
+        *   Définissez les heures de début et de fin.
+        *   Cliquez sur **Sauvegarder**.
+    3.  **Pour supprimer une journée :** Cliquez sur l'icône **croix rouge**.
+    *   **Note importante :** Il n'est pas possible de modifier une journée de garde existante. Vous devez la supprimer et en créer une nouvelle.
+
+---
+
+### **7. Points de Fidélité**
+
+*   **Description :** Gérez le programme de fidélité de votre officine, de la création des récompenses à la définition des points gagnés par les clients.
+
+#### **7.1. Cadeaux de Points de Fidélité**
+
+*   **Objectif :** Définir les cadeaux (produits ou avoirs) que les clients peuvent obtenir en échange de leurs points de fidélité.
+*   **Procédure :**
+    1.  Accédez à **Paramètres > Points de Fidélité > Cadeaux de points de fidélité**.
+    2.  Consultez la liste des cadeaux existants.
+    3.  **Pour modifier un cadeau :** Cliquez sur l'icône **crayon**, ajustez le nom, les points requis ou le statut (actif/inactif), puis cliquez sur **Sauvegarder**.
+    4.  **Pour ajouter un cadeau :** Cliquez sur **Nouveau cadeau**, remplissez les informations (type, nom, points), puis cliquez sur **Sauvegarder**.
+
+---
+
+#### **7.2. Modifier les Points Gagnés par Catégorie**
+
+*   **Objectif :** Définir la règle de conversion des achats en points de fidélité.
+*   **Procédure :**
+    1.  Accédez à **Paramètres > Points de Fidélité > Modifier les points gagnés par catégorie**.
+    2.  Saisissez le **montant en DHS** et son **équivalent en points** (ex : pour 100 DHS dépensés, le client gagne 10 points).
+    3.  Cliquez sur **Sauvegarder**.
+
+---
+
+### **8. Modèles**
+
+*   **Description :** Personnalisez les communications (e-mails, SMS) et les documents (tickets de caisse, factures) envoyés depuis Sobrus Pharma.
+
+#### **8.1. E-mails**
+
+*   **Objectif :** Créer ou modifier des modèles d'e-mails pour différentes communications (ex: facture, rappel de solde).
+*   **Procédure :**
+    1.  Accédez à **Paramètres > Modèles > E-mails**.
+    2.  **Pour modifier :** Cliquez sur les **trois points** à côté d'un modèle, ajustez le contenu (en utilisant les variables disponibles comme `@@name`), puis **Sauvegardez**.
+    3.  **Pour créer :** Cliquez sur **Nouveau modèle**, définissez la rubrique, le nom et le contenu, puis cliquez sur **Sauvegarder**.
+
+---
+
+#### **8.2. Options du Ticket de Caisse**
+
+*   **Objectif :** Choisir les informations à afficher sur le ticket de caisse imprimé.
+*   **Procédure :**
+    1.  Accédez à **Paramètres > Modèles > Options du ticket de caisse**.
+    2.  Activez ou désactivez les options souhaitées (ex: afficher le numéro de transaction, le montant reçu).
+    3.  Cliquez sur **Sauvegarder**.
+
+---
+
+#### **8.3. Options Documents**
+
+*   **Objectif :** Personnaliser les documents officiels en ajoutant un logo, un en-tête, un pied de page et des termes et conditions.
+*   **Procédure :**
+    1.  Accédez à **Paramètres > Modèles > Options Documents**.
+    2.  **Logo/En-tête/Pied de page :** Cliquez sur **"Télécharger votre fichier ici"** pour ajouter vos images.
+    3.  **Termes et conditions :** Sélectionnez le type de document (ex: Vente), saisissez votre texte, puis cliquez sur **Sauvegarder**.
+    *   **Note :** L'en-tête et le pied de page par défaut sont générés à partir des informations dans **Paramètres de l'entreprise**.
+
+---
+
+#### **8.4. SMS**
+
+*   **Objectif :** Créer des modèles de SMS pour des notifications rapides (ex: rappel de solde).
+*   **Procédure :**
+    1.  Accédez à **Paramètres > Modèles > SMS**.
+    2.  **Pour créer :** Cliquez sur **Nouveau modèle**, choisissez l'opération (Rappel de solde ou personnalisé), la cible, le nom, et rédigez le message (max 160 caractères). Utilisez les variables si besoin. Cliquez sur **Sauvegarder**.
+    3.  **Pour modifier/supprimer :** Cliquez sur les **trois points** à côté du modèle souhaité.
+
+---
+
+### **9. Paramètres de sécurité**
+
+*   **Description :** Gérez les droits d'accès des utilisateurs, consultez les notifications de sécurité et définissez des règles de sécurité globales.
+
+#### **9.1. Autorisation et Accès**
+
+*   **Objectif :** Contrôler précisément ce que chaque utilisateur peut voir et faire dans le logiciel.
+*   **Procédure - Accès aux rapports :**
+    1.  Accédez à **Paramètres > Paramètres de sécurité > Autorisation et accès > Accès aux rapports**.
+    2.  Sélectionnez un utilisateur.
+    3.  Cochez les rapports que vous autorisez.
+    4.  Cliquez sur **Sauvegarder**.
+*   **Procédure - Restrictions de sécurité :**
+    1.  Accédez à **Paramètres > Paramètres de sécurité > Restrictions de sécurité**.
+    2.  Sélectionnez un utilisateur.
+    3.  Choisissez d'**Autoriser** ou de **Retirer** l'accès à des fonctionnalités spécifiques.
+    4.  Cliquez sur **Sauvegarder**.
+
+---
+
+#### **9.2. Notifications**
+
+*   **Objectif :** Surveiller les actions sensibles effectuées sur le système et configurer les alertes.
+*   **Procédure - Consulter les notifications :**
+    1.  Accédez à **Paramètres > Paramètres de sécurité > Notification de sécurité**.
+    2.  Consultez la liste des événements enregistrés (ex: modification de produit, création de client).
+*   **Procédure - Gérer les alertes :**
+    1.  Accédez à **Paramètres > Paramètres de sécurité > Paramètres et notification**.
+    2.  Cliquez sur **Modifier**.
+    3.  Activez ou désactivez les notifications pour des événements spécifiques.
+    4.  Cliquez sur **Sauvegarder**.
+
+---
+
+#### **9.3. Préférences de Sécurité**
+
+*   **Objectif :** Appliquer des règles de sécurité strictes à **tous les utilisateurs** sans exception.
+*   **Note importante :** Ces paramètres sont globaux et ne peuvent pas être configurés individuellement par utilisateur.
+*   **Procédure :**
+    1.  Accédez à **Paramètres > Paramètres de sécurité > Préférences de sécurité**.
+    2.  Cliquez sur **Modifier**.
+    3.  Activez ou désactivez les options souhaitées :
+        *   **Empêcher l'accès en dehors des heures d'ouverture :** Bloque les connexions en dehors des horaires définis.
+        *   **Désactiver la modification des dates de paiement/transactions :** Empêche tout changement de date sur les transactions.
+        *   **Imposer la confirmation de l'identité pour les transactions :** Exige une validation d'identité pour chaque vente pour assurer la traçabilité.
+    4.  Cliquez sur **Sauvegarder**.
+
+---
+
+### **10. Paramètres des Transactions**
+
+#### **10.1. Séquences**
+
+*   **Objectif :** Définir le numéro de départ pour la séquence de numérotation de divers documents (factures, bons de commande, etc.) afin d'assurer une continuité comptable.
+*   **Procédure :**
+    1.  Accédez à **Paramètres > Paramètres des transactions > Séquences**.
+    2.  Sélectionnez le type de transaction (ex: Ventes).
+    3.  Saisissez le numéro à partir duquel la nouvelle séquence doit commencer.
+    4.  Cliquez sur **Sauvegarder**.
+
+---
+
+#### **10.2. Remise Max par Catégorie**
+
+*   **Objectif :** Fixer une limite de remise (en pourcentage ou en montant) applicable par catégorie de produits pour contrôler les réductions.
+*   **Note importante :** Cette limite s'applique à **tous les utilisateurs**, y compris les "gestionnaire admin" et "admin".
+*   **Procédure :**
+    1.  Accédez à **Paramètres > Paramètres des transactions > Remise max par catégorie**.
+    2.  Sélectionnez une catégorie de produits.
+    3.  Saisissez la remise maximale autorisée (ex : `10` pour 10%).
+    4.  Cliquez sur **Sauvegarder**.
+    *   **Pour interdire toute remise :** Saisissez la valeur `0`.
+    *   **Pour autoriser des remises sans limite (désactiver la fonction) :** Laissez le champ vide.
+
+---
+
+
+### **Partie 3**
+
+---
+
+### **11. Retours sur Ventes**
+
+#### **11.1. Raisons de Retour sur Ventes**
+
+*   **Objectif :** Créer une liste standardisée de motifs pour justifier les retours de produits par les clients, afin d'assurer une traçabilité claire.
+*   **Procédure :**
+    1.  Accédez à **Paramètres > Retours sur ventes > Raisons de retour sur ventes**.
+    2.  Cliquez sur **Nouvelle raison de retours sur vente**.
+    3.  Saisissez le motif (ex : "Produit endommagé", "Erreur de délivrance").
+    4.  Cliquez sur **Sauvegarder**.
+    5.  Pour modifier ou supprimer un motif existant, utilisez les icônes correspondantes dans la liste.
+
+---
+
+### **12. Avoirs Fournisseurs Reçus**
+
+#### **12.1. Raisons des Avoirs Fournisseurs Reçus**
+
+*   **Objectif :** Créer une liste standardisée de motifs pour justifier la réception d'avoirs de la part des fournisseurs.
+*   **Procédure :**
+    1.  Accédez à **Paramètres > Avoirs fournisseurs reçus > Raisons des avoirs fournisseurs**.
+    2.  Cliquez sur **Nouvelle raison d’avoir fournisseur**.
+    3.  Saisissez le motif (ex : "Erreur de commande", "Produit manquant à la livraison").
+    4.  Cliquez sur **Sauvegarder**.
+    5.  Pour modifier ou supprimer un motif, utilisez les options dans la liste.
+
+---
+
+### **13. Zones**
+
+#### **13.1. Liste des Zones**
+
+*   **Objectif :** Organiser le stock physique et faciliter les inventaires en créant des zones de rangement virtuelles correspondant à l'agencement de l'officine (ex : "Rayon A", "Tiroir B").
+*   **Procédure :**
+    1.  Accédez à **Paramètres > Zones > Liste des zones**.
+    2.  **Pour créer une zone :**
+        *   Cliquez sur **Nouvelle zone**.
+        *   Saisissez le nom de la zone et cliquez sur **Sauvegarder**.
+    3.  **Pour ajouter des produits à une zone :**
+        *   Cliquez sur les **trois points** à côté de la zone concernée.
+        *   Sélectionnez **Ajouter des produits**.
+        *   Recherchez et sélectionnez les produits à affecter à cette zone.
+        *   Cliquez sur **Sauvegarder**.
+    4.  Pour modifier ou supprimer une zone, utilisez les options dans le menu des trois points.
+
+---
+
+### **14. Gérer les Groupes de Produits**
+
+*   **Objectif :** Créer des groupes de produits pour appliquer des remises automatiques lors des ventes, ce qui est idéal pour les promotions saisonnières ou les offres spéciales.
+*   **Exemple :** Créer un groupe "Produits Solaires" pour appliquer une remise de 15% sur tous les écrans solaires pendant l'été.
+*   **Procédure :**
+    1.  Accédez à **Paramètres > Produits > Groupes de produits**.
+    2.  **Pour créer un groupe :**
+        *   Cliquez sur **Nouveau groupe de produits**.
+        *   Saisissez le nom, le type de remise (pourcentage ou montant) et sa valeur.
+        *   Cliquez sur **Sauvegarder**.
+    3.  **Pour ajouter des produits au groupe :**
+        *   Cliquez sur les **trois points** à côté du groupe, puis **Ajouter des produits**.
+        *   Recherchez et sélectionnez les produits concernés.
+        *   Cliquez sur **Sauvegarder**.
+    4.  La remise sera appliquée automatiquement à la vente pour tout produit de ce groupe.
+
+---
+
+### **15. Activer ou Désactiver des Produits**
+
+*   **Objectif :** Gérer la visibilité des produits dans la base de données pour "nettoyer" les résultats de recherche en masquant les produits non utilisés ou obsolètes.
+*   **Procédure :**
+    1.  Accédez à **Paramètres > Produits > Désactivation des produits**.
+    2.  Vous verrez le nombre de produits classés comme :
+        *   **Actifs :** Visibles dans le système.
+        *   **Inactifs :** Masqués.
+        *   **Utilisés :** Avec un historique de stock ou de vente.
+        *   **Non utilisés :** Sans historique.
+    3.  **Pour désactiver en masse :** Cliquez sur **Désactiver les produits non utilisés** pour masquer tous les produits qui n'ont jamais été vendus ou mis en stock.
+    4.  **Pour réactiver en masse :** Cliquez sur **Activer tous les produits** pour rendre tous les produits de la base de données à nouveau visibles.
+
+---
+
+### **16. My Sobrus**
+
+*   **Description :** Une application mobile pour les patients qui leur permet de consulter les informations que vous choisissez de partager (historique d'achats, solde, points de fidélité).
+
+#### **16.1. Paramètres de Partage d'Information**
+
+*   **Objectif :** Contrôler quelles informations sont partagées avec les clients via l'application My Sobrus.
+*   **Procédure :**
+    1.  Accédez à **Paramètres > My Sobrus > Paramètres de partage d’information**.
+    2.  Activez les options de partage souhaitées (Solde, Historique des transactions, Points de fidélité).
+    3.  Choisissez quand appliquer ces paramètres :
+        *   **Tous les clients :** Applique les réglages à tous vos clients actuels et futurs.
+        *   **Prochains clients ajoutés :** Applique les réglages uniquement aux nouveaux clients.
+    4.  Cliquez sur votre choix pour sauvegarder.
+    *   **Note :** Le partage peut aussi être activé ou désactivé individuellement depuis la fiche de chaque client.
+
+---
+
+#### **16.2. Le QR Code**
+
+*   **Objectif :** Fournir un moyen simple aux clients de connecter leur application My Sobrus à votre pharmacie.
+*   **Procédure :**
+    1.  Accédez à **Paramètres > My Sobrus**.
+    2.  Localisez le QR Code affiché.
+    3.  Affichez ce QR Code à vos clients (en l'imprimant ou sur un écran).
+    4.  Le client doit scanner ce code avec son application My Sobrus pour établir la connexion.
+
+---
+
+### **17. Services Annexes**
+
+*   **Description :** Intégrez des outils matériels à Sobrus Pharma pour améliorer l'efficacité et l'expérience client.
+
+#### **17.1. Terminal de Paiement Électronique (TPE)**
+
+*   **Objectif :** Connecter votre TPE à Sobrus Pharma pour que le montant de la vente soit automatiquement envoyé au terminal, évitant ainsi les erreurs de saisie manuelle.
+*   **Procédure :**
+    1.  Accédez à **Paramètres > Services annexes > Terminal de paiement électronique**.
+    2.  Cochez la case **"Activer le paiement par terminal de paiement électronique"**.
+    3.  Téléchargez et installez l'application **Sobrus Pharma TPE** sur votre ordinateur.
+    4.  Configurez l'application en y entrant les paramètres réseau de votre TPE (notamment son adresse IP).
+    5.  Effectuez une vente test pour vous assurer que le montant est bien transféré au TPE lors du choix du paiement par carte.
+
+---
+
+#### **17.2. Application Borne Sobrus**
+
+*   **Objectif :** Utiliser une tablette comme borne de consultation de prix en temps réel pour les clients.
+*   **Description :** L'application assure que le prix affiché sur la borne est toujours identique au prix dans le système et à la caisse.
+*   **Procédure :**
+    1.  Accédez à **Paramètres > Services annexes > Borne Sobrus Price**.
+    2.  Cliquez sur **"Accéder à la Borne Sobrus"**.
+    3.  Suivez les instructions pour télécharger l'application **Sobrus Price** sur la tablette.
+    4.  Installez et lancez l'application sur la tablette.
+    5.  Testez en scannant le code-barres d'un produit pour vérifier que le prix s'affiche correctement.
+
+
+

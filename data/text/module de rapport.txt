@@ -1,0 +1,649 @@
+---
+
+### **Partie 1 : Rapports Principaux, Comptables et Exports**
+
+---
+
+#### **Titre : Rapport Principal - Vue Globale**
+*   **Objectif :** Fournir une vue globale de l'activité financière quotidienne ou sur une période spécifique.
+*   **Contenu :** Ce module inclut l'arrêté de caisse, le rapport de la journée, le rapport de caisse et le journal des produits.
+
+---
+
+#### **Titre : Rapport Principal - Arrêté de Caisse**
+*   **Navigation :** Rapports > Rapports principaux > Arrêté de Caisse
+*   **Objectif :** Vérifier l'état financier de la caisse pour une journée ou une période spécifique, en détaillant les ventes (comptant et crédit), les règlements, les remises et le crédit restant pour contrôler les liquidités.
+*   **Note :** La clôture de la caisse est automatique à minuit.
+*   **Procédure :**
+    1.  **Accès :** Aller à `Rapports > Rapports principaux` et cliquer sur `Arrêté de Caisse`.
+    2.  **Configuration :**
+        *   Choisir la période (ex: "Aujourd’hui" ou une plage de dates).
+        *   Cocher `Regrouper par jour` pour un détail quotidien sur une période.
+        *   Sélectionner la `version avancée` pour inclure les détails par client, catégorie et TVA.
+    3.  **Génération :** Cliquer sur `Télécharger` pour obtenir le rapport en PDF.
+*   **Définitions des Termes :**
+    *   **Total règlement :** Paiements reçus pour les ventes à crédit.
+    *   **Total caisse :** Somme réelle attendue en caisse (règlements du jour + ventes comptant + avances clients + avoirs fournisseurs en espèces - retours remboursés en espèces - dépenses).
+    *   **Total crédit restant :** Montant des ventes à crédit non encore réglées.
+    *   **Crédit accordé :** Total fixe des crédits accordés sur la période.
+    *   **Chiffre d’affaires net :** Total des ventes (payées ou non) moins les remises et les retours.
+    *   **Ventes au comptant net :** Ventes réglées immédiatement, moins les remises.
+    *   **Ventes à crédit net :** Ventes à crédit, moins les remises.
+*   **Conseils et Bonnes Pratiques :**
+    *   **[Conseil] :** Générer le rapport chaque matin pour vérifier la caisse de la veille.
+    *   **[Bonne Pratique] :** Utiliser la version avancée pour suivre les règlements des clients et planifier les relances.
+*   **Mises en Garde :**
+    *   **[Avertissement] :** S'assurer que toutes les transactions sont enregistrées avant de générer le rapport.
+    *   **[Avertissement] :** En cas d'échec de téléchargement, autoriser les pop-ups dans le navigateur.
+
+---
+
+#### **Titre : Rapport Principal - Rapport de la Journée**
+*   **Navigation :** Rapports > Rapports principaux > Rapport journalier
+*   **Objectif :** Offrir une vue synthétique et visuelle (diagrammes) des performances quotidiennes : ventes par catégorie, TVA, remises, bénéfices, retours, achats, etc.
+*   **Procédure :**
+    1.  **Accès :** Aller à `Rapports > Rapports principaux` et cliquer sur `Rapport journalier`.
+    2.  **Configuration :** Sélectionner la date souhaitée.
+    3.  **Visualisation :** Consulter les diagrammes qui s'affichent à l'écran.
+    4.  **Détails :** Cliquer sur le bouton `Détails` pour des informations plus spécifiques.
+
+---
+
+#### **Titre : Rapport Principal - Rapport de Caisse**
+*   **Navigation :** Rapports > Rapports principaux > Rapport de caisse
+*   **Objectif :** Suivre avec précision tous les encaissements et décaissements, détaillés par mode de paiement et type de transaction, pour vérifier les flux financiers quotidiens.
+*   **Procédure :**
+    1.  **Accès :** Aller à `Rapports > Rapports principaux` et cliquer sur `Rapport de caisse`.
+    2.  **Configuration :**
+        *   Sélectionner la période.
+        *   Filtrer par type de transaction (ex: ventes) ou moyen de paiement (ex: espèces).
+    3.  **Consultation :** Le rapport s'affiche avec la liste détaillée des transactions.
+
+---
+
+#### **Titre : Rapport Principal - Journal des Produits**
+*   **Navigation :** Rapports > Rapports principaux > Journal produits
+*   **Objectif :** Suivre tous les produits vendus sur une période donnée. Utile pour les inventaires journaliers, la planification des commandes et l'identification des produits les plus vendus.
+*   **Procédure :**
+    1.  **Accès :** Aller à `Rapports > Rapports principaux` et cliquer sur `Journal produits`.
+    2.  **Configuration :**
+        *   Choisir la période.
+        *   Appliquer des filtres (produit, catégorie, zone, quantité vendue/disponible).
+        *   Utiliser l'option `Trier` pour classer les résultats.
+    3.  **Consultation :** Consulter la liste des produits vendus.
+    4.  **Action :** Identifier les produits à faible stock pour commander et imprimer le rapport si besoin.
+
+---
+
+#### **Titre : Rapports Comptables - Accès à MaCompta**
+*   **Navigation :** Rapports > Rapports comptables > Rapports comptables
+*   **Objectif :** Fournir une assistance pour la gestion comptable de l'officine.
+*   **Procédure d'accès :**
+    1.  **URL :** Se rendre sur `https://macompta.sobrus.com` ou utiliser la navigation interne.
+    2.  **Action :** Cliquer sur `Accédez à MaCompta`, puis sur `Se connecter`.
+    3.  **Connexion :** Utiliser les identifiants Sobrus habituels.
+
+---
+
+#### **Titre : Exports - Présentation**
+*   **Objectif :** Outil de gestion pour générer des vues détaillées et exportables des données clés de l'officine (stock, achats, ventes, clients).
+
+---
+
+#### **Titre : Export - Exporter le stock**
+*   **Navigation :** Rapports > Export > Exporter le stock
+*   **Objectif :** Obtenir une vue détaillée du stock en format Excel (CSV) ou PDF.
+*   **Informations Incluses (CSV) :** ID produit, catégorie, TVA, PPH, PPV, zone, date de péremption, stocks min/max, codes à barres. Le PDF n'inclut pas les codes à barres.
+*   **Procédure :**
+    1.  **Accès :** Aller à `Rapports > Export` et cliquer sur `Exporter le stock`.
+    2.  **Configuration :** Choisir la date, le classement (ex: ordre alphabétique), la zone, la forme galénique.
+    3.  **Format :** Cocher `Télécharger en CSV` pour Excel, ou décocher pour PDF.
+    4.  **Action :** Cliquer sur `Télécharger`.
+*   **Mise en Garde :** Si le téléchargement échoue, vérifier les bloqueurs de pop-ups du navigateur.
+
+---
+
+#### **Titre : Export - Exporter les achats**
+*   **Navigation :** Rapports > Export > Exporter les achats
+*   **Objectif :** Obtenir une vue détaillée des achats (format CSV) sur une période.
+*   **Informations Incluses :** Date BL, référence, fournisseur, détails produits (ID, PPH, PPV, catégorie, quantité, etc.).
+*   **Procédure :**
+    1.  **Accès :** Aller à `Rapports > Export` et cliquer sur `Exporter les achats`.
+    2.  **Configuration :** Choisir la période.
+    3.  **Action :** Cliquer sur `télécharger en format CSV`.
+
+---
+
+#### **Titre : Export - Exporter les ventes**
+*   **Navigation :** Rapports > Export > Exporter les ventes
+*   **Objectif :** Obtenir une vue détaillée des ventes (format CSV) sur une période.
+*   **Informations Incluses :** Date, N° facture, détails produits (ID, client, TVA, PPH, PPV, catégorie, quantité, etc.).
+*   **Procédure :**
+    1.  **Accès :** Aller à `Rapports > Export` et cliquer sur `Exporter les ventes`.
+    2.  **Configuration :** Choisir la période.
+    3.  **Action :** Cliquer sur `télécharger en format CSV`.
+
+---
+
+#### **Titre : Export - Exporter les clients**
+*   **Navigation :** Rapports > Export > Exporter les clients
+*   **Objectif :** Obtenir une liste des clients au format Excel (CSV).
+*   **Informations Incluses :** Nom, email, téléphone, montant du crédit, avoir, solde.
+*   **Procédure :**
+    1.  **Accès :** Aller à `Rapports > Export` et cliquer sur `Exporter les clients`.
+    2.  **Action :** Cliquer sur `télécharger en format CSV`.
+
+---
+
+#### **Titre : Export - Exporter les produits avec prix modifiés**
+*   **Navigation :** Rapports > Export > Exporter des produits avec des prix modifiés
+*   **Objectif :** Obtenir la liste des produits dont le prix a été modifié (format CSV).
+*   **Informations Incluses :** Produit, moment exact de la modification, utilisateur.
+*   **Procédure :**
+    1.  **Accès :** Aller à `Rapports > Export` et cliquer sur `Exporter des produits avec des prix modifiés`.
+    2.  **Action :** Cliquer sur `télécharger en format CSV`.
+
+
+---
+
+### **Partie 2 : Rapports sur Chiffre d'Affaires, Achats et Ventes**
+
+---
+
+#### **Titre : Rapport sur Chiffre d'Affaires - Présentation**
+*   **Objectif :** Fournir une analyse approfondie de la performance commerciale de l'officine.
+
+---
+
+#### **Titre : CA par Famille Tarifaire (Catégorie et TVA)**
+*   **Navigation :** Rapports > Rapport sur chiffre d'affaires > Chiffre d'affaires par famille tarifaire (catégorie et TVA)
+*   **Objectif :** Analyser le chiffre d'affaires des ventes (incluant les retours) classé par catégorie et TVA.
+*   **Informations Clés :** Affiche le CA en TTC et brut, ainsi que les remises. Les retours sur ventes sont inclus.
+*   **Procédure :**
+    1.  **Accès :** Suivre le chemin de navigation.
+    2.  **Configuration :**
+        *   Choisir la période.
+        *   Cocher `Regrouper les données par jour` pour un détail quotidien (si une période est sélectionnée).
+    3.  **Action :** Cliquer sur `Imprimer` pour générer le rapport.
+
+---
+
+#### **Titre : CA par TVA**
+*   **Navigation :** Rapports > Rapport sur chiffre d'affaires > Chiffre d'affaires par TVA
+*   **Objectif :** Présenter le chiffre d'affaires par TVA en total TTC brut et la remise appliquée sur une période.
+*   **Procédure :**
+    1.  **Accès :** Suivre le chemin de navigation.
+    2.  **Configuration :**
+        *   Choisir la période.
+        *   Sélectionner le type de transaction (Tout, Régulier, Client passager).
+    3.  **Action :** Cliquer sur `Imprimer`.
+
+---
+
+#### **Titre : CA par Catégorie**
+*   **Navigation :** Rapports > Rapport sur chiffre d'affaires > Chiffre d'affaires par catégorie
+*   **Objectif :** Offrir une vue sur le chiffre d'affaires des ventes par catégorie, incluant retours et remises, et distinguant les clients réguliers des passagers.
+*   **Procédure :**
+    1.  **Accès :** Suivre le chemin de navigation.
+    2.  **Configuration :** Choisir la période.
+    3.  **Action :** Cliquer sur `Imprimer`.
+
+---
+
+#### **Titre : Interprétation des Valeurs Négatives dans les Rapports**
+*   **Montant négatif sur une catégorie :** Signifie que les retours sur vente pour cette catégorie ont été plus importants que les ventes durant la période.
+    *   **Analyse :** Consulter les rapports de retours sur ventes et de ventes par catégories pour la même période pour confirmer.
+*   **Remise affichée en négatif :** Se produit si un prix de vente unitaire supérieur au PPV (Prix Public de Vente) a été appliqué sans modifier le prix de base. Le système interprète cela comme une remise négative.
+    *   **Analyse :** Exporter les ventes, filtrer par catégorie et par remise différente de 0 pour identifier les produits concernés.
+
+---
+
+#### **Titre : Rapports sur Achats - Présentation**
+*   **Objectif :** Obtenir une vue détaillée des transactions d'achat et analyser les dépenses sur une période donnée.
+
+---
+
+#### **Titre : Rapport sur Achats**
+*   **Navigation :** Rapports > Rapport sur achats > Rapport sur achats
+*   **Objectif :** Fournir une visibilité sur les achats par bon de livraison (BL) pour une période.
+*   **Informations Clés :** Date de création du BL, N° de transaction, fournisseur, montants (avant/après remise), statut du paiement.
+*   **Procédure :**
+    *   **Filtrage :** Par fournisseur, type de paiement (Tout, Payé, Non payé), et période.
+    *   **Action :** Imprimer le rapport.
+
+---
+
+#### **Titre : Rapport sur Achat par Produit**
+*   **Navigation :** Rapports > Rapport sur achats > Rapport sur achat par produit
+*   **Objectif :** Détailler les achats par produit pour une période.
+*   **Informations Clés :** Quantité, prix d'origine, prix unitaire.
+*   **Procédure :**
+    *   **Filtrage :** Par produit et période.
+    *   **Action :** Télécharger au format CSV (Excel).
+
+---
+
+#### **Titre : Rapport sur Achat par Famille Tarifaire (Catégorie et TVA)**
+*   **Navigation :** Rapports > Rapport sur achats > Rapport sur achat par famille tarifaire (catégorie et TVA)
+*   **Objectif :** Présenter les achats par catégorie et TVA.
+*   **Informations Clés :** Total HT, TVA, TTC, remise, brut.
+*   **Procédure :** Filtrer par fournisseur et période.
+
+---
+
+#### **Titre : Rapport sur Achat par Laboratoire**
+*   **Navigation :** Rapports > Rapport sur achats > Rapport sur achat par laboratoire
+*   **Objectif :** Regrouper les achats par laboratoire.
+*   **Informations Clés :** Quantité, total PPH, PPH remisé.
+*   **Note :** Les produits sans laboratoire assigné ne sont pas inclus.
+*   **Procédure :** Filtrer par laboratoire et période.
+
+---
+
+#### **Titre : Rapport sur Achat par Remise**
+*   **Navigation :** Rapports > Rapport sur achats > Rapport sur achat par remise
+*   **Objectif :** Afficher les détails des BL classés par remise.
+*   **Informations Clés :** Date, N° de transaction, fournisseur, totaux avant/après remise, gestionnaire.
+*   **Procédure :** Filtrer par type de remise (Tout, Remisé, Non remisé) et période.
+
+---
+
+#### **Titre : Rapport des Avoirs Fournisseurs Reçus**
+*   **Navigation :** Rapports > Rapport sur achats > Rapport des avoirs fournisseurs reçus
+*   **Objectif :** Lister l'historique des avoirs fournisseurs reçus.
+*   **Informations Clés :** Date, N° de transaction, fournisseur, montant, gestionnaire, statut.
+*   **Procédure :** Filtrer par mode de paiement (Tout, Espèce, Crédit) et période.
+
+---
+
+#### **Titre : Rapport sur Achats par Jour**
+*   **Navigation :** Rapports > Rapport sur achats > Rapport sur achat par jour
+*   **Objectif :** Montrer le total des achats par jour (avant et après remise) avec un diagramme d'évolution.
+*   **Procédure :** Choisir la période.
+
+---
+
+#### **Titre : Rapport sur Achat par Catégorie**
+*   **Navigation :** Rapports > Rapport sur achats > Rapport sur achat par catégorie
+*   **Objectif :** Fournir une visibilité sur les achats par catégorie et calculer la marge bénéficiaire.
+*   **Informations Clés :** Quantité totale, total PPH, PPH remisé, PPV remisé. La marge à l'achat est la différence entre PPH et PPH remisé.
+*   **Procédure :** Filtrer par fournisseur et période.
+
+---
+
+#### **Titre : Rapport sur Achat par TVA**
+*   **Navigation :** Rapports > Rapport sur achats > Rapport sur achat par TVA
+*   **Objectif :** Donner une visibilité sur les achats par taux de TVA.
+*   **Informations Clés :** Quantité totale, total PPH, PPH remisé, et % PPH remisé pour chaque taux.
+*   **Procédure :** Choisir la période.
+
+---
+
+#### **Titre : Rapport sur Achat par Fournisseur**
+*   **Navigation :** Rapports > Rapport sur achats > Rapport sur achat par fournisseur
+*   **Objectif :** Regrouper les informations par fournisseur sur une période.
+*   **Informations Clés :** Total des BL en montant, total des avoirs émis (en attente, acceptés, refusés), montant net à payer.
+*   **Procédure :** Filtrer par fournisseur et période.
+
+---
+
+#### **Titre : Rapport des Avoirs Fournisseurs Émis**
+*   **Navigation :** Rapports > Rapport sur achats > Rapport des avoirs fournisseurs émis
+*   **Objectif :** Détailler les avoirs émis par produit pour suivre les montants retournés aux fournisseurs.
+*   **Utilité :** Suivre les avoirs, relancer les retours non traités et assurer un suivi fiable des remboursements.
+*   **Procédure :** Filtrer par statut de réponse (En attente, Accepté, Refusé), fournisseur et période.
+
+---
+
+#### **Titre : Rapport sur Achats Groupés**
+*   **Navigation :** Rapports > Rapport sur achats > Rapport sur achats groupés
+*   **Objectif :** Visualiser la répartition des achats groupés entre pharmacies, comparer les totaux et calculer les écarts.
+*   **Procédure :** Sélectionner l'année, le type de rapport (Balance par pharmacie, Achats par fournisseur) et le groupe.
+
+---
+
+#### **Titre : Rapports sur Ventes - Présentation**
+*   **Objectif :** Offrir une vue complète et personnalisable de l'activité commerciale pour optimiser la prise de décision et la gestion des stocks.
+
+---
+
+#### **Titre : Rapport sur Ventes (Général)**
+*   **Navigation :** Rapports > Rapport sur ventes > Rapport sur ventes
+*   **Objectif :** Détailler toutes les ventes par facture sur une période.
+*   **Informations Clés :** Date, N° facture, client, totaux (avant/après remise), statut du paiement, vendeur.
+*   **Utilité :** Identifier les ventes à crédit, suivre les impayés.
+
+---
+
+#### **Titre : Rapport sur Ventes par Heure**
+*   **Navigation :** Rapports > Rapport sur ventes > Rapport sur ventes par heures
+*   **Objectif :** Afficher l'évolution des ventes heure par heure avec un diagramme.
+*   **Utilité :** Identifier les heures de pointe pour optimiser les effectifs.
+
+---
+
+#### **Titre : Rapport des Ventes par Catégorie**
+*   **Navigation :** Rapports > Rapport sur ventes > Rapport des ventes par catégorie
+*   **Objectif :** Analyser le total des ventes par catégorie de produits.
+*   **Informations Clés :** Quantité, Total PPV, PPV remisé, Marge bénéficiaire `[(PPV remisé - PPH remisé) × Quantité]`.
+*   **Utilité :** Identifier les catégories les plus rentables.
+
+---
+
+#### **Titre : Rapport des Ventes par TVA**
+*   **Navigation :** Rapports > Rapport sur ventes > Rapport des ventes par TVA
+*   **Objectif :** Regrouper les ventes par taux de TVA.
+*   **Informations Clés :** Quantité, part en %, total PPV, PPV remisé.
+*   **Utilité :** Aide à la comptabilité et aux déclarations fiscales.
+
+---
+
+#### **Titre : Rapport sur Ventes par Vendeur**
+*   **Navigation :** Rapports > Rapport sur ventes > Rapport sur ventes par vendeur
+*   **Objectif :** Analyser la performance individuelle de chaque vendeur/utilisateur.
+*   **Informations Clés :** Nombre de ventes, quantités (vendues/retournées), remises, totaux (payés/non payés).
+
+---
+
+#### **Titre : Rapport sur Ventes par Remise**
+*   **Navigation :** Rapports > Rapport sur ventes > Rapport sur ventes par remise
+*   **Objectif :** Suivre l'ensemble des remises appliquées sur les ventes.
+*   **Informations Clés :** Date, N° transaction, client, totaux (avant/après remise), gestionnaire.
+
+---
+
+#### **Titre : Ordonnancier**
+*   **Navigation :** Rapports > Rapport sur ventes > Ordonnancier
+*   **Objectif :** Lister les produits vendus nécessitant une traçabilité particulière (statut "Tableau").
+*   **Utilité :** Assurer la conformité réglementaire.
+
+---
+
+#### **Titre : Rapport sur Ventes par Jour**
+*   **Navigation :** Rapports > Rapport sur ventes > Rapport sur ventes par jour
+*   **Objectif :** Montrer l'évolution des ventes jour par jour avec un tableau et un graphique.
+
+---
+
+#### **Titre : Rapport sur Ventes par Produit**
+*   **Navigation :** Rapports > Rapport sur ventes > Rapport sur ventes par produit
+*   **Objectif :** Détailler les ventes par produit pour analyser leurs performances.
+*   **Informations Clés :** Date, vendeur, client, quantité, prix, disponibilité.
+
+---
+
+#### **Titre : Rapport sur Ventes par Forme Galénique**
+*   **Navigation :** Rapports > Rapport sur ventes > Rapport sur ventes par forme galénique
+*   **Objectif :** Analyser les ventes selon la forme pharmaceutique (comprimé, sirop, etc.).
+
+---
+
+#### **Titre : Rapport sur Ventes par Zone**
+*   **Navigation :** Rapports > Rapport sur ventes > Rapport sur ventes par zone
+*   **Objectif :** Évaluer la performance commerciale des différents emplacements (rayons) dans l'officine.
+
+---
+
+#### **Titre : Rapport sur Ventes par Laboratoire**
+*   **Navigation :** Rapports > Rapport sur ventes > Rapport sur ventes par laboratoire
+*   **Objectif :** Suivre les ventes regroupées par laboratoire fournisseur.
+*   **Mise en Garde :** Les produits non associés à un laboratoire ne sont pas inclus.
+
+---
+
+#### **Titre : Rapport des Retours sur Vente**
+*   **Navigation :** Rapports > Rapport sur ventes > Rapport des retours sur vente
+*   **Objectif :** Afficher tous les retours clients pour une traçabilité complète.
+*   **Informations Clés :** Date, N° transaction, client, montant, mode de paiement, gestionnaire.
+
+---
+
+#### **Titre : Ventes par Mois par Laboratoire**
+*   **Navigation :** Rapports > Rapport sur ventes > Ventes par mois par laboratoire
+*   **Objectif :** Analyser les quantités vendues de chaque produit par laboratoire sur une période, mois par mois.
+*   **Utilité :** Préparer les commandes, suivre les performances des laboratoires, appuyer les négociations.
+*   **Informations Clés :** Quantité vendue par mois, quantité disponible en stock.
+*   **Mise en Garde :** Les produits non associés à un laboratoire ne sont pas affichés.
+
+---
+---
+
+### **Partie 3 : Rapports sur Stock, Paiements, Fournisseurs, Clients et Produits**
+
+---
+
+#### **Titre : Rapports sur Stock - Présentation**
+*   **Objectif :** Offrir une vue détaillée de l'état actuel du stock à une date spécifiée, avec des analyses par différents critères.
+
+---
+
+#### **Titre : Rapport sur Stock (Général)**
+*   **Navigation :** Rapports > Rapport sur stock > Rapport sur stock
+*   **Objectif :** Donner une visibilité sur la quantité en stock et sa valeur en PPV et PPH à une date précise.
+*   **Utilité :** Évaluer la valeur du stock, comparer les valorisations PPV vs PPH, et contrôler les quantités physiques.
+*   **Procédure :** Sélectionner la date et imprimer.
+
+---
+
+#### **Titre : Rapport sur Stock par Famille Tarifaire (Catégorie et TVA)**
+*   **Navigation :** Rapports > Rapport sur stock > Rapport sur stock par famille tarifaire (Catégorie et TVA)
+*   **Objectif :** Afficher le stock par catégorie et TVA (quantité, PPV, PPH en HT et TTC).
+*   **Utilité :** Rapport clé pour la comptabilité et le bilan de fin d’année ; analyse de la structure tarifaire.
+*   **Procédure :** Sélectionner la date et imprimer.
+
+---
+
+#### **Titre : Rapport sur Stock par TVA**
+*   **Navigation :** Rapports > Rapport sur stock > Rapport sur stock par TVA
+*   **Objectif :** Afficher le stock valorisé en PPV (avant et après remise) par taux de TVA.
+*   **Utilité :** Contrôle de la répartition du stock pour des raisons comptables ou fiscales.
+*   **Procédure :** Sélectionner la date et imprimer.
+
+---
+
+#### **Titre : Rapport sur Stock par DCI**
+*   **Navigation :** Rapports > Rapport sur stock > Rapport sur stock par DCI
+*   **Objectif :** Afficher le stock par Dénomination Commune Internationale (DCI).
+*   **Informations Clés :** Quantité totale, PPV, PPH (en montant et pourcentage).
+*   **Utilité :** Gérer les références par molécule, notamment pour les génériques.
+*   **Procédure :** Filtrer par DCI et date.
+
+---
+
+#### **Titre : Rapport sur Stock par Zone**
+*   **Navigation :** Rapports > Rapport sur stock > Rapport sur stock par zone
+*   **Objectif :** Afficher le stock par zone de rangement.
+*   **Utilité :** Localiser les produits, évaluer la valeur de chaque zone, et optimiser le rangement.
+*   **Procédure :** Filtrer par zone et date.
+
+---
+
+#### **Titre : Rapport sur Stock par Stock Minimum**
+*   **Navigation :** Rapports > Rapport sur stock > Rapport sur stock par stock min
+*   **Objectif :** Identifier les produits dont la quantité en stock est inférieure au seuil minimum défini.
+*   **Informations Clés :** Quantité nette actuelle, stock minimum, écart à commander.
+
+---
+
+#### **Titre : Produits au Stock Zéro**
+*   **Navigation :** Rapports > Rapport sur stock > Produits au stock zéro (0)
+*   **Objectif :** Lister tous les produits actuellement épuisés (stock = 0) nécessitant une commande.
+
+---
+
+#### **Titre : Rapport sur Stock par Catégorie**
+*   **Navigation :** Rapports > Rapport sur stock > Rapport sur stock par catégorie
+*   **Objectif :** Détailler le stock par catégorie avec valorisation PPV et PPH (HT/TTC).
+*   **Utilité :** Très utilisé pour le bilan comptable de fin d'année.
+*   **Procédure :** Sélectionner la date et imprimer.
+
+---
+
+#### **Titre : Rapport sur Stock par Forme Galénique**
+*   **Navigation :** Rapports > Rapport sur stock > Rapport sur stock par forme galénique
+*   **Objectif :** Afficher le stock classé par forme pharmaceutique (comprimé, sirop, etc.).
+*   **Procédure :** Filtrer par forme galénique et date.
+
+---
+
+#### **Titre : Rapport sur Stock par Produit**
+*   **Navigation :** Rapports > Rapport sur stock > Rapport sur stock par produit
+*   **Objectif :** Lister le stock produit par produit à une date précise.
+*   **Informations Clés :** Quantité, total PPV et PPH TTC par produit.
+*   **Procédure :** Filtrer par produit et date.
+
+---
+
+#### **Titre : Rapport sur Stock par Classe Thérapeutique**
+*   **Navigation :** Rapports > Rapport sur stock > Rapport sur stock par classe thérapeutique
+*   **Objectif :** Offrir une visibilité sur le stock par classe thérapeutique.
+*   **Procédure :** Filtrer par classe thérapeutique et date.
+
+---
+
+#### **Titre : Rapport sur Stock par Laboratoire**
+*   **Navigation :** Rapports > Rapport sur stock > Rapport sur stock par laboratoire
+*   **Objectif :** Afficher le stock par laboratoire fournisseur.
+*   **Mise en Garde :** Les produits sans laboratoire assigné ne sont pas affichés.
+*   **Procédure :** Filtrer par laboratoire et date.
+
+---
+
+#### **Titre : Rapport sur Stock Négatif**
+*   **Navigation :** Rapports > Rapport sur stock > Rapport sur stock négatif
+*   **Objectif :** Lister tous les produits ayant un stock négatif (sauf ceux en cours de commande) pour correction.
+
+---
+
+#### **Titre : Inventaires par Période**
+*   **Navigation :** Rapports > Rapport sur stock > Inventaire par période
+*   **Objectif :** Calculer l'écart d'un inventaire sur une période.
+*   **Informations Clés :** Quantité avant/après inventaire, écart en quantité, et écart valorisé en PPH/PPV.
+*   **Utilité :** Identifier et corriger les anomalies de stock, analyser les pertes ou surplus.
+*   **Procédure :** Choisir la période et télécharger en CSV.
+
+---
+
+#### **Titre : Rapports sur Paiements - Présentation**
+*   **Objectif :** Fournir une vue détaillée des transactions financières (encaissements et décaissements) sur une période donnée.
+
+---
+
+#### **Titre : Rapport sur Encaissements**
+*   **Navigation :** Rapports > Rapport sur paiements > Rapport sur encaissements
+*   **Objectif :** Afficher tous les encaissements effectués.
+*   **Procédure :** Filtrer par période, type de transaction (paiement vente, avance client, etc.) et mode de paiement.
+
+---
+
+#### **Titre : Rapport des Encaissements par Utilisateur**
+*   **Navigation :** Rapports > Rapport sur paiements > Rapport des encaissements par utilisateurs
+*   **Objectif :** Détailler tous les encaissements par vendeur/utilisateur.
+*   **Utilité :** Essentiel pour l'arrêté de caisse par utilisateur.
+*   **Procédure :** Choisir la période et imprimer.
+
+---
+
+#### **Titre : Rapport sur Décaissements**
+*   **Navigation :** Rapports > Rapport sur paiements > Rapport sur décaissements
+*   **Objectif :** Afficher tous les décaissements effectués.
+*   **Procédure :** Filtrer par période, type de transaction et mode de paiement.
+
+---
+
+#### **Titre : Rapport des Droits de Timbre**
+*   **Navigation :** Rapports > Rapport sur paiements > Rapport des droits timbres
+*   **Objectif :** Calculer les droits de timbre (0,25% du TTC) dus sur les paiements en espèces.
+*   **Note :** Les paiements par virement ou chèque sont généralement exonérés.
+*   **Procédure :** Choisir la période et imprimer le formulaire pré-rempli.
+
+---
+
+#### **Titre : Rapports sur Fournisseurs - Présentation**
+*   **Objectif :** Regrouper toutes les informations relatives aux fournisseurs.
+
+---
+
+#### **Titre : Rapport sur Fournisseurs (Général)**
+*   **Navigation :** Rapports > Rapports sur Fournisseurs > rapport sur fournisseurs
+*   **Objectif :** Lister tous les fournisseurs et leur situation financière.
+*   **Informations Clés :** Nombre total de fournisseurs, solde total, et pour chaque fournisseur : crédit, avoirs, date du dernier achat/paiement.
+*   **Calcul :** Solde fournisseur = Total Crédit - Total Avoir.
+
+---
+
+#### **Titre : Rapport sur Paiements Fournisseurs**
+*   **Navigation :** Rapports > Rapports sur Fournisseurs > rapport sur paiements fournisseurs
+*   **Objectif :** Suivre les paiements effectués aux fournisseurs sur une période.
+*   **Informations Clés :** Montant total déboursé, date du dernier règlement, solde restant par fournisseur.
+*   **Procédure :** Filtrer par période et fournisseur.
+
+---
+
+#### **Titre : Rapports sur Clients - Présentation**
+*   **Objectif :** Offrir une vue détaillée des informations clients pour mieux gérer les relations.
+
+---
+
+#### **Titre : Rapport sur Clients (Général)**
+*   **Navigation :** Rapports > Rapport sur clients > Rapport sur clients
+*   **Objectif :** Fournir une vue globale du portefeuille client à une date précise.
+*   **Informations Clés :** Nombre total de clients, solde total, et pour chaque client : date dernier achat/paiement, solde actuel.
+*   **Procédure :** Configurer la période et imprimer.
+
+---
+
+#### **Titre : Rapport des Règlements Clients**
+*   **Navigation :** Rapports > Rapport sur clients > Rapport des règlements clients
+*   **Objectif :** Suivre les règlements effectués par les clients sur une période.
+*   **Informations Clés :** Montant réglé par client, solde restant, et détails de chaque paiement (date, montant, mode de paiement).
+*   **Note sur les Dates :** La `date de création` (fixe) peut différer de la `date de paiement` (modifiable). Une différence est signalée en rouge.
+*   **Procédure :** Configurer la période.
+
+---
+
+#### **Titre : Rapports sur Produits - Présentation**
+*   **Objectif :** Regrouper les données sur les mouvements de produits pour faciliter la gestion des stocks et la prise de décision.
+
+---
+
+#### **Titre : Historique Produits**
+*   **Navigation :** Rapports > Rapports sur produits > historique produits
+*   **Objectif :** Afficher tous les mouvements d'un produit (vente, retour, BL, etc.) sur une période.
+*   **Informations Clés :** Date, type de mouvement, quantité, stock après transaction.
+*   **Utilité :** Suivre les flux, analyser les entrées/sorties, identifier les anomalies.
+*   **Procédure :** Filtrer par produit, laboratoire, type de mouvement et période.
+
+---
+
+#### **Titre : Produits les Plus Vendus**
+*   **Navigation :** Rapports > Rapports sur produits > Les produits les plus vendus
+*   **Objectif :** Présenter les produits les plus performants sur une période.
+*   **Informations Clés :** Quantité vendue, retournée, nette, date de dernière vente.
+*   **Utilité :** Aider aux décisions de réassort, promotions et gestion de stock.
+*   **Procédure :** Filtrer par période, catégorie et télécharger en CSV.
+
+---
+
+#### **Titre : Produits Proches de la Péremption**
+*   **Navigation :** Rapports > Rapports sur produits > Produits proches périmés
+*   **Objectif :** Lister les produits approchant de leur date de péremption.
+*   **Informations Clés :** Disponibilité, date de péremption, jours restants.
+*   **Utilité :** Anticiper les pertes, mettre en place des actions commerciales.
+*   **Procédure :** Choisir la période (ex: 3 prochains mois) et imprimer.
+
+---
+
+#### **Titre : Nouveaux Produits**
+*   **Navigation :** Rapports > Rapports sur produits > Nouveaux produits
+*   **Objectif :** Lister les produits récemment ajoutés au système.
+*   **Utilité :** Visualiser les ajouts récents à la base de données.
+
+---
+
+#### **Titre : Produits les Moins Vendus**
+*   **Navigation :** Rapports > Rapports sur produits > Les produits les moins vendus
+*   **Objectif :** Identifier les produits à faible rotation (dormants ou manquants).
+*   **Informations Clés :** Quantité vendue, retournée, disponible, date de dernière vente/achat.
+*   **Utilité :** Optimiser les commandes, éviter le surstockage.
+*   **Procédure :** Filtrer par période, catégorie, type (dormants/manquants) et télécharger en CSV.

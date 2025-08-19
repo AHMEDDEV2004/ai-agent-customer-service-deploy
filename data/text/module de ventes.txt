@@ -1,0 +1,405 @@
+### **Partie 1**
+
+---
+
+#### **Module : VENTES**
+
+##### **Section 1 : Introduction au Module Ventes**
+
+*   **1.1. Objectif du Module Ventes**
+    *   **Mission :** Simplifier et optimiser la gestion des transactions en pharmacie.
+    *   **Applications :** Convient à la vente de médicaments sur ordonnance et de produits de parapharmacie.
+    *   **Bénéfices :**
+        *   Suivi centralisé de toutes les opérations.
+        *   Création et gestion simplifiées des ventes.
+        *   Administration des paiements.
+        *   Impression de documents essentiels (tickets de caisse, factures).
+        *   Gain de temps opérationnel.
+        *   Réduction du risque d'erreurs.
+        *   Amélioration de l'expérience et de la satisfaction des clients.
+
+*   **1.2. Fonctionnalités et Sous-Modules**
+    *   **Gestion des ventes :** Permet de créer, suivre et gérer les transactions commerciales avec des statuts clairs (par exemple, Complété, Annulé, Partiellement Payé).
+    *   **Devis :** Offre la possibilité de préparer des propositions commerciales détaillées pour les clients et de les convertir facilement en ventes.
+    *   **Retours sur ventes :** Facilite le traitement des retours de produits tout en conservant un historique complet des transactions.
+    *   **Documents temporaires :** Permet de générer des factures pro forma ou des brouillons pour des simulations ou des planifications, sans aucun impact sur la comptabilité ou les stocks.
+    *   **Reconditionnement :** Autorise la division de produits en unités plus petites, dans le respect des cadres réglementaires.
+    *   **Préparations officinales et magistrales :** Assure la création et la gestion des préparations pharmaceutiques réalisées sur place.
+
+---
+
+##### **Section 2 : Gérer les Ventes au Quotidien**
+
+*   **2.1. Statuts des Ventes**
+    *   **Complété :** La vente est finalisée et le paiement intégral a été reçu.
+    *   **Annulé :** La transaction a été annulée et invalidée.
+    *   **Non Payé :** La vente a été validée, mais aucun paiement n'a encore été effectué.
+    *   **Partiellement Payé :** Un acompte a été versé, mais un solde reste à payer.
+    *   **Payé :** Le paiement a été intégralement reçu, mais les produits n'ont pas encore été livrés au client.
+    *   **Brouillon :** La vente est sauvegardée dans le système mais n'est pas encore validée ; elle peut être modifiée ou finalisée ultérieurement.
+
+*   **2.2. Consultation des Transactions**
+    *   **Accès :** Naviguer vers `Menu principal > VENTES > Ventes`.
+    *   **Informations Clés du Tableau de Bord :**
+        *   Numéro de transaction (identifiant unique).
+        *   Client associé.
+        *   Date de la vente.
+        *   Montant total.
+        *   Statut de la transaction.
+    *   **Fonctionnalités :** Utiliser les boutons `Rafraîchir` pour actualiser les données et `Recherche` pour filtrer des transactions spécifiques.
+
+*   **2.3. Processus de Création d'une Vente**
+    *   **Vente Complétée :**
+        1.  Lancer la création via `Vente > Créer` ou le raccourci clavier `F4`.
+        2.  Ajouter des produits en les scannant ou en les recherchant (par nom, code-barres, DCI).
+        3.  Ajuster les détails si nécessaire : appliquer une remise (globale ou par produit), spécifier un taux de remboursement, modifier le prix ou la date de péremption, ajouter un nouveau client ou des unités gratuites.
+        4.  Valider la saisie avec `Approuver` ou `F12`.
+        5.  Sur l'écran de paiement, confirmer le montant reçu et le mode de paiement.
+        6.  Finaliser la transaction (pour les espèces, `F12` de nouveau).
+        7.  Après validation, des options pour imprimer les documents (facture, ticket, bon de livraison) sont disponibles.
+
+    *   **Vente Partiellement Payée :**
+        1.  Suivre le processus de vente standard.
+        2.  Associer la vente à un client.
+        3.  Cliquer sur `Approuver`.
+        4.  Saisir le montant partiel reçu.
+        5.  Sélectionner le mode de paiement correspondant.
+
+    *   **Vente à Crédit :**
+        1.  Procéder comme pour une vente partiellement payée.
+        2.  Laisser le champ `Montant reçu` à 0.
+        3.  Valider en cliquant sur `Vente à crédit` ou en utilisant `F12`.
+
+    *   **Vente en Brouillon :**
+        1.  Suivre les étapes de création de vente habituelles.
+        2.  Au lieu de valider, cliquer sur `Brouillon` pour sauvegarder la vente en tant que brouillon modifiable.
+
+    *   **Vente Organisme "Tiers Payant" :**
+        1.  Suivre la procédure d'une vente à crédit.
+        2.  Associer la vente au client de l'organisme et vérifier que les informations de remboursement (taux, base) sont correctement saisies.
+        3.  Approuver et compléter les informations requises pour le dossier de l'organisme.
+        4.  Saisir le montant payé par le client (sa part) et le mode de paiement, ou valider comme une vente à crédit si la totalité est prise en charge.
+
+    *   **Vente Payée en Avoir :**
+        1.  Procéder comme pour une vente à crédit.
+        2.  Dans le champ `Montant reçu`, saisir le montant total de la facture.
+        3.  Choisir `Avoir` comme mode de paiement.
+        4.  Si l'avoir du client est insuffisant pour couvrir le total, saisir d'abord le montant de l'avoir disponible, le valider, puis ajouter le paiement complémentaire via `Afficher la facture > Autres actions > Ajouter le reste de paiement`.
+
+    *   **Vente Non Livrée :**
+        1.  Créer une vente (normale, partielle ou à crédit).
+        2.  Avant de passer à l'étape du paiement, décocher la case `Livré`.
+
+    *   **Vente avec Plusieurs Modes de Paiement :**
+        1.  Enregistrer la vente comme `Partiellement Payée` avec le premier mode de paiement.
+        2.  Après validation, accéder à la facture et utiliser `Autres actions > Ajoutez un paiement` pour enregistrer les paiements suivants avec d'autres modes.
+
+*   **2.4. Modification et Annulation d'une Vente**
+    *   **Règle générale :** Les ventes ayant un statut `Complété`, `Non Payé`, `Payé` ou `Partiellement Payé` ne sont pas modifiables directement. Elles doivent être annulées puis dupliquées pour modification.
+    *   **Annuler une Vente :**
+        1.  Ouvrir la facture correspondante.
+        2.  Cliquer sur le bouton `Annuler`.
+        3.  Confirmer l'action en saisissant le code de sécurité requis.
+    *   **Modifier une Vente (après annulation) :**
+        1.  Ouvrir la facture annulée.
+        2.  Cliquer sur `Dupliquer` pour créer une nouvelle version modifiable.
+        3.  Apporter les corrections nécessaires et valider la nouvelle vente.
+    *   **Modifier une Vente en Brouillon :**
+        1.  Accéder au brouillon via l'icône de modification (crayon) dans la liste des ventes ou en ouvrant directement la facture.
+        2.  Cliquer sur `Modifier`, apporter les changements, puis valider (`Approuver`) ou sauvegarder de nouveau en tant que brouillon (`Brouillon`).
+    *   **Gestion des Interactions Médicamenteuses :**
+        *   Le système déclenche une alerte automatique lors de la validation d'une vente si une interaction potentielle est détectée entre les médicaments.
+        *   **Codes Couleur d'Alerte :**
+            *   **Jaune/Orange :** Interaction à prendre en compte.
+            *   **Orange foncé :** Utilisation avec précaution recommandée.
+            *   **Rouge clair :** Association déconseillée.
+            *   **Rouge foncé :** Contre-indication formelle.
+
+*   **2.5. Suivi Détaillé des Factures de Vente**
+    *   **Contenu de la Facture :** Affiche le numéro de facture, les dates, le détail des produits (prix, remises, TVA), les totaux (HT, TTC), l'historique des commentaires et le détail des paiements.
+    *   **Gestion des Paiements :**
+        *   Permet de consulter les détails de chaque paiement (date, montant) et d'annuler un paiement si nécessaire (la modification est impossible, il faut annuler et recréer).
+        *   Possibilité d'ajouter un nouveau paiement via `Autres actions > Ajouter un paiement`.
+    *   **Menu "Autres actions" (sur une facture complétée) :**
+        *   Impression des documents (ticket de caisse, facture, bon de livraison).
+        *   Téléchargement du bon de livraison en format PDF.
+        *   Mise à jour des informations du client sur la facture.
+        *   Génération d'un retour sur vente.
+    *   **Impression :**
+        *   **Ticket de caisse :** Le nombre d'impressions est suivi ; à partir de la deuxième impression, une mention "Ticket 2 : ref." apparaît.
+        *   **Facture et Bon de livraison :** Peuvent être imprimés à plusieurs étapes (après validation, depuis la liste des ventes, ou via "Autres actions").
+    *   **Mise à Jour des Informations Client :** Si des informations (comme l'ICE) sont ajoutées à la fiche client après la validation de la vente, utilisez `Mettre à jour les informations du client` sur la facture pour les synchroniser.
+    *   **Traçabilité :**
+        *   **Date de création :** Date de l'enregistrement initial, non modifiable.
+        *   **Date de mise à jour :** Indique la date de la dernière modification de statut (par exemple, passage de "Brouillon" à "Complété").
+
+---
+
+##### **Section 3 : Créer et Gérer un Devis**
+
+*   **3.1. Différence entre Devis et Facture**
+    *   **Devis :** Une proposition commerciale formelle qui n'engage pas une transaction. Il détaille les produits, les prix et les conditions mais n'a pas de valeur comptable.
+    *   **Facture :** Un document comptable officiel qui confirme une vente et crée une obligation de paiement.
+    *   **Flux de travail :** Un devis accepté par le client est destiné à être converti en facture pour finaliser la transaction.
+
+*   **3.2. Consultation des Devis**
+    *   **Accès :** Naviguer vers `Menu principal > VENTES > Devis`.
+    *   **Informations Clés :** Affiche la liste des devis avec leur numéro, le nom du client, la date de validité, le montant total et le statut.
+
+*   **3.3. Création d'un Nouveau Devis**
+    1.  Lancer la création via `VENTES > Devis > Créer`.
+    2.  Associer le devis à un client et définir une date de validité.
+    3.  Ajouter les produits et ajuster les quantités, prix et remises.
+    4.  Appliquer une remise globale si nécessaire.
+    5.  Valider le devis avec `Approuver` ou `F12`.
+
+*   **3.4. Modification, Annulation ou Duplication d'un Devis**
+    *   **Annuler :** Ouvrir le devis, puis `Autres actions > Annuler`. Confirmer avec le code de sécurité.
+    *   **Dupliquer :** Ouvrir le devis, puis `Autres actions > Dupliquer` pour en créer une copie.
+    *   **Modifier un Devis Validé :** Il faut d'abord l'annuler, puis le dupliquer pour créer une version modifiable.
+    *   **Modifier un Devis en Brouillon :** Ouvrir le devis, puis `Autres actions > Modifier`.
+    *   **Important :** Un devis qui a été converti en vente ne peut plus être modifié.
+
+*   **3.5. Impression d'un Devis**
+    *   Accéder au devis validé et cliquer sur `Imprimer` pour générer une version papier ou PDF.
+
+*   **3.6. Traçabilité d'un Devis**
+    *   La section `Informations de traçabilité` sur la page du devis permet de suivre l'historique des actions (création, validation, modification, annulation) avec les dates correspondantes.
+
+*   **3.7. Conversion d'un Devis en Vente**
+    1.  Ouvrir le devis validé que le client a accepté.
+    2.  Cliquer sur le bouton `Convertir en vente`.
+    3.  Le système génère une nouvelle interface de vente pré-remplie avec les informations du devis.
+    4.  Vérifier les détails et finaliser la transaction en cliquant sur `Approuver` (`F12`).
+
+---
+
+### **Partie 2**
+
+---
+
+#### **Module : VENTES**
+
+##### **Section 4 : Gérer les Retours sur Ventes**
+
+*   **4.1. Objectif et Importance de la Gestion des Retours**
+    *   **Mission :** Gérer efficacement les retours de produits initiés par les clients.
+    *   **Bénéfices :**
+        *   Améliorer la relation client en répondant à leurs besoins de manière structurée.
+        *   Assurer la précision des rapports financiers et de l'inventaire.
+        *   Respecter les bonnes pratiques pharmaceutiques pour la gestion des produits retournés.
+
+*   **4.2. Consultation des Retours sur Ventes**
+    *   **Accès :** Naviguer vers `Menu principal > Ventes > Retours sur ventes`.
+    *   **Informations Clés du Tableau de Bord :**
+        *   Numéro de transaction (ex. RV-3062).
+        *   Client associé.
+        *   Date du retour.
+        *   Montant restitué.
+        *   Mode de remboursement (ex. Restituer en argent, Avoir).
+        *   Statut (ex. Complété).
+    *   **Fonctionnalités :** Utiliser les boutons `Rafraîchir` pour actualiser les données et `Recherche` pour trouver un retour spécifique.
+
+*   **4.3. Processus de Création d'un Retour sur Vente**
+    *   **Cas 1 : Retour d'une Vente Complétée et Payée**
+        1.  **Accès :** `Retours sur vente > Créer`.
+        2.  Saisir les produits à retourner.
+        3.  **Validation :** Cliquer sur `Approuver – Espèce` pour finaliser le retour et le remboursement en espèces.
+        4.  **Option :** Cliquer sur `Sauvegarder` pour conserver le retour en tant que brouillon.
+        5.  **Avertissement :** Les retours pour des ventes initialement payées par TPE, chèque, etc., sont systématiquement remboursés en espèces.
+
+    *   **Cas 2 : Créer un Retour sur Vente à Crédit (en Avoir)**
+        1.  **Accès :** `Retours sur vente > Créer`.
+        2.  Saisir le ou les produits concernés.
+        3.  **Validation :** Cliquer sur `Approuver – Avoir` pour générer un avoir sur le compte du client.
+
+    *   **Cas 3 : Créer un Retour avec Échange de Produit**
+        1.  Effectuer l'opération directement depuis la vente d'origine (si celle-ci a été payée).
+        2.  Saisir le produit retourné avec une quantité **négative**.
+        3.  Ajouter le nouveau produit de remplacement avec une quantité **positive**.
+        4.  Valider la transaction.
+        5.  **Résultat :** Le produit retourné apparaît dans la liste des "Retours sur vente" et le nouveau produit dans la liste des "Ventes".
+        6.  **Avertissement :** Cette méthode n'est pas applicable pour un retour à crédit. Il faut suivre la procédure standard de retour en avoir, puis créer une nouvelle vente pour le produit d'échange.
+
+    *   **Cas 4 : Retour sur une Vente Partiellement Payée**
+        1.  Finaliser la vente initiale.
+        2.  Créer et valider un retour sur vente standard, qui sera remboursé en espèces.
+
+*   **4.4. Modification et Annulation d'un Retour**
+    *   **Modification :** Un retour ne peut être modifié que s'il est au statut `Brouillon`.
+    *   **Duplication :** Un retour ne peut pas être dupliqué.
+    *   **Processus d'Annulation :**
+        *   **Retour en espèces ou en brouillon :** Annulation standard via le bouton `Annuler`.
+        *   **Retour en avoir (si l'avoir a déjà été utilisé) :**
+            1.  **Étape 1 :** Annuler le paiement en avoir depuis l'historique des paiements du client.
+            2.  **Étape 2 :** Annuler le retour sur vente lui-même.
+    *   **Avertissement :** Si le message "L’avoir client doit être supérieur au montant à restituer" s'affiche, cela signifie que le paiement utilisant cet avoir doit d'abord être annulé.
+
+*   **4.5. Suivi de la Facture de Retour**
+    *   **Contenu de la Facture de Retour :**
+        *   Détail des produits retournés.
+        *   Date de création et de mise à jour.
+        *   Raison du retour (si renseignée).
+        *   Mode de remboursement utilisé.
+    *   **Menu "Autres actions" (Raccourci `⇧+K`) :**
+        *   `Imprimer` le document de retour.
+        *   `Imprimer ticket de caisse`.
+        *   `Modifier` (uniquement si le retour est en brouillon).
+    *   **Impression :** Les documents peuvent être imprimés depuis la liste des retours, depuis le menu "Autres actions", ou immédiatement après la validation.
+    *   **Commentaires :** Possibilité d'ajouter des commentaires et de consulter l'historique complet.
+    *   **Traçabilité :** Suivi des dates de création et de la dernière mise à jour de statut (brouillon, complété, annulé).
+
+---
+
+##### **Section 5 : Générer des Documents Temporaires**
+
+*   **5.1. Création d'un Document Temporaire**
+    *   **Objectif :** Simuler une facture ou un autre document de vente sans aucun impact sur la comptabilité, les stocks ou les opérations réelles.
+    *   **Processus de Création :**
+        1.  **Accès :** `Menu principal > VENTES > Générer document`.
+        2.  Sélectionner le `Type de document` à simuler (ex. Vente).
+        3.  Cliquer sur `Suivant`.
+        4.  Remplir les champs (client, produits, etc.) comme pour une transaction normale.
+        5.  Cliquer sur `Imprimer` pour générer un aperçu du document temporaire. Ce document n'est pas sauvegardé dans le système comme une transaction validée.
+
+---
+
+##### **Section 6 : Reconditionner un Produit**
+
+*   **6.1. Définition et Cadre Légal du Reconditionnement**
+    *   **Définition :** Action de diviser un produit (ex. une boîte) en ses unités constitutives (ex. gélules, ampoules).
+    *   **Contexte d'Utilisation :** Principalement pour les préparations officinales ou magistrales.
+    *   **Avertissement Légal :** La loi marocaine n° 17-04 interdit strictement la vente de médicaments à l'unité. Sobrus Pharma décline toute responsabilité en cas d'usage non conforme de cette fonctionnalité.
+
+*   **6.2. Prérequis pour le Reconditionnement**
+    *   **Base de Données :** Le produit sous sa forme globale (boîte) et sa forme unitaire (unité) doivent tous les deux être enregistrés dans la base de données des produits.
+    *   **Action requise :** Si le produit unitaire n'existe pas, il doit être suggéré et créé via le module `Produits`.
+
+*   **6.3. Processus de Reconditionnement**
+    1.  **Accès :** `Menu principal > Ventes > Reconditionner un produit`.
+    2.  Dans le champ `Produit à reconditionner`, sélectionner le produit global (la boîte).
+    3.  Cliquer sur le bouton `Reconditionner`.
+    4.  **Impact sur l'Inventaire :**
+        *   La quantité en stock du produit global est décrémentée.
+        *   La quantité en stock du produit unitaire est incrémentée.
+    5.  **Conseil :** Il est recommandé de vérifier les niveaux de stock des deux produits après l'opération pour confirmer la mise à jour.
+
+---
+
+### **Partie 3**
+
+---
+
+#### **Module : VENTES**
+
+##### **Section 7 : Gérer les Préparations Officinales et Magistrales**
+
+*   **7.1. Définitions**
+    *   **Préparation officinale :** Une préparation standardisée, fabriquée selon des formules reconnues (pharmacopée), qui peut être préparée à l'avance et stockée.
+    *   **Préparation magistrale :** Une préparation personnalisée, réalisée spécifiquement pour un patient donné sur présentation d'une ordonnance médicale.
+    *   **Point Clé :** Les préparations magistrales exigent une ordonnance, tandis que les préparations officinales peuvent être anticipées.
+
+*   **7.2. Processus de Création d'une Préparation**
+    *   **Prérequis :**
+        *   Les composants nécessaires doivent être disponibles en stock (le reconditionnement peut être une étape préalable).
+        *   Une ordonnance valide est obligatoire pour une préparation magistrale.
+    *   **Étapes de création :**
+        1.  **Accès :** `Menu principal > VENTES > Préparations > Créer`.
+        2.  **Remplir les champs :**
+            *   **Client :** À sélectionner pour une préparation magistrale.
+            *   **Type :** Choisir entre "Préparations officinales" ou "Préparations magistrales".
+            *   **Qté de produit résultant :** Indiquer la quantité finale de la préparation.
+            *   **Prix Uni. produit résultant :** Définir le prix de vente final (incluant la main-d'œuvre).
+        3.  **Choisir l'action finale :**
+            *   **Pour vendre immédiatement :** Laisser la case `Vendre cette préparation` cochée et cliquer sur `Approuver`.
+            *   **Pour stocker la préparation :** Décocher la case `Vendre cette préparation` avant de cliquer sur `Approuver`.
+
+*   **7.3. Suivi et Gestion des Préparations**
+    *   **Accès :** `Menu principal > VENTES > Préparations` pour afficher la liste.
+    *   **Informations Clés du Tableau de Bord :**
+        *   Numéro de transaction.
+        *   Type (officinale ou magistrale).
+        *   Date de création.
+        *   Quantité du produit résultant.
+        *   Prix unitaire du produit résultant.
+        *   Statut (ex. Complété).
+    *   **Action :** Cliquer sur une ligne pour consulter les détails d'une préparation spécifique.
+    *   **Conseil :** Utiliser les fonctions `Rafraîchir` et `Recherche` pour gérer la liste.
+
+---
+
+##### **Section 8 : Gérer les Factures Globales**
+
+*   **8.1. Définition d'une Facture Globale**
+    *   **Concept :** Un document unique qui regroupe plusieurs transactions (ventes, retours) pour un même client sur une période définie.
+    *   **Cas d'usage typiques :**
+        *   Facturation pour des clients institutionnels (cliniques, écoles).
+        *   Regroupement des ventes mensuelles pour un client régulier.
+        *   Simplification du suivi des paiements pour des commandes importantes.
+    *   **Point Clé :** Contrairement à une facture standard qui correspond à une seule vente, une facture globale consolide plusieurs transactions.
+
+*   **8.2. Consultation et Gestion des Factures Globales**
+    *   **Accès :** `Menu principal > VENTES > Factures globales`.
+    *   **Informations Clés du Tableau de Bord :**
+        *   Numéro de transaction.
+        *   Nom du client.
+        *   Date de la facture.
+        *   Montant total.
+    *   **Action :** Cliquer sur une facture pour voir les détails des transactions incluses.
+
+*   **8.3. Processus de Création d'une Facture Globale**
+    *   **Prérequis :** Les ventes ou transactions à inclure doivent déjà exister dans le système.
+    *   **Étapes de création :**
+        1.  **Accès :** `Menu principal > VENTES > Factures globales > Créer`.
+        2.  Sélectionner le `Client` concerné et cliquer sur `Suivant`.
+        3.  Saisir la `Date` de la facture globale.
+        4.  Ajouter les transactions (factures de vente, retours) en les recherchant par numéro, date ou montant.
+        5.  Vérifier le `Total` calculé.
+        6.  Cliquer sur `Sauvegarder` pour finaliser la création.
+
+*   **8.4. Modification ou Suppression d'une Facture Globale**
+    *   **Accès :** Ouvrir la facture globale concernée depuis la liste.
+    *   **Pour modifier :**
+        1.  Cliquer sur `Modifier` en haut à droite.
+        2.  Ajuster les transactions incluses.
+        3.  Cliquer sur `Sauvegarder`.
+    *   **Pour supprimer :**
+        1.  Cliquer sur `Supprimer` en haut à droite.
+        2.  Confirmer l'action avec le code de sécurité.
+
+---
+
+##### **Section 9 : Glossaire des Termes Techniques**
+
+*   **9.1. Termes Liés à l’Interface**
+    *   **Approuver (F12) :** Bouton ou raccourci pour valider une opération (vente, devis). Ex. : Cliquez sur Approuver (F12) pour finaliser la vente.
+    *   **Autres actions (Ctrl+K) :** Menu contextuel offrant des options supplémentaires. Ex. : Cliquez sur Autres actions (Ctrl+K) pour imprimer un ticket.
+    *   **Créer :** Bouton pour démarrer une nouvelle transaction. Ex. : Cliquez sur Créer pour commencer une nouvelle facture globale.
+    *   **Rafraîchir :** Bouton pour actualiser les données affichées dans une liste. Ex. : Cliquez sur Rafraîchir pour actualiser la liste des ventes.
+    *   **Recherche :** Champ ou bouton pour filtrer et trouver un élément spécifique. Ex. : Utilisez Recherche pour trouver une facture globale.
+
+*   **9.2. Termes Métiers Pharmaceutiques**
+    *   **Préparation officinale :** Préparation standard, non personnalisée, fabriquée selon des formules reconnues.
+    *   **Préparation magistrale :** Préparation personnalisée, réalisée sur ordonnance pour un patient spécifique.
+    *   **Reconditionnement :** Processus de division d'un produit de sa forme globale à ses unités individuelles. Ex. : Reconditionner une boîte de gélules en unités individuelles.
+    *   **Client institutionnel :** Client qui est une organisation (clinique, école) et non un particulier. Ex. : Une clinique locale est un client institutionnel.
+
+*   **9.3. Termes Liés à la Gestion des Transactions**
+    *   **Complété :** Statut d'une transaction finalisée et entièrement payée. Ex. : Une vente marquée Complété a été entièrement réglée.
+    *   **Annulé :** Statut d'une transaction qui a été invalidée. Ex. : Une facture marquée Annulé n’est plus valide.
+    *   **Partiellement Payé :** Statut d'une vente où un paiement partiel a été effectué, avec un solde restant. Ex. : Une vente Partiellement Payée nécessite un suivi pour le solde.
+    *   **Non Payé :** Statut d'une vente finalisée mais pour laquelle aucun paiement n'a été reçu. Ex. : Une vente Non Payée doit être réglée par le client.
+    *   **Numéro de transaction :** Identifiant unique pour toute opération (vente, devis, facture). Ex. : FAC-2450 est un numéro de transaction pour une vente.
+    *   **Montant restitué :** Somme remboursée à un client lors d'un retour. Ex. : Le Montant restitué pour un retour est de 207,00 DHS.
+    *   **Mode de remboursement :** Méthode de remboursement (espèces, avoir). Ex. : Le Mode de remboursement choisi est Restituer en argent.
+
+*   **9.4. Termes Liés aux Fonctionnalités Spécifiques**
+    *   **Devis :** Proposition commerciale non engageante, préalable à une vente. Ex. : Un Devis est créé pour proposer des produits solaires.
+    *   **Facture :** Document comptable final qui valide une vente. Ex. : Une Facture est générée après la conversion d’un devis.
+    *   **Facture globale :** Document qui regroupe plusieurs transactions pour un client.
+    *   **Retour sur vente :** Transaction gérant le retour d'un produit par un client. Ex. : Un Retour sur vente est créé pour rembourser un produit non conforme.
+    *   **Document temporaire :** Simulation de document sans impact sur les opérations. Ex. : Un Document temporaire est généré pour un test.
+    *   **Convertir en vente :** Action de transformer un devis en une vente active. Ex. : Cliquez sur Convertir en vente pour finaliser un devis.
+    *   **Qté de produit résultant :** Quantité finale obtenue après une préparation. Ex. : La Qté de produit résultant d’une préparation est 1 unité.
+    *   **Produit à reconditionner :** Produit de départ (forme globale) utilisé dans une opération de reconditionnement.
+    *   **Produit reconditionné :** Produit final (forme unitaire) obtenu après un reconditionnement.

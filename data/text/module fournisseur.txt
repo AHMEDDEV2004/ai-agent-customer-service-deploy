@@ -1,0 +1,265 @@
+# Partie 1
+
+## Introduction à la Gestion des Fournisseurs dans Sobrus
+
+### **Description**
+La fonctionnalité de gestion des fournisseurs dans Sobrus est conçue pour centraliser et organiser toutes les interactions avec les partenaires commerciaux, qui incluent les laboratoires pharmaceutiques, les grossistes et les sociétés importatrices. Elle offre un accès rapide aux informations des fournisseurs, permet de suivre les transactions telles que les commandes, les livraisons et les paiements, et donne la possibilité de suggérer de nouveaux fournisseurs pour satisfaire les besoins de l'officine. Cette gestion est particulièrement bénéfique pour optimiser la gestion des stocks et pour la planification des commandes saisonnières.
+
+### **Prérequis**
+*   Un compte Sobrus actif.
+*   Accès à l'interface web ou à l'application mobile de Sobrus.
+
+### **Procédure**
+1.  **Connexion** : Se connecter à son compte Sobrus.
+2.  **Accès à la rubrique** : Naviguer vers la rubrique **Fournisseurs** dans le menu principal pour ouvrir la base de données des fournisseurs.
+    *   **Résultat attendu** : La liste complète des fournisseurs s'affiche avec des options pour trier, filtrer ou rechercher.
+3.  **Exploration** : Parcourir les sous-rubriques disponibles comme **Liste des fournisseurs**, **Suggestions** ou **Fiche fournisseur** en fonction des besoins spécifiques.
+    *   **Résultat attendu** : Chaque sous-rubrique mène à des fonctionnalités distinctes, par exemple, la consultation d'une fiche détaillée ou la suggestion d'un nouveau fournisseur.
+
+### **Conseils et Bonnes Pratiques**
+*   Pour une gestion optimale, il est conseillé de consulter régulièrement la liste des fournisseurs pour se tenir au courant des mises à jour.
+*   Utiliser les filtres pour affiner les recherches et gagner du temps.
+
+### **Astuces d’Intégration au Flux Quotidien**
+*   Intégrer la consultation de la liste des fournisseurs dans la routine matinale pour anticiper les besoins en commandes.
+*   Avant de passer une commande importante, vérifier la fiche du fournisseur pour s'assurer que toutes les informations sont à jour.
+
+### **FAQ**
+*   **Q : Comment puis-je accéder rapidement à un fournisseur que j'utilise fréquemment ?**
+    *   R : Vous pouvez utiliser la fonction de recherche ou ajouter le fournisseur à vos favoris pour un accès plus rapide (voir section 8).
+*   **Q : La liste des fournisseurs est-elle mise à jour automatiquement ?**
+    *   R : Oui, la base de données est mise à jour quotidiennement par le service de modération de Sobrus.
+
+---
+
+## Accéder et Explorer la Liste des Fournisseurs
+
+### **Description**
+La fonctionnalité **Liste des fournisseurs** de Sobrus permet de visualiser l'ensemble des fournisseurs enregistrés dans la base de données, qui est mise à jour quotidiennement par le service de modération. Cette liste facilite l'identification rapide de partenaires (laboratoires, grossistes, sociétés) pour les commandes. Elle permet également de filtrer les fournisseurs selon des critères spécifiques tels que le nom, la ville ou le solde, optimisant ainsi la gestion des approvisionnements. Cette fonctionnalité est particulièrement utile pendant les périodes de forte activité pour trouver des fournisseurs fiables et locaux.
+
+### **Prérequis**
+*   Un compte Sobrus actif.
+*   Être connecté à l'interface web ou à l'application mobile.
+
+### **Procédure**
+1.  **Connexion** : Se connecter à son compte Sobrus.
+2.  **Accès à la rubrique** : Cliquer sur la rubrique **Fournisseurs** dans le menu principal.
+    *   **Résultat attendu** : La liste complète des fournisseurs enregistrés s'affiche.
+3.  **Trier la liste** : Cliquer sur l'en-tête d'une colonne (par exemple, **Nom**, **Ville**, **Solde**) pour trier les données par ordre croissant ou décroissant.
+    *   **Résultat attendu** : La liste est réorganisée selon le critère de tri sélectionné.
+4.  **Filtrer la liste** : Utiliser les options de filtrage disponibles (par exemple, sélectionner une ville spécifique dans le menu déroulant **Ville**).
+    *   **Résultat attendu** : Seuls les fournisseurs qui correspondent aux critères de filtre sont affichés.
+5.  **Rechercher un fournisseur** : Saisir un terme de recherche (nom, numéro de téléphone, ville) dans le champ **Recherche** et valider.
+    *   **Résultat attendu** : La liste est filtrée pour n'afficher que les fournisseurs correspondant au terme de recherche.
+
+### **Conseils et Bonnes Pratiques**
+*   Combiner les fonctions de tri et de filtre pour des recherches plus précises.
+*   Vérifier l'orthographe lors de l'utilisation de la barre de recherche pour garantir des résultats corrects.
+
+### **Mises en Garde**
+*   Si un fournisseur attendu n'apparaît pas, vérifier les filtres actifs qui pourraient exclure le résultat.
+*   Un solde affiché peut ne pas inclure les transactions les plus récentes ; il est donc conseillé de vérifier la fiche fournisseur pour les détails.
+
+### **Astuces d’Intégration au Flux Quotidien**
+*   Utiliser la recherche par ville pour trouver des fournisseurs locaux en cas de besoin urgent.
+*   En début de mois, trier par solde pour planifier les paiements à venir.
+
+### **FAQ**
+*   **Q : Que faire si je ne trouve pas un fournisseur ?**
+    *   R : Vérifiez les filtres appliqués et l'orthographe du nom. Si le fournisseur n'est toujours pas listé, vous pouvez suggérer son ajout (voir section 4).
+*   **Q : Puis-je exporter la liste des fournisseurs ?**
+    *   R : Le document ne spécifie pas cette fonctionnalité. Il est recommandé de consulter l'aide de Sobrus ou de contacter le support pour cette question.
+
+# Partie 2
+
+## Consulter et Utiliser la Fiche Fournisseur
+
+### **Description**
+La **Fiche fournisseur** dans Sobrus est une interface centralisée qui regroupe toutes les informations et interactions relatives à un fournisseur spécifique. Elle permet de consulter les détails du fournisseur (contacts, adresse), de suivre les historiques (paiements, produits, commandes) et de gérer les documents financiers comme les avoirs. Cette fonctionnalité est essentielle pour évaluer la fiabilité d'un partenaire avant de passer une commande, pour suivre l'état des livraisons ou pour administrer les aspects financiers de la relation.
+
+### **Prérequis**
+*   Un compte Sobrus actif.
+*   Être connecté à l'interface web ou à l'application mobile.
+
+### **Procédure**
+1.  **Accès à la Fiche** : Depuis le menu principal, allez dans **Fournisseurs**, puis recherchez et cliquez sur le nom du fournisseur souhaité dans la liste.
+    *   **Résultat attendu** : La Fiche fournisseur s'ouvre, affichant les informations générales et plusieurs onglets.
+2.  **Informations Générales** : Consultez l'onglet **Informations générales** pour voir le nom, le numéro de téléphone, l'adresse et la ville du fournisseur.
+3.  **Contacts** : Cliquez sur l'onglet **Contacts** pour accéder aux noms, adresses e-mail et numéros de téléphone des personnes de contact.
+4.  **Historique des Paiements** : Allez dans l'onglet **Historique des paiements fournisseurs** pour visualiser un tableau des paiements effectués, les moyens de paiement utilisés, les montants et les avoirs.
+5.  **Mouvements de Stock** : Ouvrez l'onglet **Historique des produits fournisseurs** pour suivre les entrées et sorties de produits liées à ce fournisseur.
+6.  **Bons de Commande et de Livraison** : Utilisez les onglets **Bons de commandes fournisseurs** ou **Bons de livraisons fournisseurs** pour consulter, filtrer, trier ou créer de nouveaux bons.
+7.  **Avoirs** : Accédez aux onglets **Avoirs fournisseurs émis** ou **Avoirs fournisseurs reçus** pour voir les listes d'avoirs, leurs statuts, et pour en créer de nouveaux.
+8.  **Envoyer un E-mail** : Dans un bon (commande, livraison) ou une proposition de commande, cliquez sur **Autres actions** puis sur **Envoyer par E-mail**. Vous pouvez personnaliser le message avant l'envoi.
+    *   **Résultat attendu** : L'e-mail est envoyé au contact principal si son adresse est correctement enregistrée.
+9.  **Traçabilité** : Consultez l'onglet **Informations de traçabilité fournisseurs** pour voir qui a créé ou modifié la fiche et à quelles dates.
+10. **Commentaires** : Utilisez l'onglet **Commentaires fournisseurs** pour lire les notes existantes ou pour en ajouter de nouvelles.
+
+### **FAQ**
+*   **Q : Pourquoi certains produits n’apparaissent-ils pas dans l’historique des produits ?**
+    *   R : L’Historique des produits fournisseurs n'inclut pas les avoirs reçus (sauf s'ils sont refusés). Pour ces informations, consultez la section **Avoirs fournisseurs reçus**.
+*   **Q : Comment savoir qui a modifié la fiche d’un fournisseur ?**
+    *   R : L’onglet **Informations de traçabilité fournisseurs** indique la date de la dernière modification et le nom du gestionnaire responsable.
+*   **Q : Que faire si l’e-mail du contact est incorrect ?**
+    *   R : Utilisez la fonctionnalité **Suggérer une modification fournisseurs** pour proposer la mise à jour de l'adresse e-mail (voir section 6).
+*   **Q : Puis-je créer un bon de commande directement depuis la fiche ?**
+    *   R : Oui, l'onglet **Bons de commandes fournisseurs** vous permet de créer un nouveau bon de commande.
+*   **Q : Comment consulter les avoirs non utilisés ?**
+    *   R : Dans l'onglet **Avoirs fournisseurs reçus**, filtrez la liste par statut pour identifier facilement les avoirs qui n'ont pas encore été utilisés.
+
+---
+
+## Suggérer un Nouveau Fournisseur
+
+### **Description**
+La fonctionnalité **Suggérer un nouveau fournisseur** de Sobrus permet aux utilisateurs de proposer l'ajout d'un partenaire commercial qui n'est pas encore présent dans la base de données, comme un nouveau grossiste ou un laboratoire spécialisé. Cette option est essentielle pour enrichir les sources d'approvisionnement et répondre à des besoins spécifiques en produits. Les suggestions sont examinées par le service de modération de Sobrus, qui s'engage à les traiter dans un délai maximum de 15 minutes.
+
+### **Prérequis**
+*   Un compte Sobrus actif.
+*   Être connecté à l'interface web ou à l'application mobile.
+
+### **Procédure**
+1.  **Accès aux Suggestions** : Dans le menu principal, allez dans **Fournisseurs**, puis sélectionnez la sous-rubrique **Suggestions**.
+2.  **Lancer la Suggestion** : Cliquez sur le bouton **Suggérer un nouveau fournisseur**.
+    *   **Résultat attendu** : Un formulaire de saisie apparaît.
+3.  **Remplir le Formulaire** : Complétez les champs obligatoires, notamment :
+    *   Nom complet du fournisseur.
+    *   Numéro de téléphone fixe.
+    *   Ville.
+    *   Adresse complète.
+4.  **Soumettre la Suggestion** : Cliquez sur **Sauvegarder** pour envoyer votre proposition.
+    *   **Résultat attendu** : La suggestion est transmise au service de modération avec le statut **En attente**.
+5.  **Suivre le Statut** : Retournez dans la sous-rubrique **Suggestions** pour consulter l'état de votre demande.
+    *   **Résultat attendu** : Le statut sera mis à jour à **Validée** ou **Rejetée**. En cas de rejet, un motif sera affiché en cliquant sur le statut **Rejeté**.
+
+### **FAQ**
+*   **Q : Combien de temps faut-il pour qu’une suggestion soit traitée ?**
+    *   R : Le service de modération traite les suggestions en 15 minutes maximum. Le statut est consultable dans l'historique des suggestions.
+*   **Q : Pourquoi ma suggestion a-t-elle été rejetée ?**
+    *   R : Les raisons courantes de rejet sont des informations incomplètes ou l'existence d'un doublon. Cliquez sur le statut **Rejeté** pour voir la justification précise.
+*   **Q : Puis-je suggérer à nouveau un fournisseur qui a été refusé ?**
+    *   R : Oui, à condition de corriger les erreurs signalées dans le motif du rejet avant de soumettre une nouvelle suggestion.
+*   **Q : Que faire si le statut de ma suggestion reste “En attente” pendant une longue période ?**
+    *   R : Contactez le support de Sobrus en fournissant le nom du fournisseur que vous avez suggéré.
+
+---
+
+## Gérer les Fournisseurs Doublons
+
+### **Description**
+La gestion des doublons dans Sobrus est une fonctionnalité qui permet aux utilisateurs de signaler les fournisseurs qui apparaissent plusieurs fois dans la base de données. L'identification et la fusion de ces doublons sont cruciales pour éviter les erreurs dans la gestion des commandes et des paiements, et pour maintenir une base de données propre et conforme aux exigences de traçabilité.
+
+### **Prérequis**
+*   Un compte Sobrus actif.
+*   Être connecté à l'interface web ou à l'application mobile.
+
+### **Procédure**
+1.  **Identifier un Doublon** : Lors de la consultation de la **Liste des fournisseurs**, si vous repérez deux entrées avec des noms ou des informations très similaires, il s'agit potentiellement d'un doublon.
+2.  **Noter les Informations** : Relevez le **Nom** ou le **Lien** du fournisseur que vous suspectez d'être un doublon.
+3.  **Signaler le Doublon** : Contactez le support Sobrus via les canaux de communication disponibles dans l'application. Transmettez les informations (nom ou lien) du doublon identifié.
+    *   **Résultat attendu** : La demande est prise en charge par le service de modération qui procède à la fusion des fiches.
+4.  **Vérification** : Le service de modération conserve la fiche la plus ancienne et marque la plus récente avec la mention "DELETED" pour préserver l'historique des transactions. Des annonces concernant les fusions de doublons sont publiées sur le **Tableau de bord Pharma** en début de mois.
+
+### **FAQ**
+*   **Q : Comment être sûr qu'un fournisseur est un doublon ?**
+    *   R : Comparez attentivement les informations des fiches fournisseurs (nom, adresse, téléphone). Des données identiques ou très proches sont un fort indicateur de doublon.
+*   **Q : Que se passe-t-il exactement après avoir signalé un doublon ?**
+    *   R : Le service de modération regroupe les informations et transactions sur une seule fiche (la plus ancienne) et annote la fiche la plus récente avec la mention "DELETED". Cela garantit qu'aucune donnée historique n'est perdue.
+*   **Q : Puis-je signaler plusieurs doublons en même temps ?**
+    *   R : Oui, vous pouvez inclure les noms ou les liens de tous les doublons identifiés dans une seule demande adressée au support.
+*   **Q : Que faire si un doublon que j'ai signalé n'est pas traité ?**
+    *   R : Relancez le support Sobrus en rappelant les détails de votre signalement initial.
+
+# Partie 3
+
+## Proposer des Modifications à une Fiche Fournisseur
+
+### **Description**
+La fonctionnalité **Suggérer une modification fournisseurs** permet de soumettre des propositions de mise à jour pour les informations d'un fournisseur existant dans Sobrus. Cela peut concerner un changement d'adresse, de numéro de téléphone ou d'adresse e-mail. Cette option est essentielle pour garantir l'exactitude des données de la base, ce qui facilite les communications et les transactions avec les partenaires, particulièrement avant des périodes de forte activité.
+
+### **Prérequis**
+*   Un compte Sobrus actif.
+*   Être connecté à l'interface web ou à l'application mobile.
+
+### **Procédure**
+1.  **Accéder à la Fiche** : Naviguez jusqu'à la **Liste des fournisseurs** via la rubrique **Fournisseurs** et ouvrez la fiche du fournisseur concerné.
+2.  **Lancer la Suggestion** : Cliquez sur l'option **Suggérer une modification**.
+    *   **Résultat attendu** : Un formulaire de modification s'affiche, pré-rempli avec les informations actuelles.
+3.  **Mettre à jour les Informations** : Modifiez les champs nécessaires (nom, e-mail, adresse, téléphone, etc.).
+4.  **Soumettre la Suggestion** : Cliquez sur **Sauvegarder** pour envoyer la proposition au service de modération.
+    *   **Résultat attendu** : La suggestion est envoyée avec le statut **En attente**.
+5.  **Suivre le Statut** : Le statut de votre suggestion (**Validée**, **Rejetée**, ou **En attente**) peut être consulté directement sur la **Fiche fournisseur** ou dans la sous-rubrique **Suggestions**.
+    *   **Résultat attendu** : En cas de rejet, le motif est affiché pour vous permettre de corriger et de soumettre à nouveau.
+
+### **FAQ**
+*   **Q : Quelles informations puis-je modifier sur une fiche fournisseur ?**
+    *   R : Vous pouvez suggérer des modifications pour la plupart des informations de contact et d'identification, y compris le nom, l'adresse e-mail, l'adresse postale, le numéro de téléphone et le site Internet.
+*   **Q : Que faire si ma modification est rejetée ?**
+    *   R : Consultez le motif du rejet en cliquant sur le statut **Rejeté**. Apportez les corrections nécessaires et soumettez une nouvelle suggestion.
+
+---
+
+## Payer les Bons de Livraison Fournisseurs
+
+### **Description**
+La fonctionnalité **Payer les bons de livraison fournisseurs** dans Sobrus est un outil de gestion financière qui permet de régler les soldes créditeurs et de gérer les avoirs liés aux bons de livraison (BL) pour une période définie. Elle centralise les paiements et intègre automatiquement les avoirs pour diminuer le montant net à payer, simplifiant ainsi la comptabilité de l'officine. C'est un moyen efficace de clôturer les comptes avec les fournisseurs et de maintenir de bonnes relations commerciales.
+
+### **Prérequis**
+*   Un compte Sobrus actif.
+*   Être connecté à l'interface web ou à l'application mobile.
+*   Avoir des bons de livraison impayés pour le fournisseur concerné.
+
+### **Procédure**
+1.  **Accéder à la Fonctionnalité** : Ouvrez la **Fiche fournisseur** du partenaire concerné et cliquez sur **Payer les bons de livraison impayés**.
+2.  **Sélectionner la Période** : Définissez une période de paiement en choisissant une date de début et une date de fin.
+    *   **Résultat attendu** : Une page de paiement s'affiche, listant tous les bons de livraison et les avoirs correspondants pour la période sélectionnée.
+3.  **Sélectionner les Documents** : Cochez les bons de livraison et les avoirs que vous souhaitez inclure dans le paiement. Vous pouvez utiliser l'option **Tous** pour tout régler en une fois.
+    *   **Résultat attendu** : Le montant net à payer est calculé automatiquement (Total des BL - Total des avoirs acceptés).
+4.  **Ajuster et Payer** : Si nécessaire, modifiez la date du paiement ou appliquez une remise négociée. Cliquez ensuite sur **Payer** et sélectionnez le mode de paiement.
+5.  **Finaliser** : Cliquez à nouveau sur **Payer** pour valider la transaction.
+    *   **Résultat attendu** : Le paiement est enregistré dans le système, et le solde du fournisseur est mis à jour.
+6.  **Annuler un Paiement** : En cas d'erreur, allez dans l'**Historique des paiements** sur la fiche du fournisseur, sélectionnez le paiement à annuler, et suivez les instructions en saisissant votre code de sécurité.
+    *   **Résultat attendu** : Le paiement est annulé, et le solde est automatiquement réajusté.
+
+### **FAQ**
+*   **Q : Comment le net à payer est-il calculé ?**
+    *   R : Le net à payer correspond à la somme des montants des bons de livraison sélectionnés, de laquelle est déduite la somme des montants des avoirs reçus et acceptés.
+*   **Q : Puis-je payer plusieurs bons avec différents modes de paiement ?**
+    *   R : Oui, l'interface de paiement permet d'attribuer un mode de paiement spécifique à chaque groupe de bons de livraison.
+*   **Q : Que faire si j'ai fait une erreur dans un paiement ?**
+    *   R : Vous pouvez annuler le paiement via l'**Historique des paiements** en utilisant votre code de sécurité.
+*   **Q : Pourquoi un de mes avoirs n'est-il pas pris en compte dans le calcul ?**
+    *   R : Seuls les avoirs ayant le statut **accepté** sont déduits du montant à payer. Vérifiez le statut de l'avoir dans la section **Avoirs fournisseurs reçus**.
+
+---
+
+## Autres Actions sur les Fournisseurs
+
+### **Description**
+La section **Autres actions fournisseurs** dans Sobrus offre un ensemble d'outils supplémentaires pour une gestion personnalisée de vos partenaires. Elle permet de marquer des fournisseurs comme favoris, de créer de nouveaux contacts, ou de générer rapidement divers documents commerciaux (bons de commande, de livraison, avoirs). Ces fonctionnalités apportent une flexibilité accrue et optimisent la gestion quotidienne de l'officine.
+
+### **Prérequis**
+*   Un compte Sobrus actif.
+*   Être connecté à l'interface web ou à l'application mobile.
+
+### **Procédure**
+1.  **Accéder aux Actions** : Ouvrez la **Fiche fournisseur** du partenaire souhaité et localisez la section ou le menu **Autres actions fournisseurs**.
+2.  **Ajouter/Supprimer un Favori** :
+    *   Cliquez sur **Ajouter aux favoris** pour marquer un fournisseur et y accéder plus rapidement.
+    *   Cliquez sur **Supprimer des favoris** pour le retirer de votre liste de favoris.
+3.  **Créer un Contact** :
+    *   Cliquez sur **Créer un nouveau contact**.
+    *   Remplissez le formulaire avec les informations du contact (nom, e-mail, téléphone) et cliquez sur **Sauvegarder**.
+    *   **Résultat attendu** : Le nouveau contact est associé à la fiche du fournisseur.
+4.  **Générer un Document** :
+    *   Sélectionnez l'option désirée : **Créer un nouveau bon de commande**, **Créer un nouveau bon de livraison**, **Créer un nouvel avoir fournisseur émis** ou **Créer un nouvel avoir fournisseur reçu**.
+    *   Suivez les étapes de création spécifiques à chaque type de document.
+    *   **Résultat attendu** : Le document est créé et sauvegardé dans l'historique du fournisseur.
+
+### **FAQ**
+*   **Q : Comment puis-je voir quels fournisseurs sont dans mes favoris ?**
+    *   R : Un indicateur visuel (comme une étoile) apparaît généralement à côté du nom du fournisseur dans la **Liste des fournisseurs** et sur sa **Fiche fournisseur**.
+*   **Q : Puis-je associer plusieurs contacts à un même fournisseur ?**
+    *   R : Oui, vous pouvez ajouter autant de contacts que nécessaire en utilisant la fonction **Créer un nouveau contact**.
+*   **Q : Que se passe-t-il si je supprime accidentellement un fournisseur de mes favoris ?**
+    *   R : Il n'y a pas de perte de données. Il vous suffit de retourner sur la **Fiche fournisseur** et de cliquer à nouveau sur **Ajouter aux favoris**.
