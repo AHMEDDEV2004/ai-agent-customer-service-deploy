@@ -27,10 +27,10 @@ def get_agent():
     from agno.vectordb.mongodb import MongoDb
     from agno.vectordb.search import SearchType
     from agno.knowledge.text import TextKnowledgeBase
-    # from agno.document.chunking.agentic import AgenticChunking
+    from agno.document.chunking.agentic import AgenticChunking
 
-    from agno.document.chunking.semantic import SemanticChunking
-    # from agno.document.chunking.recursive import RecursiveChunking
+    #from agno.document.chunking.semantic import SemanticChunking
+    #@from agno.document.chunking.recursive import RecursiveChunking
     from agno.embedder.openai import OpenAIEmbedder
     from agno.storage.mongodb import MongoDbStorage
     from agno.memory.v2.db.mongodb import MongoMemoryDb
@@ -69,14 +69,14 @@ def get_agent():
     )
 
     knowledge_base = TextKnowledgeBase(
-        chunking_strategy=SemanticChunking(),
+        chunking_strategy=AgenticChunking(),
         path="data/text",
         vector_db=vector_db,
     )
 
     # Loading may fail on server if local data is excluded; keep resilient
     try:
-        knowledge_base.load(recreate=False)
+        knowledge_base.load(recreate=True)
     except Exception as exc:
         print(f"[get_agent] Knowledge base load skipped: {exc}")
 
@@ -103,7 +103,7 @@ def get_agent():
         show_tool_calls=True,
         add_history_to_messages=True,
         read_chat_history=True,
-        num_history_responses=6,
+        num_history_responses=4,
         memory=memory,
         enable_agentic_memory=True,
         debug_mode=True,
