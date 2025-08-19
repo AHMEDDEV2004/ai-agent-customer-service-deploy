@@ -13,7 +13,7 @@ load_dotenv()
 
 MONGODB_URI = os.getenv(
     "MONGODB_URI",
-    "mongodb+srv://ahmedsadikidev:AlXOKUrrG9CFVd4G@cluster0.ywk7r1l.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+    "mongodb://localhost:27017",
 )
 DB_NAME = os.getenv("MONGODB_DB", "sobrus_customer_service")
 COLLECTION_NAME = os.getenv("MONGODB_COLLECTION", "chat_messages")
@@ -577,7 +577,7 @@ async def whatsapp_webhook(request: Request):
                 from main import get_agent
                 from agno.media import Audio  # lazy import
                 agent_response = get_agent().run(
-                    "Écoute cet audio et réponds directement à l'utilisateur. L'utilisateur peut parler en français, en darija marocaine, ou un mélange des deux. Réponds de manière naturelle et utile.",
+                    "Écoute cet audio et réponds directement à l'utilisateur en tant qu'Assistant Sobrus. L'utilisateur peut parler en français, en darija marocaine, ou un mélange des deux. Comprends sa demande concernant la plateforme Sobrus, effectue une recherche dans la base de connaissances avec les mots-clés pertinents, puis réponds uniquement en français écrit en utilisant 'vous'. Maintiens un ton professionnel et chaleureux, et termine en vérifiant si l'utilisateur a besoin d'aide supplémentaire.",
                     audio=[Audio(content=audio_content)],
                     user_id=user_id,
                     session_id=session_id
