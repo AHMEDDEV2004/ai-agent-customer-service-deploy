@@ -28,6 +28,7 @@ def get_agent():
     from agno.vectordb.search import SearchType
     from agno.knowledge.text import TextKnowledgeBase
     from agno.document.chunking.agentic import AgenticChunking
+    from agno.vectordb.lancedb import LanceDb,SearchType
 
     #from agno.document.chunking.semantic import SemanticChunking
     #@from agno.document.chunking.recursive import RecursiveChunking
@@ -40,7 +41,7 @@ def get_agent():
     # Memory DB for user profiles
     mongo_url = os.getenv(
         "MONGODB_URI",
-        "mongodb+srv://ahmedsadikidev:AlXOKUrrG9CFVd4G@cluster0.ywk7r1l.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+        "mongodb://ahmedsadikidev:AlXOKUrrG9CFVd4G@cluster0.ywk7r1l.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
     )
     memory_db = MongoMemoryDb(
         db_url=mongo_url,
@@ -60,18 +61,17 @@ def get_agent():
     memory = Memory(db=memory_db, memory_manager=memory_manager)
 
     # Vector database
-    vector_db = MongoDb(
-        collection_name="pharma_platform_docs",
-        db_url=mongo_url,
-        search_index_name=os.getenv("MONGODB_ATLAS_SEARCH_INDEX", "pharma_vector_index"),
-        search_type=SearchType.hybrid,
+    vector_db = LanceDb(
+        table_name="pharma_platform_docs",
+        uri="tmp/lancedb",
         embedder=OpenAIEmbedder(),
+        search_type=SearchType.hybrid 
     )
 
     knowledge_base = TextKnowledgeBase(
         chunking_strategy=AgenticChunking(),
         path="data/text",
-        vector_db=vector_db,
+        vector_db=vector_db
     )
 
     # Loading may fail on server if local data is excluded; keep resilient
