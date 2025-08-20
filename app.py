@@ -577,7 +577,7 @@ async def whatsapp_webhook(request: Request):
                 from main import get_agent
                 from agno.media import Audio  # lazy import
                 agent_response = get_agent().run(
-                    "Écoute cet audio et réponds directement à l'utilisateur en tant qu'Assistant Sobrus. L'utilisateur peut parler en français, en darija marocaine, ou un mélange des deux. Comprends sa demande concernant la plateforme Sobrus, effectue une recherche dans la base de connaissances avec les mots-clés pertinents, puis réponds uniquement en français écrit en utilisant 'vous'. Maintiens un ton professionnel et chaleureux, et termine en vérifiant si l'utilisateur a besoin d'aide supplémentaire.",
+                    "Listen to this audio. Search knowledge base and respond in French using 'vous'.",
                     audio=[Audio(content=audio_content)],
                     user_id=user_id,
                     session_id=session_id
