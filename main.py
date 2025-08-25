@@ -36,7 +36,6 @@ def get_agent():
     from agno.storage.mongodb import MongoDbStorage
     from agno.memory.v2.db.mongodb import MongoMemoryDb
     from agno.memory.v2.memory import Memory
-    from agno.memory.v2.manager import MemoryManager
 
     # Memory DB for user profiles
     mongo_url = os.getenv(
@@ -49,11 +48,8 @@ def get_agent():
         collection_name="user_profiles",
     )
 
-    memory_manager = MemoryManager(
-        model=Gemini(id="gemini-2.5-flash"),
-        cup
-    )
-    memory = Memory(db=memory_db, memory_manager=memory_manager)
+   
+    memory = Memory(db=memory_db)
 
     # Vector database
     vector_db = LanceDb(
