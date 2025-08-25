@@ -27,7 +27,7 @@ def get_agent():
     from agno.vectordb.mongodb import MongoDb
     from agno.vectordb.search import SearchType
     from agno.knowledge.text import TextKnowledgeBase
-    from agno.document.chunking.agentic import AgenticChunking
+    #from agno.document.chunking.agentic import AgenticChunking
     from agno.vectordb.lancedb import LanceDb,SearchType
 
     from agno.document.chunking.semantic import SemanticChunking
@@ -50,7 +50,8 @@ def get_agent():
     )
 
     memory_manager = MemoryManager(
-        model=Gemini(id="gemini-2.5-flash-lite")
+        model=Gemini(id="gemini-2.5-flash"),
+        cup
     )
     memory = Memory(db=memory_db, memory_manager=memory_manager)
 
@@ -63,7 +64,7 @@ def get_agent():
     )
 
     knowledge_base = TextKnowledgeBase(
-        chunking_strategy=AgenticChunking(),
+        chunking_strategy=SemanticChunking(),
         path="data/text",
         vector_db=vector_db
     )
@@ -78,17 +79,17 @@ def get_agent():
         db_url=mongo_url,
         db_name=db_name,
     )
-    knowledge_base.load(recreate=True)
+    knowledge_base.load(recreate=False)
 
     _agent_instance = Agent(
         model=Gemini(id="gemini-2.5-flash"),
         knowledge=knowledge_base,
         storage=mongo_storage,
         show_tool_calls=True,
-        add_history_to_messages=True,
         read_chat_history=True,
         search_knowledge=True,
-        num_history_responses=8,
+        num_history_responses=6,
+        add_history_to_messages=True,
         memory=memory,
         enable_agentic_memory=True,
         debug_mode=True,
@@ -99,6 +100,7 @@ def get_agent():
             "Moroccan Darija audio but ALWAYS respond in clear, conversational French, consistently using 'vous'."
         ),
         instructions=[
+            "CRITICAL RULE: For ANY question about 'how to do' something (like 'kifch ndir une vente', 'comment faire une vente'), you MUST ask clarifying questions FIRST. Never give direct step-by-step instructions until the user specifies exactly what type they want.",
             "Always search your knowledge before answering the question.",
             "1.1. Golden Rule of Knowledge: For EVERY user request, without exception, you must perform a new search of the provided Sobrus knowledge base. This is your only source of information. Never use external knowledge, pre-trained information, or the results of previous searches.",
             "1.2. Silent Operation: The knowledge base search process must be completely invisible to the user. Never announce that you are searching for information. Present the answer directly after retrieving it.",
@@ -111,8 +113,8 @@ def get_agent():
             "3.2. Readability: Use simple, everyday French. Structure responses as flowing sentences. Avoid bullet points or numbered lists unless a procedure is too complex for a simple sentence.",
             "3.3. Procedural Guidance: For 'how-to' questions, provide detailed step-by-step instructions in a clear, numbered format. Always include ALL steps from the knowledge base, never omit any details. Start each step with an action verb and be specific about where to click, what to select, and what information to enter. Example: '1. Accédez au module Ventes. 2. Cliquez sur Nouvelle Vente. 3. Sélectionnez le client dans la liste déroulante. 4. Ajoutez les produits en cliquant sur Ajouter un produit. 5. Saisissez les quantités. 6. Vérifiez le total. 7. Cliquez sur Valider pour confirmer la vente.'",
             "3.4. Concluding Interaction: Always end your response by checking for understanding and offering more help. Examples: 'C'est clair ?', 'Cela vous aide ? Autre question ?'",
-            "4.1. Vague Queries: If a query is too broad (e.g., 'comment gérer les ventes'), proactively suggest specific options from the knowledge base to narrow it down. Example: 'Pour les ventes, je peux vous guider sur les ventes complétées, les retours ou la facturation. Lequel vous intéresse ?'",
-            "4.1.1. Multiple Topics: When the knowledge base contains several topics related to the same subject, ask the user to clarify which aspect they are most interested in. Example: 'J'ai trouvé plusieurs informations concernant les ventes : le module de rapports, la gestion des commandes et la facturation. Pourriez-vous préciser sur quel aspect vous souhaitez que je me concentre ?'",
+                    "4.1. Vague Queries: If a query is too broad (e.g., 'comment gérer les ventes', 'kifch ndir une vente'), you MUST NOT give a direct answer. Instead, proactively suggest specific options from the knowledge base to narrow it down. Example: 'Pour les ventes, je peux vous guider sur plusieurs types : ventes complétées, ventes à crédit, ventes partiellement payées, ventes en brouillon, ou ventes avec organismes tiers payants. Lequel de ces types de vente vous intéresse le plus ?'",
+        "4.1.1. Multiple Topics: When the knowledge base contains several topics related to the same subject, you MUST ask the user to clarify which aspect they are most interested in BEFORE providing any detailed steps. Example: 'J'ai trouvé plusieurs informations concernant les ventes : ventes complétées, ventes à crédit, ventes partiellement payées, ventes en brouillon, ventes avec organismes tiers payants, et ventes non livrées. Pourriez-vous préciser sur quel type de vente vous souhaitez que je me concentre ?'",
             "4.2. General Questions: For questions like 'Que pouvez-vous faire ?', briefly summarize your role as an Assistant Sobrus, an interface to the knowledge base.",
             "4.3. Off-Topic Questions: If asked anything unrelated to Sobrus, politely decline and pivot back. Example: 'Je suis spécialisé dans l'assistance pour Sobrus. Une question sur la plateforme ?'",
             "4.4. If the user asks question about Sobrus but not related to the knowledge base, tell them to contact the support team. Example: 'Pour toute question sur Sobrus, veuillez contacter le service client au 05 30 500 500 ou par e-mail support@sobrus.com'"
@@ -129,7 +131,7 @@ def main():
         user_input = input("You: ")
         if user_input.lower() in {"exit", "quit"}:
             break
-        response = get_agent().run(user_input, user_id="13", session_id="12345")
+        response = get_agent().run(user_input, user_id="33", session_id="1345")
         agent_message = response.content if hasattr(response, "content") else response
         print(f"Agent: {agent_message}")
 

@@ -12,8 +12,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 MONGODB_URI = os.getenv(
-    "MONGODB_URI",
-    "mongodb://localhost:27017",
+    "MONGODB_URI"
 )
 DB_NAME = os.getenv("MONGODB_DB", "sobrus_customer_service")
 COLLECTION_NAME = os.getenv("MONGODB_COLLECTION", "chat_messages")
