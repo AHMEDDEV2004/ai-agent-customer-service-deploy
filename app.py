@@ -71,7 +71,7 @@ async def save_chat_message(user_id: str, message: str, sender: str, timestamp: 
         "message": message,
         "sender": sender,
         "timestamp": timestamp,
-        "session_id": session_id or f"{user_id}_session"
+        "session_id": session_id or f"{user_id}_{datetime.utcnow().strftime('%Y%m%d')}"
     }
     
     # Add media-related fields if present
@@ -480,7 +480,8 @@ async def chat_api(request: Request):
         return JSONResponse({"detail": "user_id and message are required"}, status_code=400)
 
     timestamp = datetime.utcnow()
-    session_id = f"{user_id}_session"
+    current_date = timestamp.strftime("%Y%m%d")
+    session_id = f"{user_id}_{current_date}"
 
     # Store user message
     await save_chat_message(
@@ -541,7 +542,8 @@ async def whatsapp_webhook(request: Request):
         user_id = (data.get("From", "") or "").replace("whatsapp:", "")
         user_message = data.get("Body", "")
         timestamp = datetime.utcnow()
-        session_id = f"{user_id}_session"
+        current_date = timestamp.strftime("%Y%m%d")
+        session_id = f"{user_id}_{current_date}"
 
         media_url = data.get("MediaUrl0")
         media_type = data.get("MediaContentType0", "")

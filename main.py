@@ -127,7 +127,13 @@ def main():
         user_input = input("You: ")
         if user_input.lower() in {"exit", "quit"}:
             break
-        response = get_agent().run(user_input, user_id="33", session_id="1345")
+        
+        # Generate session ID with user ID + current date
+        from datetime import datetime
+        current_date = datetime.utcnow().strftime("%Y%m%d")
+        session_id = f"33_{current_date}"
+        
+        response = get_agent().run(user_input, user_id="33", session_id=session_id)
         agent_message = response.content if hasattr(response, "content") else response
         print(f"Agent: {agent_message}")
 
