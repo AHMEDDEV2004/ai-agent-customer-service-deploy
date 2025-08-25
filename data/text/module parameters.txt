@@ -1,46 +1,95 @@
-### **Partie 1**
+# MODULE PARAMÈTRES - CONFIGURATION ET PERSONNALISATION DU SYSTÈME
+# ============================================================
+# MÉTADONNÉES RAG
+# ============================================================
+# Module: PARAMETRES
+# Catégorie: GESTION_ADMINISTRATIVE
+# Niveau: INTERMEDIAIRE_AVANCE
+# Prérequis: Module Formation, Module Support
+# Dépendances: Tous les autres modules
+# Fréquence d'utilisation: QUOTIDIEN_HEBDOMADAIRE
+# Complexité: MOYENNE_HAUTE
+# Temps d'apprentissage: 4-5 heures
+# Mots-clés sémantiques: paramètres, configuration, personnalisation, abonnement, profil, sécurité, transactions, documents, communications, fidélité
+# Synonymes: configuration système, paramétrage, personnalisation, gestion administrative, configuration utilisateur
+# Concepts liés: gestion des utilisateurs, sécurité système, configuration des modules, personnalisation de l'interface, gestion des abonnements
+# ============================================================
+
+### **Partie 1 : Fondamentaux du Module Paramètres**
 
 ---
 
 ### **1. Introduction au Module Paramètres de Sobrus Pharma**
 
-*   **Objectif :** Ce module permet de personnaliser et d’optimiser la gestion de l'officine en configurant l'abonnement, les profils utilisateurs, les transactions, et d'autres fonctionnalités pour répondre aux besoins spécifiques de la pharmacie.
+**ID : PARAM_INTRO_001**
+**Type : FONDAMENTAL**
+**Priorité : HAUTE**
+**Mots-clés : introduction, objectif, utilisation, prérequis, procédure générale**
+
+*   **Objectif :** Ce module permet de personnaliser et d'optimiser la gestion de l'officine en configurant l'abonnement, les profils utilisateurs, les transactions, et d'autres fonctionnalités pour répondre aux besoins spécifiques de la pharmacie.
+*   **Concepts liés :** , 
+*   **Actions rapides :** Personnalisation du système, Optimisation de la gestion, Configuration des fonctionnalités
+
 *   **Quand utiliser ce module :**
     *   **Gestion administrative :** Configurer les documents pour les fournisseurs et gérer les factures.
-    *   **Opérations saisonnières :** Ajuster les heures d’ouverture (gardes, Ramadan) et configurer les points de fidélité.
-    *   **Sécurité :** Définir des codes de sécurité et des restrictions d’accès pour protéger les données.
+    *   **Opérations saisonnières :** Ajuster les heures d'ouverture (gardes, Ramadan) et configurer les points de fidélité.
+    *   **Sécurité :** Définir des codes de sécurité et des restrictions d'accès pour protéger les données.
     *   **Expérience client :** Personnaliser les communications (e-mails, SMS) et partager des informations via My Sobrus.
+*   **Concepts liés :** [Module Fournisseur]
+*   **Actions rapides :** Configuration administrative, Ajustements saisonniers, Sécurisation du système
+
 *   **Prérequis :**
     *   **Accès :** Compte "gestionnaire admin" ou "admin" pour la plupart des paramètres.
     *   **Connexion Internet :** Requise pour la sauvegarde des modifications (sauf pour le mode hors ligne).
-    *   **Informations de l’officine :** Logo, coordonnées, etc.
+    *   **Informations de l'officine :** Logo, coordonnées, etc.
+*   **Concepts liés :** , 
+*   **Actions rapides :** Vérification des droits, Test de connexion, Préparation des informations
+
 *   **Procédure générale :**
     1.  Connectez-vous à Sobrus Pharma avec un compte administrateur.
     2.  Cliquez sur **Paramètres** dans le menu principal.
     3.  Sélectionnez la sous-catégorie souhaitée (ex. : Mon abonnement, Mes paramètres).
     4.  Suivez les instructions spécifiques à chaque section.
     5.  Cliquez sur **Sauvegarder** après chaque modification. Un message de confirmation vert apparaîtra.
+*   **Concepts liés :** 
+*   **Actions rapides :** Connexion admin, Navigation dans le menu, Sauvegarde des modifications
+*   **Temps estimé :** 5-10 minutes par paramètre
 
 ---
 
 ### **2. Mon Abonnement**
 
+**ID : PARAM_ABONNEMENT_002**
+**Type : FONCTIONNALITE_ADMINISTRATIVE**
+**Priorité : HAUTE**
+**Mots-clés : abonnement, licence, facture, SMS, renouvellement, paiement**
+
 #### **2.1. Licence et Facture**
 
 *   **Description :** Cette section offre une vue détaillée de votre licence Sobrus Pharma. Elle est utile pour anticiper le renouvellement et vérifier le solde SMS.
+*   **Concepts liés :** 
+*   **Actions rapides :** Consultation de la licence, Vérification du solde SMS, Anticipation du renouvellement
+
 *   **Informations disponibles :**
     *   **Reste à payer :** Solde dû pour l'abonnement.
-    *   **Date d’expiration :** Date de fin de validité de la licence.
+    *   **Date d'expiration :** Date de fin de validité de la licence.
     *   **Solde SMS :** Nombre de SMS restants pour les communications.
+*   **Concepts liés :** [Module Rapport]
+*   **Actions rapides :** Vérification du solde, Suivi de l'expiration, Gestion des SMS
+
 *   **Procédure :**
     1.  Accédez à **Paramètres > Mon abonnement > Licence et facture**.
     2.  Consultez les informations affichées.
-
----
+*   **Concepts liés :** 
+*   **Actions rapides :** Navigation vers la section, Consultation des informations
+*   **Temps estimé :** 2-3 minutes
 
 #### **2.2. Moyens de Paiement**
 
 *   **Description :** Permet d'accéder aux informations pour le paiement de votre abonnement, que ce soit par virement, prélèvement automatique ou carte bancaire.
+*   **Concepts liés :** 
+*   **Actions rapides :** Consultation des moyens de paiement, Téléchargement des documents, Paiement en ligne
+
 *   **Procédure :**
     1.  Accédez à **Paramètres > Mon abonnement > Moyens de paiement**.
     2.  **Pour un virement bancaire :** Consultez le numéro de RIB affiché.
@@ -51,29 +100,47 @@
         *   Cliquez sur l'option **"Cliquez ici pour continuer"**.
         *   Saisissez les informations de votre carte bancaire et validez.
     5.  Si le montant n'apparaît pas, contactez le service client.
-
----
+*   **Concepts liés :** 
+*   **Actions rapides :** Consultation du RIB, Téléchargement des documents, Paiement sécurisé
+*   **Temps estimé :** 10-15 minutes par mode de paiement
 
 #### **2.3. Mes Factures**
 
 *   **Description :** Permet de télécharger toutes vos factures Sobrus Pharma au format PDF. Essentiel pour la comptabilité et les audits.
+*   **Concepts liés :** 
+*   **Actions rapides :** Téléchargement des factures, Impression des documents, Archivage comptable
+
 *   **Informations sur la facture :** Numéro de transaction, date, période de licence, total, statut.
 *   **Procédure :**
     1.  Accédez à **Paramètres > Mon abonnement > Mes factures**.
     2.  Consultez la liste des factures.
     3.  Cliquez sur l'icône **Télécharger** à côté de la facture souhaitée.
     4.  Pour imprimer, cliquez sur l'icône d'impression dans le PDF ouvert.
+*   **Concepts liés :** 
+*   **Actions rapides :** Consultation de la liste, Téléchargement des PDF, Impression des documents
+*   **Temps estimé :** 5-10 minutes par facture
 
 ---
 
 ### **3. Mes Paramètres**
 
+**ID : PARAM_PERSONNELS_003**
+**Type : FONCTIONNALITE_UTILISATEUR**
+**Priorité : MOYENNE**
+**Mots-clés : profil, mot de passe, code de sécurité, langue, fuseau horaire, informations personnelles**
+
 #### **3.1. Profil**
 
 *   **Description :** Section pour gérer vos informations personnelles, changer votre mot de passe, et configurer la langue ou le fuseau horaire.
+*   **Concepts liés :** , 
+*   **Actions rapides :** Gestion des informations, Changement de mot de passe, Configuration de la langue
+
 *   **Prérequis :**
     *   Le mot de passe doit contenir au moins 8 caractères, avec des lettres, chiffres et caractères spéciaux.
     *   Le code de sécurité doit contenir au moins 4 caractères.
+*   **Concepts liés :** , 
+*   **Actions rapides :** Vérification des critères, Respect des règles de sécurité, Validation des paramètres
+
 *   **Procédure - Mettre à jour les informations et le mot de passe :**
     1.  Accédez à **Paramètres > Mes paramètres > Profil**.
     2.  Sélectionnez **Gérer mon compte Sobrus**.
@@ -83,61 +150,32 @@
         *   Cliquez sur **Changer le mot de passe**.
         *   Saisissez l'ancien mot de passe, puis le nouveau deux fois.
         *   Cliquez sur **Enregistrer le nouveau mot de passe**.
+*   **Concepts liés :** 
+*   **Actions rapides :** Accès au profil, Modification des informations, Changement sécurisé du mot de passe
+*   **Temps estimé :** 10-15 minutes par modification
+
 *   **Procédure - Configurer la langue et le fuseau horaire :**
     1.  Contactez le service client au 05 30 500 500 ou par e-mail.
     2.  Spécifiez la langue et le fuseau horaire souhaités.
     3.  Attendez la confirmation du support pour l'application du changement.
-
----
+*   **Concepts liés :** , 
+*   **Actions rapides :** Contact du support, Spécification des préférences, Attente de confirmation
+*   **Temps estimé :** 5-10 minutes + délai de traitement
 
 #### **3.2. Code de Sécurité**
 
 *   **Description :** Le code de sécurité est utilisé pour valider des opérations sensibles comme les annulations. Cette section permet de le créer ou de le modifier.
+*   **Concepts liés :** , 
+*   **Actions rapides :** Création du code, Modification du code, Validation des opérations sensibles
+
 *   **Procédure :**
     1.  Accédez à **Paramètres > Mes paramètres > Changer mon code de sécurité**.
     2.  Saisissez votre **mot de passe** actuel.
     3.  Entrez un nouveau code de sécurité (minimum 4 caractères).
     4.  Confirmez le nouveau code.
-    5.  Cliquez sur **Sauvegarder**.
-
----
-
-#### **3.3. Thème et Préférences**
-
-*   **Description :** Permet de personnaliser l'apparence de l'interface (thème et taille du texte) pour un meilleur confort visuel, notamment pendant les gardes de nuit.
-*   **Procédure :**
-    1.  Accédez à **Paramètres > Mes paramètres > Thème et préférences**.
-    2.  Sélectionnez un thème : **classique, sombre ou clair**.
-    3.  Ajustez la taille de lecture à l'aide du curseur.
-
----
-
-#### **3.4. Documents Administratifs**
-
-*   **Description :** Permet de télécharger et de soumettre les documents administratifs (ex: registre de commerce) requis par les fournisseurs pour créer un compte client via la marketplace de Sobrus.
-*   **Prérequis :**
-    *   Accès "gestionnaire admin" ou "admin".
-    *   Documents numérisés prêts à être téléchargés.
-    *   Une autorisation explicite est requise pour partager les documents avec les fournisseurs.
-*   **Procédure :**
-    1.  Accédez à **Paramètres > Mes paramètres > Documents administratifs**.
-    2.  Consultez l'état de votre dossier (ex: en attente, validé).
-    3.  Cliquez sur **Ajouter un document** pour téléverser un fichier.
-    4.  *Information manquante dans le document source : Formats de fichiers acceptés.*
-    5.  Répétez pour chaque document requis.
-    6.  Cliquez sur **Sauvegarder** pour soumettre le dossier à validation.
-
----
-
-#### **3.5. Mode Hors Ligne**
-
-*   **Description :** Permet de continuer à utiliser Sobrus Pharma pour des opérations de base sans connexion Internet.
-*   **Conditions d'activation :**
-    1.  La base de données (produits et clients) doit avoir été synchronisée au préalable.
-    2.  Une connexion au système doit avoir été effectuée avant la coupure.
-    3.  Une vente doit avoir été réalisée au moins une fois.
-*   **Limitations en mode hors ligne :** Seules les ventes simples et la consultation du solde client sont possibles.
-*   **Synchronisation :** Les données sont automatiquement synchronisées dès que la connexion Internet est rétablie.
+*   **Concepts liés :** 
+*   **Actions rapides :** Accès à la section, Saisie du mot de passe, Création du nouveau code
+*   **Temps estimé :** 5-10 minutes
 
 ---
 

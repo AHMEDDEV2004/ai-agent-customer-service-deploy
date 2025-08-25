@@ -1,9 +1,35 @@
+# MODULE ACHATS - GESTION DE L'APPROVISIONNEMENT ET DES COMMANDES
+# ============================================================
+# MÉTADONNÉES RAG
+# ============================================================
+# Module: ACHATS
+# Catégorie: GESTION_OPERATIONNELLE
+# Niveau: INTERMEDIAIRE
+# Prérequis: Module Produit, Module Stock, Module Fournisseur
+# Dépendances: Module Ventes, Module Rapport
+# Fréquence d'utilisation: QUOTIDIEN_HEBDOMADAIRE
+# Complexité: MOYENNE
+# Temps d'apprentissage: 3-4 heures
+# Mots-clés sémantiques: achats, commandes, approvisionnement, fournisseurs, marketplace, bons de commande, bons de livraison, avoirs, dépenses
+# Synonymes: gestion des achats, approvisionnement, commandes fournisseurs, gestion des fournisseurs, contrôle des stocks
+# Concepts liés: gestion des stocks, gestion des fournisseurs, planification des achats, optimisation des coûts, contrôle qualité
+# ============================================================
+
 ### **Partie 1 : Gestion des Achats et Commandes**
 
-#### **1. Gérer vos Achats avec Sobrus : Vue d’Ensemble**
+---
+
+#### **1. Gérer vos Achats avec Sobrus : Vue d'Ensemble**
+
+**ID : ACHATS_OVERVIEW_001**
+**Type : FONDAMENTAL**
+**Priorité : HAUTE**
+**Mots-clés : vue d'ensemble, approvisionnement, processus, sous-modules, contextes d'utilisation**
 
 *   **Introduction**
     *   Le module Achats de Sobrus est conçu pour gérer efficacement toutes les étapes du processus d'approvisionnement d'une officine, de la recherche d'offres à la réception des produits. Il vise à simplifier les commandes, optimiser les stocks, et réduire les erreurs, permettant ainsi de libérer du temps pour le conseil client. Ce module est particulièrement utile pour la planification des achats, notamment en prévision de périodes chargées ou de jours de garde.
+*   **Concepts liés :** [Module Stock]
+*   **Actions rapides :** Planification des achats, Optimisation des stocks, Réduction des erreurs
 
 *   **Sous-modules Disponibles**
     *   **Sobrus Marketplace :** Permet de consulter et de commander des offres publiées par les laboratoires et les grossistes.
@@ -13,22 +39,33 @@
     *   **Avoirs fournisseurs émis :** Module pour enregistrer les retours de produits aux fournisseurs.
     *   **Avoirs fournisseurs reçus :** Permet de gérer les remboursements ou les échanges avec les fournisseurs.
     *   **Dépenses :** Outil pour le suivi quotidien des charges de l'officine.
+*   **Concepts liés :** [Module Rapport]
+*   **Actions rapides :** Consultation des offres, Gestion des commandes, Suivi des réceptions
 
-*   **Contextes d’utilisation de chaque sous-module**
+*   **Contextes d'utilisation de chaque sous-module**
     *   **Sobrus Marketplace :** Idéal pour bénéficier des remises saisonnières.
     *   **Propositions de commande :** Utile pour anticiper les besoins, par exemple avant les jours de garde.
     *   **Bons de commande/livraison :** Recommandé pour un contrôle précis et détaillé des achats.
     *   **Avoirs :** Indispensable pour la gestion des retours ou des remboursements.
     *   **Dépenses :** Essentiel pour le suivi des charges fixes, comme le loyer.
+*   **Concepts liés :** [Module Rapport]
+*   **Actions rapides :** Remises saisonnières, Anticipation des besoins, Contrôle des achats
 
-*   **Astuces d’Intégration**
+*   **Astuces d'Intégration**
     *   **Quotidiennement :** Consacrer 15 minutes chaque matin à la consultation des nouvelles offres sur la Sobrus Marketplace.
     *   **Hebdomadairement :** Planifier une vérification des bons de livraison pour s'assurer de la conformité des réceptions avec les commandes.
     *   **Mensuellement :** Utiliser le module Dépenses en fin de mois pour enregistrer toutes les sorties financières et préparer l'arrêté de caisse.
+*   **Concepts liés :** [Module Rapport]
+*   **Actions rapides :** Consultation quotidienne, Vérification hebdomadaire, Enregistrement mensuel
 
 ---
 
 #### **2. Passer une Commande via les Offres de la Marketplace**
+
+**ID : ACHATS_MARKETPLACE_002**
+**Type : FONCTIONNALITE_CORE**
+**Priorité : HAUTE**
+**Mots-clés : marketplace, offres, commandes, laboratoires, grossistes, remises, promotions**
 
 *   **2.1 Rechercher et Consulter les Offres Disponibles**
     *   **Introduction :** La Marketplace de Sobrus centralise les offres des laboratoires et grossistes, permettant de trouver des promotions sur des produits essentiels et d'optimiser les coûts d'achat.
@@ -38,6 +75,9 @@
         3.  Utiliser la barre de recherche et les filtres pour trouver une offre par produit, nom de l'offre, fournisseur ou DCI.
         4.  Parcourir les offres pour examiner les détails : durée de validité, remises, et conditions.
         5.  Consulter les offres d'un laboratoire spécifique via la section "Laboratoires à la une".
+*   **Concepts liés :** [Module Fournisseur]
+*   **Actions rapides :** Navigation marketplace, Recherche d'offres, Consultation des détails
+*   **Temps estimé :** 10-15 minutes par session
 
 *   **2.2 Commander une Offre en Ligne**
     *   **Introduction :** Commander via la Marketplace simplifie le processus d'achat et permet de bénéficier de remises, garantissant un approvisionnement rapide et économique.
@@ -55,6 +95,9 @@
         11. Cliquer sur **Passer la commande** pour valider.
         12. Une page de confirmation apparaît avec des options pour afficher, imprimer ou créer un nouveau bon de commande.
     *   **Conseil :** Toujours vérifier le stock disponible en officine avant de commander pour éviter le surstockage.
+*   **Concepts liés :** [Module Stock]
+*   **Actions rapides :** Vérification du stock, Saisie des quantités, Validation de la commande
+*   **Temps estimé :** 20-30 minutes par commande
 
 *   **2.3 Suivre et Gérer vos Commandes Marketplace**
     *   **Procédure :**
@@ -63,6 +106,8 @@
         3.  Identifier la commande grâce à son numéro de transaction, fournisseur, date, total et statut (ex: "Traité par fournisseur").
         4.  Cliquer sur une commande pour en voir les détails (produits, quantités, etc.).
         5.  Une fois la commande livrée, cliquer sur **"Convertir en bon de livraison"** pour confirmer la réception et mettre à jour le stock.
+*   **Concepts liés :** [Module Stock]
+*   **Actions rapides :** Suivi des commandes, Consultation des détails, Conversion en livraison
 
 *   **2.4 Annuler une Offre Marketplace**
     *   **Introduction :** Cette option permet de corriger une commande en cas d'erreur ou de changement de besoin.
@@ -77,10 +122,17 @@
         5.  Confirmer l'annulation en saisissant le code de sécurité.
         6.  Le statut de la commande passe à "Annulé".
     *   **Avertissement :** L'annulation peut ne plus être possible si la commande est déjà en cours de traitement par le fournisseur. Dans ce cas, il faut contacter directement le fournisseur.
+*   **Concepts liés :** [Module Paramètres]
+*   **Actions rapides :** Localisation de la commande, Annulation sécurisée, Contact fournisseur si nécessaire
 
 ---
 
 #### **3. Générer des Propositions de Commande**
+
+**ID : ACHATS_PROPOSITIONS_003**
+**Type : FONCTIONNALITE_INTELLIGENTE**
+**Priorité : MOYENNE**
+**Mots-clés : propositions, IA, analyse, ventes, stocks, prévisions, saisonnalité, jours de garde**
 
 *   **3.1 Comprendre les Méthodes de Proposition de Commande**
     *   **Introduction :** Le sous-module **Propositions de commande** aide à anticiper les besoins en générant des suggestions d'achat basées sur diverses analyses (ventes, stocks, prévisions) pour optimiser les commandes et éviter les ruptures ou le surstockage.
@@ -89,13 +141,15 @@
         *   Historique de ventes et de stocks suffisant pour des calculs précis.
         *   Paramètres de stock (minimum/maximum) à jour.
     *   **Méthodes Disponibles :**
-        *   **Consommation d’une période :** Basée sur la formule : `(Quantités vendues - (Quantités achetées + Quantités des commandes en attente))`.
+        *   **Consommation d'une période :** Basée sur la formule : `(Quantités vendues - (Quantités achetées + Quantités des commandes en attente))`.
         *   **Stock maximum :** Calcule la quantité nécessaire pour atteindre le stock maximum défini. Formule : `Stock maximum - (Quantité disponible en stock + Quantité des commandes en attente)`.
         *   **Couverture du stock :** Suggère des produits pour couvrir une période définie. Formule : `(((Quantité vendue / Période) × Stock à couvrir) - (Stock disponible + Quantité des commandes en attente))`.
         *   **Prévisionnelle :** Basée sur les ventes, le stock disponible et les commandes en cours. Formule : `(Quantités vendues - (Stock disponible + Quantités des commandes en attente))`.
-        *   **Intelligente boostée par l’IA :** Analyse avancée incluant la saisonnalité, les jours de garde et les risques de rupture. Nécessite au moins 2 ans d'historique de données pour être fiable.
+        *   **Intelligente boostée par l'IA :** Analyse avancée incluant la saisonnalité, les jours de garde et les risques de rupture. Nécessite au moins 2 ans d'historique de données pour être fiable.
+*   **Concepts liés :** [Module Rapport]
+*   **Actions rapides :** Analyse des besoins, Génération de propositions, Optimisation des commandes
 
-*   **3.2 Générer une Proposition selon la Consommation d’une Période**
+*   **3.2 Générer une Proposition selon la Consommation d'une Période**
     *   **Introduction :** Idéale pour identifier les produits les plus demandés sur une période donnée, sans tenir compte du stock actuel.
     *   **Procédure :**
         1.  Accéder au sous-module **Propositions de commande**.
@@ -146,11 +200,14 @@
         6.  Ajuster la proposition.
         7.  Sélectionner le fournisseur et cliquer sur **Approuver** ou **Brouillon**.
 
-*   **3.6 Utiliser la Proposition de Commande Intelligente Boostée par l’IA**
+*   **3.6 Utiliser la Proposition de Commande Intelligente Boostée par l'IA**
     *   **Introduction :** Méthode avancée pour des commandes précises et optimisées, réduisant les surstocks et sous-stocks.
     *   **Prérequis :** Historique d'achats et de ventes d'au moins deux ans dans Sobrus. Données à jour.
     *   **Procédure :**
-        1.  Cliquer sur **Proposition de commande intelligente Boostée par l’intelligence Artificielle**. (Fonctionnalité en cours de test).
+        1.  Cliquer sur **Proposition de commande intelligente Boostée par l'intelligence Artificielle**. (Fonctionnalité en cours de test).
+*   **Concepts liés :** [Module Rapport]
+*   **Actions rapides :** Utilisation de l'IA, Optimisation des commandes, Réduction des surstocks
+*   **Temps estimé :** 15-20 minutes par analyse
 
 *   **3.7 Valider et Suivre une Proposition de Commande**
     *   **Introduction :** Permet de finaliser les achats et de suivre leur statut après validation.
@@ -158,10 +215,17 @@
         1.  Après approbation d'une proposition, une page de confirmation s'affiche avec plusieurs options (afficher, imprimer, etc.).
         2.  Pour suivre l'historique, aller dans la sous-rubrique **Bon de Commande**.
         3.  Consulter la liste des bons de commande créés à partir des propositions.
+*   **Concepts liés :** [Module Rapport]
+*   **Actions rapides :** Validation des propositions, Suivi des commandes, Consultation de l'historique
 
 ---
 
 #### **4. Passer une Commande en Ligne avec les Fournisseurs Partenaires**
+
+**ID : ACHATS_COMMANDE_LIGNE_004**
+**Type : FONCTIONNALITE_AVANCEE**
+**Priorité : MOYENNE**
+**Mots-clés : commande en ligne, fournisseurs partenaires, disponibilité 24/7, erreurs de saisie, visibilité temps réel**
 
 *   **4.1 Passer une Commande en Ligne**
     *   **Avantages :**
@@ -176,6 +240,9 @@
         1.  Après avoir préparé une proposition ou un bon de commande, vérifier que le fournisseur est partenaire.
         2.  Cliquer sur le bouton **Commander en Ligne**.
         3.  Un message de confirmation de la commande en ligne s'affiche.
+*   **Concepts liés :** [Module Fournisseur]
+*   **Actions rapides :** Vérification du partenariat, Commande en ligne, Confirmation automatique
+*   **Temps estimé :** 5-10 minutes par commande
 
 *   **4.2 Suivre une Commande en Ligne**
     *   **Procédure de suivi :**
@@ -192,24 +259,40 @@
     *   **Annulation d'une commande en ligne :**
         *   L'annulation n'est pas possible directement depuis le logiciel.
         *   Il est nécessaire de contacter le fournisseur par téléphone pour annuler.
+*   **Concepts liés :** [Module Stock]
+*   **Actions rapides :** Suivi des commandes, Conversion en livraison, Contact fournisseur si nécessaire
+*   **Temps estimé :** 10-15 minutes par suivi
+
+---
 
 ### **Partie 2 : Commandes Spécifiques et Gestion des Réceptions**
 
 #### **5. La Commande Consolidée (Multi-Fournisseurs)**
 
+**ID : ACHATS_CONSOLIDEE_005**
+**Type : FONCTIONNALITE_SPECIALISEE**
+**Priorité : MOYENNE**
+**Mots-clés : commande consolidée, multi-fournisseurs, automatisation, gestion manuelle, disponibilité**
+
 *   **Introduction**
     *   La fonctionnalité de commande consolidée permet de passer une commande unique qui est automatiquement répartie entre plusieurs grossistes en fonction de la disponibilité de leurs produits. Elle a pour but principal d'éviter la gestion manuelle des commandes lorsque des produits sont en rupture de stock chez le fournisseur principal.
+*   **Concepts liés :** [Module Fournisseur]
+*   **Actions rapides :** Commande multi-fournisseurs, Automatisation des répartitions, Gestion des ruptures
 
 *   **Avantages**
     *   Gain de temps significatif dans la gestion des commandes.
     *   Réduction des erreurs humaines liées à la ressaisie.
     *   Autonomie accrue, sans nécessité de contacter les fournisseurs par téléphone.
     *   Flexibilité pour passer des commandes 24h/24 et 7j/7.
+*   **Concepts liés :** [Module Rapport]
+*   **Actions rapides :** Optimisation du temps, Réduction des erreurs, Autonomie accrue
 
 *   **Prérequis**
     *   Le service de Commande en Ligne (CEL) doit être activé sur le compte.
     *   Disposer de plusieurs fournisseurs partenaires actifs pour la commande en ligne.
     *   Avoir configuré une liste de fournisseurs favoris, classés par ordre de préférence.
+*   **Concepts liés :** [Module Paramètres]
+*   **Actions rapides :** Activation du service CEL, Configuration des favoris, Vérification des partenaires
 
 *   **5.1 Passer une Commande Consolidée**
     *   **Depuis une Proposition de Commande :**
@@ -227,15 +310,25 @@
     *   **Logique du système :**
         *   La commande est d'abord envoyée au fournisseur n°1.
         *   Si un produit est indisponible, la commande pour ce produit est automatiquement transférée au fournisseur n°2, et ainsi de suite selon l'ordre de préférence établi.
+*   **Concepts liés :** [Module Fournisseur]
+*   **Actions rapides :** Activation multi-fournisseurs, Configuration des préférences, Lancement automatique
+*   **Temps estimé :** 15-25 minutes par commande consolidée
 
-*   **5.2 Suivi d’une Commande Consolidée**
+*   **5.2 Suivi d'une Commande Consolidée**
     *   Après la validation, un message récapitulatif s'affiche (ex: "18 sur 20 produits commandés avec succès").
     *   Le statut de chaque ligne de produit peut être suivi individuellement depuis le tableau de bord.
     *   Si des produits restent indisponibles après avoir interrogé tous les fournisseurs, un nouveau bon de commande peut être créé pour les articles restants.
+*   **Concepts liés :** [Module Rapport]
+*   **Actions rapides :** Consultation du récapitulatif, Suivi individuel des produits, Gestion des indisponibilités
 
 ---
 
 #### **6. Créer et Gérer vos Bons de Commande**
+
+**ID : ACHATS_BONS_COMMANDE_006**
+**Type : FONCTIONNALITE_CORE**
+**Priorité : HAUTE**
+**Mots-clés : bons de commande, création manuelle, contrôle total, produits rares, besoins urgents**
 
 *   **6.1 Créer un Bon de Commande Manuellement**
     *   **Introduction :** La création manuelle d'un bon de commande offre un contrôle total et est idéale pour les commandes spécifiques, comme des produits rares, ou pour des besoins urgents non couverts par les propositions automatiques.
@@ -244,12 +337,9 @@
         2.  Cliquer sur **Créer** (ou utiliser le raccourci clavier **F10**).
         3.  Sélectionner le **Fournisseur** dans le menu déroulant.
         4.  Ajouter les produits en les saisissant manuellement ou en les scannant, puis indiquer la **Quantité**.
-        5.  Vérifier le **Total** du bon de commande.
-        6.  Cliquer sur **Approuver** pour valider ou sur **Brouillon** pour enregistrer et modifier plus tard.
-        7.  La page de confirmation offre plusieurs options : afficher, imprimer, passer une commande en ligne (si partenaire), ou consulter la liste des bons.
-    *   **Vérifier la disponibilité d’un produit :**
-        *   Un bouton **"Vérifier la disponibilité"** apparaît sur la page du bon de commande après la saisie d'un produit.
-        *   En cliquant sur ce bouton, le système interroge en temps réel la disponibilité du produit chez les fournisseurs partenaires.
+*   **Concepts liés :** [Module Fournisseur]
+*   **Actions rapides :** Création manuelle, Sélection fournisseur, Ajout de produits
+*   **Temps estimé :** 10-20 minutes par bon de commande
 
 *   **6.2 Modifier ou Annuler un Bon de Commande**
     *   **Modifier un Bon de Commande :**
@@ -301,12 +391,17 @@
 
 ---
 
-#### **7. Gérer vos Bons de Livraison**
+#### **7. Créer et Gérer les Bons de Livraison**
+
+**ID : ACHATS_BONS_LIVRAISON_007**
+**Type : FONCTIONNALITE_CORE**
+**Priorité : HAUTE**
+**Mots-clés : bons de livraison, réception, saisie automatique, OCR, code Sobrus, paiements**
 
 *   **7.1 Créer un Bon de Livraison**
-    *   **Introduction :** La création d'un bon de livraison (BL) est l'étape qui permet d'enregistrer la réception physique des produits commandés et de mettre à jour les stocks.
+    *   **Introduction :** Les bons de livraison permettent d'enregistrer la réception des produits commandés et de mettre à jour automatiquement les stocks.
     *   **Procédure :**
-        1.  Accéder à la sous-rubrique **Bons de livraison** (ou utiliser le raccourci clavier **F6**).
+        1.  Dans le module **Achats**, aller à la sous-rubrique **Bons de livraison**.
         2.  Cliquer sur **Créer**.
         3.  Renseigner le **Fournisseur**, la **Référence du bon** et la **Date de livraison**.
         4.  Ajouter les produits reçus (saisie manuelle ou scan) et leur **Quantité**.
@@ -314,6 +409,9 @@
         6.  Appliquer une remise globale si besoin.
         7.  Cliquer sur **Approuver** pour valider ou **Brouillon** pour sauvegarder.
         8.  Rectifier le total si un décalage de centimes existe avec le BL papier du fournisseur.
+*   **Concepts liés :** [Module Stock]
+*   **Actions rapides :** Création du bon, Saisie des produits, Validation de la réception
+*   **Temps estimé :** 15-25 minutes par bon de livraison
 
 *   **7.2 Modifier ou Annuler un Bon de Livraison**
     *   **Modifier un Bon de Livraison :** Seuls les bons en statut **"Brouillon"** sont modifiables. Les bons validés doivent être annulés puis dupliqués pour être corrigés.
@@ -325,6 +423,9 @@
         *   **Avantages :** Gain de temps considérable, réduction des erreurs de saisie.
     *   **Saisie Automatique – Code Sobrus (Groupes) :**
         *   **Fonctionnement :** Conçu pour les commandes via Sobrus Groups, il suffit de scanner le code-barres présent sur le bon de commande généré pour charger automatiquement tous les produits, quantités et remises dans un nouveau bon de livraison.
+*   **Concepts liés :** [Module Paramètres]
+*   **Actions rapides :** Modification des brouillons, Annulation sécurisée, Saisie automatique OCR
+*   **Temps estimé :** 5-10 minutes avec OCR, 15-25 minutes manuellement
 
 *   **7.3 Gérer les Paiements Associés à un Bon de Livraison**
     *   **Introduction :** Cette fonction permet de suivre et d'enregistrer les paiements effectués pour un bon de livraison spécifique, garantissant une comptabilité précise.
@@ -335,13 +436,18 @@
         3.  Saisir la date, le montant et le mode de paiement.
         4.  Pour annuler un paiement, le sélectionner dans la liste et cliquer sur **Annuler le paiement**.
         *   **Info Clé :** Un paiement ne peut pas être modifié. Il doit être annulé et recréé.
+*   **Concepts liés :** [Module Fournisseur]
+*   **Actions rapides :** Ajout de paiements, Annulation de paiements, Suivi comptable
+*   **Temps estimé :** 5-10 minutes par paiement
 
 *   **7.4 Imprimer un Bon de Livraison**
     *   **Procédure :**
         1.  Trouver le bon de livraison dans la liste.
         2.  Cliquer sur l'icône **Imprimante** ou ouvrir le bon et sélectionner **Imprimer**.
+*   **Concepts liés :** [Module Rapport]
+*   **Actions rapides :** Impression du bon, Génération du document, Archivage
 
-*   **7.5 Consulter l’Historique des Bons de Livraison**
+*   **7.5 Consulter l'Historique des Bons de Livraison**
     *   **Introduction :** L'historique offre une vue complète de toutes les réceptions (complétées, annulées, en attente de paiement) et est crucial pour le suivi des stocks.
     *   **Procédure :**
         1.  Accéder à la sous-rubrique **Bons de livraison**.
@@ -350,14 +456,25 @@
         3.  Utiliser les filtres et le tri pour naviguer dans l'historique.
         4.  Cliquer sur un bon pour voir tous les détails : produits, prix, remises, TVA, historique des commentaires et des paiements.
         5.  Depuis cette vue, il est possible d'imprimer, annuler, ou ajouter un paiement au bon de livraison.
+*   **Concepts liés :** [Module Rapport]
+*   **Actions rapides :** Consultation de l'historique, Filtrage des données, Accès aux détails
+*   **Temps estimé :** 10-15 minutes par consultation
 
+---
 
 ### **Partie 3 : Avoirs et Dépenses**
 
 #### **8. Créer et Gérer les Avoirs Fournisseurs Émis**
 
+**ID : ACHATS_AVOIRS_EMIS_008**
+**Type : FONCTIONNALITE_POST_ACHAT**
+**Priorité : MOYENNE**
+**Mots-clés : avoirs émis, retours, péremption, produits endommagés, remboursement, échange**
+
 *   **Introduction**
     *   La création d'un avoir fournisseur émis est le processus par lequel l'officine formalise un retour de produits à un fournisseur (par exemple, pour cause de péremption proche ou de produits endommagés). Cette action est cruciale car elle impacte directement le stock et crée une trace officielle de la demande de retour, en vue d'obtenir un remboursement ou un échange.
+*   **Concepts liés :** [Module Stock]
+*   **Actions rapides :** Formalisation des retours, Impact sur le stock, Traçabilité officielle
 
 *   **8.1 Créer un Avoir Fournisseur Émis**
     *   **Procédure :**
@@ -372,6 +489,9 @@
         5.  Vérifier le total de l'avoir.
         6.  Cliquer sur **Approuver** pour valider et envoyer, ou sur **Sauvegarder** pour le conserver en brouillon.
         7.  La page de confirmation propose des actions rapides (afficher, imprimer, créer un nouvel avoir).
+*   **Concepts liés :** [Module Produit]
+*   **Actions rapides :** Saisie des produits, Spécification des raisons, Validation de l'avoir
+*   **Temps estimé :** 15-20 minutes par avoir
 
 *   **8.2 Modifier ou Annuler un Avoir Fournisseur Émis**
     *   **Modifier un Avoir :**
@@ -381,30 +501,44 @@
         1.  Ouvrir l'avoir à annuler depuis la liste.
         2.  Cliquer sur l'icône **Annuler** en haut de la page.
         3.  Confirmer l'opération avec le code de sécurité.
-        *   **Info Clé :** Si un avoir fournisseur *reçu* a déjà été validé en contrepartie de cet avoir émis, il est impératif d'annuler d'abord l'avoir reçu avant de pouvoir annuler l'avoir émis.
+        *   **Info Clé :** Si un avoir fournisseur *reçu* a déjà été validé en contrepartie de cet avoir émis, il est impératif d'annuler d'abord l'avoir reçu avant de pouvoir annuler l'avoir lui-même.
+*   **Concepts liés :** [Module Paramètres]
+*   **Actions rapides :** Modification des brouillons, Annulation sécurisée, Gestion des dépendances
 
 *   **8.3 Imprimer un Avoir Fournisseur Émis**
     *   **Procédure :**
         1.  Localiser l'avoir dans la liste des avoirs émis.
         2.  Cliquer sur l'icône **Imprimante** ou ouvrir l'avoir et sélectionner **Imprimer**.
+*   **Concepts liés :** [Module Rapport]
+*   **Actions rapides :** Impression de l'avoir, Génération du document, Archivage
 
-*   **8.4 Consulter l’Historique des Avoirs Fournisseurs Émis**
+*   **8.4 Consulter l'Historique des Avoirs Fournisseurs Émis**
     *   **Introduction :** L'historique permet de suivre toutes les demandes de retour et leur statut (complété, brouillon, annulé).
     *   **Procédure :**
         1.  Accéder à la sous-rubrique **Avoirs fournisseurs émis**.
         2.  La liste affiche le numéro de transaction, les dates, le total émis, le fournisseur et le statut.
         3.  Utiliser les filtres et le tri pour rechercher un avoir spécifique.
         4.  Cliquer sur un avoir pour consulter les détails, notamment les quantités (acceptées, refusées, en attente) et la traçabilité.
+*   **Concepts liés :** [Module Rapport]
+*   **Actions rapides :** Consultation de l'historique, Filtrage des données, Suivi des statuts
+*   **Temps estimé :** 10-15 minutes par consultation
 
 ---
 
 #### **9. Gérer les Avoirs Fournisseurs Reçus**
+
+**ID : ACHATS_AVOIRS_RECUS_009**
+**Type : FONCTIONNALITE_POST_ACHAT**
+**Priorité : MOYENNE**
+**Mots-clés : avoirs reçus, validation, acceptation, refus, échange, remise 100%**
 
 *   **Introduction**
     *   La création d'un avoir fournisseur reçu est l'action qui confirme la validation d'un retour par le fournisseur. Elle permet de finaliser la demande d'avoir émis et de mettre à jour la comptabilité. L'impact de cette validation varie :
         *   **Avoir accepté :** Impacte la facturation (crédit sur le compte fournisseur).
         *   **Avoir refusé :** Impacte uniquement le stock (les produits sont réintégrés).
         *   **Échange :** N'impacte ni le stock, ni la facturation (géré par des remises à 100%).
+*   **Concepts liés :** [Module Rapport]
+*   **Actions rapides :** Validation des retours, Mise à jour comptable, Gestion des échanges
 
 *   **9.1 Créer un Avoir Fournisseur Reçu**
     *   **Procédure :**
@@ -417,13 +551,19 @@
             *   **Espèces :** Pour un remboursement direct.
             *   **Avoir :** Pour un crédit à déduire des prochaines factures du fournisseur.
         7.  Cliquer sur **Approuver** pour valider.
+*   **Concepts liés :** [Module Fournisseur]
+*   **Actions rapides :** Sélection de la période, Saisie des quantités, Choix du mode de paiement
+*   **Temps estimé :** 15-20 minutes par avoir reçu
 
-*   **9.2 Gérer un Avoir Fournisseur Reçu en Cas d’Échange**
+*   **9.2 Gérer un Avoir Fournisseur Reçu en Cas d'Échange**
     *   **Procédure :**
         1.  Créer un avoir fournisseur reçu en suivant la procédure normale.
         2.  Sur les produits concernés, appliquer une **remise de 100%**. L'avoir est validé avec un montant de 0.
         3.  Créer un **Bon de livraison** distinct pour les nouveaux produits reçus en échange.
         4.  Sur ce bon de livraison, appliquer également une **remise de 100%** pour que l'entrée en stock se fasse sans impact financier.
+*   **Concepts liés :** [Module Stock]
+*   **Actions rapides :** Application des remises, Création du bon de livraison, Gestion sans impact financier
+*   **Temps estimé :** 20-30 minutes par échange
 
 *   **9.3 Modifier ou Annuler un Avoir Fournisseur Reçu**
     *   **Modifier :** Il n'est pas possible de modifier ou de dupliquer un avoir reçu validé. Il faut l'annuler et le recréer.
@@ -431,23 +571,29 @@
         1.  Ouvrir l'avoir reçu concerné.
         2.  Cliquer sur l'icône **Annuler** et confirmer avec le code de sécurité.
         *   **Info Clé :** Si l'avoir est lié à un paiement (mode "Avoir"), il faut d'abord annuler le paiement associé dans l'historique de paiement du fournisseur avant de pouvoir annuler l'avoir lui-même.
+*   **Concepts liés :** [Module Paramètres]
+*   **Actions rapides :** Annulation sécurisée, Gestion des dépendances, Recréation si nécessaire
 
 *   **9.4 Imprimer un Avoir Fournisseur Reçu**
     *   **Procédure :**
         1.  Trouver l'avoir dans la liste des avoirs reçus.
         2.  Cliquer sur l'icône **Imprimante** ou ouvrir l'avoir et sélectionner **Imprimer**.
+*   **Concepts liés :** [Module Rapport]
+*   **Actions rapides :** Impression de l'avoir, Génération du document, Archivage
 
-*   **9.5 Consulter l’Historique des Avoirs Fournisseurs Reçus**
+*   **9.5 Consulter l'Historique des Avoirs Fournisseurs Reçus**
     *   **Introduction :** L'historique permet de suivre tous les remboursements et échanges confirmés par les fournisseurs.
-    *   **Procédure :**
-        1.  Accéder à la sous-rubrique **Avoirs fournisseurs reçus**.
-        2.  La liste affiche toutes les informations pertinentes : numéro de transaction, référence, dates, totaux (accepté, refusé), fournisseur et mode de remboursement.
-        3.  Utiliser les filtres et le tri pour la recherche.
-        4.  Cliquer sur un avoir pour voir le détail des produits et la traçabilité.
+*   **Concepts liés :** [Module Rapport]
+*   **Actions rapides :** Consultation de l'historique, Suivi des confirmations, Traçabilité des échanges
 
 ---
 
 #### **10. Suivre et Gérer vos Dépenses**
+
+**ID : ACHATS_DEPENSES_010**
+**Type : FONCTIONNALITE_CORE**
+**Priorité : HAUTE**
+**Mots-clés : dépenses, suivi, comptabilité, arrêté de caisse, catégories**
 
 *   **Introduction**
     *   Le module Dépenses permet de suivre toutes les sorties financières de l'officine qui ne sont pas des achats de marchandises (ex: loyer, salaires, factures d'électricité). Cette fonctionnalité est essentielle pour une comptabilité rigoureuse.
@@ -460,6 +606,9 @@
         3.  Remplir les champs : **Catégorie**, **Libellé** (description claire), **Date** et **Montant**.
         *   **Info Clé :** Pour ajouter une nouvelle catégorie de dépense, une demande doit être envoyée à support@sobrus.com.
         4.  Cliquer sur **Sauvegarder**.
+*   **Concepts liés :** [Module Rapport]
+*   **Actions rapides :** Création de dépenses, Spécification des catégories, Sauvegarde des données
+*   **Temps estimé :** 5-10 minutes par dépense
 
 *   **10.2 Modifier ou Annuler une Dépense**
     *   **Prérequis :** La dépense ne doit pas avoir été intégrée dans un arrêté de caisse déjà clôturé.
@@ -467,6 +616,8 @@
         1.  Localiser la dépense dans la liste et cliquer dessus pour ouvrir les détails.
         2.  **Pour modifier :** Cliquer sur **Modifier**, ajuster les champs nécessaires, puis **Sauvegarder**.
         3.  **Pour annuler :** Cliquer sur **Annuler** et confirmer avec le code de sécurité. L'annulation change le statut de la dépense mais conserve une trace dans l'historique.
+*   **Concepts liés :** [Module Paramètres]
+*   **Actions rapides :** Modification des dépenses, Annulation sécurisée, Suivi des modifications
 
 *   **10.3 Consulter l’Historique de vos Dépenses**
     *   **Procédure :**
@@ -475,3 +626,18 @@
         3.  Utiliser les outils de recherche et de tri pour naviguer.
         4.  Cliquer sur une dépense pour voir ses détails complets, y compris l'historique de traçabilité des modifications.
         5.  Depuis cette vue, il est possible de modifier, annuler ou imprimer la dépense.
+*   **Concepts liés :** [Module Rapport]
+*   **Actions rapides :** Consultation de l'historique, Filtrage des données, Accès aux détails
+*   **Temps estimé :** 10-15 minutes par consultation
+
+---
+
+# ============================================================
+# RÉSUMÉ EXÉCUTIF - MODULE ACHATS
+# ============================================================
+# Ce module couvre la gestion complète de l'approvisionnement
+# incluant marketplace, propositions IA, commandes multi-fournisseurs,
+# bons de commande/livraison, avoirs et gestion des réceptions.
+# Idéal pour l'optimisation des achats et la planification
+# des approvisionnements en pharmacie.
+# ============================================================

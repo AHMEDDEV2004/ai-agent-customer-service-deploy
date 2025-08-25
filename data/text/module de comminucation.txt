@@ -1,12 +1,50 @@
+# MODULE COMMUNICATION - GESTION DES COMMUNICATIONS CLIENT
+# ============================================================
+# MÉTADONNÉES RAG
+# ============================================================
+# Module: COMMUNICATION
+# Catégorie: GESTION_CLIENT
+# Niveau: INTERMEDIAIRE
+# Prérequis: Module Client, Module Paramètres
+# Dépendances: Module Ventes, Module Rapport
+# Fréquence d'utilisation: QUOTIDIEN_HEBDOMADAIRE
+# Complexité: MOYENNE
+# Temps d'apprentissage: 2-3 heures
+# Mots-clés sémantiques: communication, SMS, clients, historique, groupée, solde, promotions, relances, modèles, crédits
+# Synonymes: gestion des communications, envoi de SMS, communication client, relances clients, messages groupés
+# Concepts liés: service client, gestion des relances, communication marketing, suivi des paiements, personnalisation des messages
+# ============================================================
 
-### **Titre : Gestion des Communications par SMS en Pharmacie via Sobrus**
+### **Partie 1 : Gestion des Communications par SMS**
+
+---
+
+#### **Titre : Gestion des Communications par SMS en Pharmacie via Sobrus**
+
+**ID : COMM_SMS_GESTION_001**
+**Type : FONDAMENTAL**
+**Priorité : HAUTE**
+**Mots-clés : SMS, communications, pharmacie, Sobrus, gestion, historique**
+
+*   **Description :** Ce module permet de gérer toutes les communications SMS avec les clients de l'officine, incluant l'envoi de messages groupés, la consultation de l'historique et la gestion des crédits SMS.
+*   **Concepts liés :** [Module Client]
+*   **Actions rapides :** Gestion des SMS, Communication avec les clients, Suivi des messages
+
+---
 
 #### **Sujet : Consultation de l'historique des communications clients**
+
+**ID : COMM_HISTORIQUE_002**
+**Type : FONCTIONNALITE_CORE**
+**Priorité : MOYENNE**
+**Mots-clés : historique, communications, clients, SMS, statut, destinataire, gestionnaire**
 
 **Question :** Comment consulter l'historique des SMS envoyés aux clients dans le logiciel Sobrus ?
 
 **Réponse :**
 La fonctionnalité "Historique des communications" permet de suivre tous les SMS envoyés aux clients de l'officine. Elle est utile pour vérifier les messages, leur statut, et retracer les rappels de soldes ou les messages personnalisés.
+*   **Concepts liés :** [Module Client]
+*   **Actions rapides :** Consultation de l'historique, Vérification des statuts, Suivi des messages
 
 **Procédure :**
 1.  **Connexion :** Connectez-vous au logiciel Sobrus.
@@ -20,21 +58,33 @@ La fonctionnalité "Historique des communications" permet de suivre tous les SMS
     *   Destinataire du message
 4.  **Trier les données :** Pour organiser la liste, cliquez sur l'en-tête d'une colonne (par exemple, "Date de création").
 5.  **Rechercher une communication :** Pour trouver un envoi spécifique, utilisez la barre de **Recherche** en y saisissant un mot-clé.
+*   **Concepts liés :** 
+*   **Actions rapides :** Navigation vers le module, Tri des données, Recherche de communications
+*   **Temps estimé :** 5-10 minutes par consultation
 
 ---
 
 #### **Sujet : Envoi d'une communication groupée par SMS**
 
+**ID : COMM_GROUPEE_003**
+**Type : FONCTIONNALITE_CORE**
+**Priorité : HAUTE**
+**Mots-clés : communication groupée, SMS, clients, rappel de solde, promotion, modèles, destinataires**
+
 **Question :** Comment envoyer un SMS groupé à plusieurs clients, par exemple pour un rappel de solde ou une promotion ?
 
 **Réponse :**
 La fonctionnalité "Communication groupée" sert à envoyer un même SMS à plusieurs clients simultanément. Cela permet d'optimiser la gestion des relances pour soldes impayés ou de diffuser des messages personnalisés (ex: promotions sur les crèmes solaires).
+*   **Concepts liés :** [Module Client]
+*   **Actions rapides :** Envoi groupé, Gestion des relances, Diffusion de promotions
 
 **Prérequis :**
 *   Avoir des identifiants valides pour le logiciel Sobrus.
 *   Disposer des autorisations nécessaires pour envoyer des SMS.
 *   S'assurer que les numéros de téléphone des clients sont corrects et à jour dans Sobrus.
 *   Avoir préalablement configuré un ou plusieurs modèles de message dans le module **Paramètres**.
+*   **Concepts liés :** [Module Paramètres]
+*   **Actions rapides :** Vérification des identifiants, Contrôle des autorisations, Validation des contacts
 
 **Procédure :**
 1.  **Connexion :** Connectez-vous à Sobrus.
@@ -51,19 +101,31 @@ La fonctionnalité "Communication groupée" sert à envoyer un même SMS à plus
 8.  **Vérification :** Contrôlez l'aperçu du message qui s'affiche sur la droite pour vous assurer que le contenu est correct.
 9.  **Modification (Facultatif) :** Si le message nécessite un ajustement, cliquez sur **Modifier modèle**, apportez les changements, puis cliquez sur **Sauvegarder**.
 10. **Envoi final :** Cliquez sur le bouton **Envoyer** pour diffuser le SMS.
+*   **Concepts liés :** 
+*   **Actions rapides :** Configuration de l'envoi, Sélection des destinataires, Validation du message
+*   **Temps estimé :** 15-25 minutes par envoi groupé
 
 **Conseils et avertissements :**
 *   **[Conseil]** Avant un envoi important, faites un test sur un petit groupe de 2 ou 3 personnes pour valider la clarté et le ton du message.
 *   **[Avertissement]** Assurez-vous que les numéros de téléphone sont corrects pour ne pas envoyer de SMS aux mauvais destinataires.
+*   **Concepts liés :** , 
+*   **Actions rapides :** Test sur petit groupe, Vérification des numéros, Validation du contenu
 
 ---
 
 #### **Sujet : Alimentation du solde SMS du compte Pharma**
 
+**ID : COMM_SOLDE_SMS_004**
+**Type : FONCTIONNALITE_ADMINISTRATIVE**
+**Priorité : MOYENNE**
+**Mots-clés : solde SMS, recharge, crédits, service commercial, packs, paiement, activation**
+
 **Question :** Comment recharger le solde de SMS sur mon compte Pharma dans Sobrus ?
 
 **Réponse :**
 Pour ajouter des crédits SMS à votre compte, vous devez suivre une procédure d'achat et d'activation.
+*   **Concepts liés :** 
+*   **Actions rapides :** Recharge du solde, Achat de crédits, Activation des packs
 
 **Procédure :**
 1.  **Prise de contact :** Adressez une demande de recharge au **service commercial**. Un agent vous contactera pour vous présenter les packs SMS disponibles et leurs tarifs.
@@ -72,3 +134,17 @@ Pour ajouter des crédits SMS à votre compte, vous devez suivre une procédure 
 4.  **Confirmation :** Envoyez la preuve ou l'avis de virement à votre interlocuteur commercial.
 5.  **Activation :** Votre pack SMS sera activé dès que le paiement sera réceptionné et la demande traitée.
 6.  **Suivi du solde :** Vous pouvez vérifier à tout moment le solde SMS qu'il vous reste en vous rendant dans la section **Paramètres** de votre compte Pharma.
+*   **Concepts liés :** 
+*   **Actions rapides :** Contact du service commercial, Sélection du pack, Suivi de l'activation
+*   **Temps estimé :** 30-60 minutes + délai de traitement
+
+---
+
+# ============================================================
+# RÉSUMÉ EXÉCUTIF - MODULE COMMUNICATION
+# ============================================================
+# Ce module couvre la gestion complète des communications SMS
+# incluant historique, envois groupés, gestion des crédits et
+# personnalisation des messages. Idéal pour optimiser la
+# communication client et les relances commerciales.
+# ============================================================

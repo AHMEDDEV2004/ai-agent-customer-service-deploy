@@ -1,113 +1,218 @@
+# MODULE PRODUIT - GESTION DES PRODUITS PHARMACEUTIQUES
+# ============================================================
+# MÉTADONNÉES RAG
+# ============================================================
+# Module: PRODUIT
+# Catégorie: GESTION_OPERATIONNELLE
+# Niveau: INTERMEDIAIRE
+# Prérequis: Module Formation, Module Paramètres
+# Dépendances: Module Stock, Module Ventes, Module Achats
+# Fréquence d'utilisation: QUOTIDIEN
+# Complexité: MOYENNE
+# Temps d'apprentissage: 3-4 heures
+# Mots-clés sémantiques: produits, fiches produits, gestion des stocks, mouvements, désactivation, restauration, PPV, PPH, TVA
+# Synonymes: gestion des produits, fiches produits, catalogue produits, référentiel produits, base de données produits
+# Concepts liés: gestion des stocks, catalogue produits, prix et tarifs, catégorisation, codes-barres, zones de stockage
+# ============================================================
+
 ### **Partie 1 : Introduction et Premiers Pas**
 
+---
+
 **Titre : Introduction au Module Produits de Sobrus Pharma**
+
+**ID : PRODUIT_INTRO_001**
+**Type : FONDAMENTAL**
+**Priorité : HAUTE**
+**Mots-clés : introduction, module produits, Sobrus Pharma, pharmacie, centralisation**
+
 **Contenu :** Le module Produits de Sobrus Pharma est un outil conçu pour simplifier et optimiser la gestion de votre pharmacie. Il permet de centraliser les informations sur les produits, de suivre leurs mouvements et de maintenir un stock organisé pour répondre aux besoins des clients.
-**Mots-clés :** gestion des produits, Sobrus Pharma, pharmacie, introduction, centralisation
+*   **Concepts liés :** [Module Stock]
+*   **Actions rapides :** Centralisation des informations, Suivi des mouvements, Organisation du stock
+*   **Temps estimé :** 5-10 minutes de familiarisation
 
 ---
 
 **Titre : Utilité du Module Produits pour une Pharmacie**
+
+**ID : PRODUIT_UTILITE_002**
+**Type : FONDAMENTAL**
+**Priorité : HAUTE**
+**Mots-clés : utilité, disponibilité produits, optimisation commandes, satisfaction client, gestion de stock**
+
 **Contenu :** La gestion efficace des produits est un atout majeur pour une officine. Le module Produits aide à :
 *   **Assurer la disponibilité des produits :** Suivre les niveaux de stock pour éviter les ruptures.
 *   **Optimiser les commandes :** Analyser les mouvements des produits pour anticiper les besoins et commander au bon moment.
 *   **Améliorer la satisfaction client :** S'assurer que les produits demandés par les clients réguliers sont toujours en stock pour renforcer leur fidélité.
-**Mots-clés :** utilité, pourquoi utiliser, disponibilité produits, optimisation commandes, satisfaction client, gestion de stock
+*   **Concepts liés :** [Module Stock]
+*   **Actions rapides :** Suivi des niveaux de stock, Analyse des mouvements, Anticipation des besoins
+*   **Temps estimé :** 10-15 minutes par analyse
 
 ---
 
 **Titre : Fonctionnalités Clés du Module Produits**
+
+**ID : PRODUIT_FONCTIONNALITES_003**
+**Type : FONDAMENTAL**
+**Priorité : HAUTE**
+**Mots-clés : fonctionnalités, fiches produits, gestion des stocks, suivi des mouvements, désactivation, restauration**
+
 **Contenu :** Le module Produits de Sobrus Pharma offre les fonctionnalités suivantes :
 1.  **Création et modification de fiches produits :** Enregistrer et mettre à jour les informations comme le prix, la zone, et les dates de péremption.
 2.  **Gestion des stocks :** Suivre les niveaux de stock.
-3.  **Suivi des mouvements :** Consulter l’historique des entrées et sorties des produits.
+3.  **Suivi des mouvements :** Consulter l'historique des entrées et sorties des produits.
 4.  **Désactivation et restauration :** Gérer les produits obsolètes ou en rupture prolongée, avec la possibilité de les restaurer.
-**Mots-clés :** fonctionnalités, fiches produits, gestion des stocks, suivi des mouvements, désactivation, restauration
+*   **Concepts liés :** [Module Stock]
+*   **Actions rapides :** Création de fiches, Modification des informations, Suivi des mouvements
+*   **Temps estimé :** 15-20 minutes par fiche
 
 ---
 
 **Titre : Différence entre un Produit Actif et un Produit Inactif**
+
+**ID : PRODUIT_STATUTS_004**
+**Type : FONDAMENTAL**
+**Priorité : MOYENNE**
+**Mots-clés : produit actif, produit inactif, statut produit, différence, disponibilité**
+
 **Contenu :**
 *   **Produit actif :** Un produit actuellement en stock ou fréquemment utilisé, disponible pour les ventes et les préparations.
 *   **Produit inactif :** Un produit qui a été désactivé car il n'est plus utilisé ou est en rupture prolongée. Il peut être restauré si nécessaire.
-**Mots-clés :** produit actif, produit inactif, statut produit, différence
+*   **Concepts liés :** [Module Stock]
+*   **Actions rapides :** Identification des statuts, Gestion de la disponibilité, Restauration si nécessaire
+*   **Temps estimé :** 2-3 minutes par vérification
 
 ---
 
 **Titre : Accéder au Tableau de Bord des Produits**
+
+**ID : PRODUIT_ACCES_005**
+**Type : FONCTIONNALITE_CORE**
+**Priorité : HAUTE**
+**Mots-clés : accéder, tableau de bord, module produits, navigation, étapes**
+
 **Contenu :** Pour accéder au module Produits :
 1.  Connectez-vous à votre compte Sobrus Pharma.
-2.  Sur la page d’accueil, repérez la barre de navigation supérieure.
+2.  Sur la page d'accueil, repérez la barre de navigation supérieure.
 3.  Cliquez sur l'onglet **Produits**.
 4.  Un sous-menu s'affiche. Cliquez sur l'option **Produits** pour ouvrir le tableau de bord.
-**Mots-clés :** accéder, tableau de bord, module produits, navigation, étapes
+*   **Concepts liés :** 
+*   **Actions rapides :** Connexion au compte, Navigation vers le module, Accès au tableau de bord
+*   **Temps estimé :** 1-2 minutes
 
 ---
 
 **Titre : Description de l'Interface de la Liste des Produits**
+
+**ID : PRODUIT_INTERFACE_006**
+**Type : FONCTIONNALITE_CORE**
+**Priorité : MOYENNE**
+**Mots-clés : interface, liste des produits, tableau, colonnes, description, PPV, PPH, code-barre**
+
 **Contenu :** L'interface de la liste des produits est composée d'un tableau où chaque ligne représente un produit. Les colonnes affichées sont : Nom du produit, Catégorie, Forme galénique, Prix PPV, Prix PPH, Code de barre, Zone, Est actif.
-**Mots-clés :** interface, liste des produits, tableau, colonnes, description
+*   **Concepts liés :** 
+*   **Actions rapides :** Consultation du tableau, Lecture des colonnes, Identification des produits
+*   **Temps estimé :** 3-5 minutes par consultation
 
 ---
 
 **Titre : Boutons d'Action Principaux sur la Page Produits**
+
+**ID : PRODUIT_ACTIONS_PRINCIPALES_007**
+**Type : FONCTIONNALITE_CORE**
+**Priorité : MOYENNE**
+**Mots-clés : boutons, actions principaux, suggérer produit, historique suggestions, informations détaillées**
+
 **Contenu :** Les boutons d'action principaux, situés en haut à droite de la page, sont :
 1.  **Suggérer un nouveau produit :** Pour suggérer un nouveau produit.
 2.  **Historique des suggestions :** Pour voir l'historique des suggestions de produits.
-3.  **Afficher plus d’informations :** Pour obtenir plus de détails sur les produits.
-**Mots-clés :** boutons, actions principaux, suggérer produit, historique suggestions
+3.  **Afficher plus d'informations :** Pour obtenir plus de détails sur les produits.
+*   **Concepts liés :** 
+*   **Actions rapides :** Suggestion de produits, Consultation de l'historique, Affichage des détails
+*   **Temps estimé :** 5-10 minutes par action
 
 ---
 
 **Titre : Boutons d'Action Secondaires sur la Page Produits**
+
+**ID : PRODUIT_ACTIONS_SECONDAIRES_008**
+**Type : FONCTIONNALITE_CORE**
+**Priorité : BASSE**
+**Mots-clés : boutons, actions secondaires, rafraîchir, rechercher produit, actualisation**
+
 **Contenu :** Les boutons d'action secondaires, situés juste en dessous des boutons principaux, sont :
 1.  **Rafraîchir :** Pour actualiser la liste des produits et voir les modifications récentes.
 2.  **Rechercher :** Pour trouver un produit par son nom ou son code de barre.
-**Mots-clés :** boutons, actions secondaires, rafraîchir, rechercher produit
+*   **Concepts liés :** 
+*   **Actions rapides :** Actualisation de la liste, Recherche de produits, Mise à jour des données
+*   **Temps estimé :** 1-2 minutes par action
 
 ---
 
 **Titre : Suggérer une Nouvelle Fiche Produit**
+
+**ID : PRODUIT_SUGGESTION_009**
+**Type : FONCTIONNALITE_COLLABORATIVE**
+**Priorité : MOYENNE**
+**Mots-clés : suggérer, nouvelle fiche produit, ajouter produit, proposition, base de données**
+
 **Contenu :** La suggestion d'une nouvelle fiche produit permet de proposer l'ajout d'un produit à la base de données. C'est utile pour les produits non encore référencés.
-**Mots-clés :** suggérer, nouvelle fiche produit, ajouter produit, proposition
+*   **Concepts liés :** 
+*   **Actions rapides :** Proposition d'ajout, Enrichissement de la base, Collaboration avec la communauté
+*   **Temps estimé :** 10-15 minutes par suggestion
 
 ---
 
 **Titre : Étapes pour Suggérer un Nouveau Produit**
+
+**ID : PRODUIT_ETAPES_SUGGESTION_010**
+**Type : FONCTIONNALITE_COLLABORATIVE**
+**Priorité : MOYENNE**
+**Mots-clés : étapes, suggérer produit, création, validation, modération, champs obligatoires**
+
 **Contenu :**
 1.  Depuis le tableau de bord, cliquez sur la rubrique **Produits** dans la barre de navigation, puis sur le bouton **Suggérer un nouveau produit**.
 2.  Remplissez les champs obligatoires : Nom, Catégorie, Prix PPV, Prix PPH, TVA sur achat, TVA sur vente.
 3.  Cliquez sur **Sauvegarder**.
 4.  Le produit apparaît dans la liste des suggestions avec le statut "En attente".
 5.  Après validation par la modération, le produit est ajouté à la base de données ou rejeté avec un motif.
-**Mots-clés :** étapes, suggérer produit, création, validation, modération
+*   **Concepts liés :** 
+*   **Actions rapides :** Remplissage du formulaire, Sauvegarde de la suggestion, Suivi de la validation
+*   **Temps estimé :** 15-20 minutes par suggestion
 
 ---
 
 **Titre : Types de Modification d'une Fiche Produit**
+
+**ID : PRODUIT_TYPES_MODIFICATION_011**
+**Type : FONCTIONNALITE_CORE**
+**Priorité : MOYENNE**
+**Mots-clés : modification interne, modification externe, suggestion de modification, validation, types, champs sensibles**
+
 **Contenu :** Il existe deux types de modification :
 *   **Modification interne (directe) :** Concerne les champs que l'utilisateur peut modifier directement sans validation, comme le prix, la catégorie, le stock, ou la zone.
 *   **Modification externe (suggestion) :** Concerne les champs sensibles qui nécessitent une validation par la modération (ex: désignation, taux de TVA, code-barres). L'utilisateur doit soumettre une "suggestion de modification".
-**Mots-clés :** modification interne, modification externe, suggestion de modification, validation, types
+*   **Concepts liés :** , 
+*   **Actions rapides :** Identification du type de modification, Modification directe, Soumission de suggestions
+*   **Temps estimé :** 5-10 minutes par modification
 
 ---
 
 **Titre : Étapes pour Modifier Directement une Fiche Produit (Modification Interne)**
+
+**ID : PRODUIT_MODIFICATION_INTERNE_012**
+**Type : FONCTIONNALITE_CORE**
+**Priorité : MOYENNE**
+**Mots-clés : étapes, modifier produit, modification interne, mise à jour, sauvegarde**
+
 **Contenu :**
 1.  Depuis le tableau de bord, trouvez le produit à modifier dans la liste (via la recherche si besoin).
 2.  Cliquez sur l'icône **Crayon** à droite de la ligne du produit.
 3.  Mettez à jour les informations souhaitées (prix, catégorie, zone, etc.).
 4.  Cliquez sur **Sauvegarder**.
-**Mots-clés :** étapes, modifier produit, modification interne, mise à jour
-
----
-
-**Titre : Étapes pour Suggérer une Modification de Fiche Produit (Modification Externe)**
-**Contenu :**
-1.  Depuis le tableau de bord, identifiez le produit à modifier.
-2.  Sélectionnez le produit et choisissez l'option **Suggérer une modification**.
-3.  Mettez à jour les informations souhaitées (Nom, Code barre, etc.).
-4.  Cliquez sur **Sauvegarder** pour soumettre la suggestion à la modération.
-**Mots-clés :** étapes, suggérer modification, modification externe, soumettre
+*   **Concepts liés :** 
+*   **Actions rapides :** Recherche du produit, Modification des informations, Sauvegarde des changements
+*   **Temps estimé :** 5-10 minutes par modification
 
 ---
 

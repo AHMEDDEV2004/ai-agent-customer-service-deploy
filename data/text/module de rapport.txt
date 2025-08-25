@@ -1,69 +1,147 @@
----
+# MODULE RAPPORT - ANALYSE ET EXPORTATION DES DONNÉES
+# ============================================================
+# MÉTADONNÉES RAG
+# ============================================================
+# Module: RAPPORT
+# Catégorie: GESTION_ANALYTIQUE
+# Niveau: INTERMEDIAIRE_AVANCE
+# Prérequis: Module Ventes, Module Achats, Module Stock, Module Client
+# Dépendances: Module Paramètres, Module Communication
+# Fréquence d'utilisation: QUOTIDIEN_HEBDOMADAIRE
+# Complexité: MOYENNE_HAUTE
+# Temps d'apprentissage: 3-4 heures
+# Mots-clés sémantiques: rapports, analyses, exports, comptabilité, caisse, journal, diagrammes, performances, données, visualisation
+# Synonymes: analyses de données, rapports d'activité, exports de données, tableaux de bord, analyses comptables
+# Concepts liés: gestion financière, analyse des performances, contrôle de gestion, exportation de données, visualisation des données
+# ============================================================
 
 ### **Partie 1 : Rapports Principaux, Comptables et Exports**
 
 ---
 
 #### **Titre : Rapport Principal - Vue Globale**
+
+**ID : RAPPORT_VUE_GLOBALE_001**
+**Type : FONDAMENTAL**
+**Priorité : HAUTE**
+**Mots-clés : vue globale, activité financière, arrêté de caisse, rapport journalier, journal des produits**
+
 *   **Objectif :** Fournir une vue globale de l'activité financière quotidienne ou sur une période spécifique.
 *   **Contenu :** Ce module inclut l'arrêté de caisse, le rapport de la journée, le rapport de caisse et le journal des produits.
+*   **Concepts liés :** [Module Ventes]
+*   **Actions rapides :** Vue d'ensemble financière, Analyse quotidienne, Contrôle de l'activité
+*   **Temps estimé :** 15-20 minutes par consultation
 
 ---
 
 #### **Titre : Rapport Principal - Arrêté de Caisse**
+
+**ID : RAPPORT_ARRETE_CAISSE_002**
+**Type : FONCTIONNALITE_CORE**
+**Priorité : HAUTE**
+**Mots-clés : arrêté de caisse, liquidités, ventes, règlements, remises, crédit, clôture automatique**
+
 *   **Navigation :** Rapports > Rapports principaux > Arrêté de Caisse
 *   **Objectif :** Vérifier l'état financier de la caisse pour une journée ou une période spécifique, en détaillant les ventes (comptant et crédit), les règlements, les remises et le crédit restant pour contrôler les liquidités.
 *   **Note :** La clôture de la caisse est automatique à minuit.
+*   **Concepts liés :** [Module Ventes]
+*   **Actions rapides :** Vérification de la caisse, Contrôle des liquidités, Suivi des règlements
+
 *   **Procédure :**
     1.  **Accès :** Aller à `Rapports > Rapports principaux` et cliquer sur `Arrêté de Caisse`.
     2.  **Configuration :**
-        *   Choisir la période (ex: "Aujourd’hui" ou une plage de dates).
+        *   Choisir la période (ex: "Aujourd'hui" ou une plage de dates).
         *   Cocher `Regrouper par jour` pour un détail quotidien sur une période.
         *   Sélectionner la `version avancée` pour inclure les détails par client, catégorie et TVA.
     3.  **Génération :** Cliquer sur `Télécharger` pour obtenir le rapport en PDF.
+*   **Concepts liés :** 
+*   **Actions rapides :** Configuration de la période, Génération du rapport, Téléchargement PDF
+*   **Temps estimé :** 10-15 minutes par rapport
+
 *   **Définitions des Termes :**
     *   **Total règlement :** Paiements reçus pour les ventes à crédit.
     *   **Total caisse :** Somme réelle attendue en caisse (règlements du jour + ventes comptant + avances clients + avoirs fournisseurs en espèces - retours remboursés en espèces - dépenses).
     *   **Total crédit restant :** Montant des ventes à crédit non encore réglées.
     *   **Crédit accordé :** Total fixe des crédits accordés sur la période.
-    *   **Chiffre d’affaires net :** Total des ventes (payées ou non) moins les remises et les retours.
+    *   **Chiffre d'affaires net :** Total des ventes (payées ou non) moins les remises et les retours.
     *   **Ventes au comptant net :** Ventes réglées immédiatement, moins les remises.
     *   **Ventes à crédit net :** Ventes à crédit, moins les remises.
+*   **Concepts liés :** 
+*   **Actions rapides :** Compréhension des termes, Application des définitions, Interprétation des données
+
 *   **Conseils et Bonnes Pratiques :**
     *   **[Conseil] :** Générer le rapport chaque matin pour vérifier la caisse de la veille.
     *   **[Bonne Pratique] :** Utiliser la version avancée pour suivre les règlements des clients et planifier les relances.
+*   **Concepts liés :** 
+*   **Actions rapides :** Génération quotidienne, Utilisation de la version avancée, Planification des relances
+
 *   **Mises en Garde :**
     *   **[Avertissement] :** S'assurer que toutes les transactions sont enregistrées avant de générer le rapport.
     *   **[Avertissement] :** En cas d'échec de téléchargement, autoriser les pop-ups dans le navigateur.
+*   **Concepts liés :** , 
+*   **Actions rapides :** Vérification des transactions, Autorisation des pop-ups, Résolution des problèmes
 
 ---
 
 #### **Titre : Rapport Principal - Rapport de la Journée**
+
+**ID : RAPPORT_JOURNALIER_003**
+**Type : FONCTIONNALITE_CORE**
+**Priorité : HAUTE**
+**Mots-clés : rapport journalier, performances, diagrammes, ventes, TVA, remises, bénéfices, retours, achats**
+
 *   **Navigation :** Rapports > Rapports principaux > Rapport journalier
 *   **Objectif :** Offrir une vue synthétique et visuelle (diagrammes) des performances quotidiennes : ventes par catégorie, TVA, remises, bénéfices, retours, achats, etc.
+*   **Concepts liés :** [Module Ventes]
+*   **Actions rapides :** Analyse des performances, Visualisation des données, Suivi quotidien
+
 *   **Procédure :**
     1.  **Accès :** Aller à `Rapports > Rapports principaux` et cliquer sur `Rapport journalier`.
     2.  **Configuration :** Sélectionner la date souhaitée.
     3.  **Visualisation :** Consulter les diagrammes qui s'affichent à l'écran.
     4.  **Détails :** Cliquer sur le bouton `Détails` pour des informations plus spécifiques.
+*   **Concepts liés :** 
+*   **Actions rapides :** Sélection de la date, Consultation des diagrammes, Accès aux détails
+*   **Temps estimé :** 10-15 minutes par consultation
 
 ---
 
 #### **Titre : Rapport Principal - Rapport de Caisse**
+
+**ID : RAPPORT_CAISSE_004**
+**Type : FONCTIONNALITE_CORE**
+**Priorité : HAUTE**
+**Mots-clés : rapport de caisse, encaissements, décaissements, modes de paiement, flux financiers, transactions**
+
 *   **Navigation :** Rapports > Rapports principaux > Rapport de caisse
 *   **Objectif :** Suivre avec précision tous les encaissements et décaissements, détaillés par mode de paiement et type de transaction, pour vérifier les flux financiers quotidiens.
+*   **Concepts liés :** [Module Ventes]
+*   **Actions rapides :** Suivi des flux financiers, Vérification des transactions, Contrôle des paiements
+
 *   **Procédure :**
     1.  **Accès :** Aller à `Rapports > Rapports principaux` et cliquer sur `Rapport de caisse`.
     2.  **Configuration :**
         *   Sélectionner la période.
         *   Filtrer par type de transaction (ex: ventes) ou moyen de paiement (ex: espèces).
     3.  **Consultation :** Le rapport s'affiche avec la liste détaillée des transactions.
+*   **Concepts liés :** 
+*   **Actions rapides :** Configuration de la période, Application des filtres, Consultation des transactions
+*   **Temps estimé :** 10-15 minutes par rapport
 
 ---
 
 #### **Titre : Rapport Principal - Journal des Produits**
+
+**ID : RAPPORT_JOURNAL_PRODUITS_005**
+**Type : FONCTIONNALITE_CORE**
+**Priorité : MOYENNE**
+**Mots-clés : journal des produits, inventaires, planification des commandes, produits vendus, stock faible**
+
 *   **Navigation :** Rapports > Rapports principaux > Journal produits
 *   **Objectif :** Suivre tous les produits vendus sur une période donnée. Utile pour les inventaires journaliers, la planification des commandes et l'identification des produits les plus vendus.
+*   **Concepts liés :** [Module Stock]
+*   **Actions rapides :** Suivi des ventes, Planification des commandes, Identification des produits populaires
+
 *   **Procédure :**
     1.  **Accès :** Aller à `Rapports > Rapports principaux` et cliquer sur `Journal produits`.
     2.  **Configuration :**
@@ -72,34 +150,67 @@
         *   Utiliser l'option `Trier` pour classer les résultats.
     3.  **Consultation :** Consulter la liste des produits vendus.
     4.  **Action :** Identifier les produits à faible stock pour commander et imprimer le rapport si besoin.
+*   **Concepts liés :** 
+*   **Actions rapides :** Configuration des filtres, Tri des résultats, Identification des besoins
+*   **Temps estimé :** 15-20 minutes par analyse
 
 ---
 
 #### **Titre : Rapports Comptables - Accès à MaCompta**
+
+**ID : RAPPORT_MACOMPTA_006**
+**Type : FONCTIONNALITE_SPECIALISEE**
+**Priorité : MOYENNE**
+**Mots-clés : MaCompta, comptabilité, gestion comptable, identifiants Sobrus**
+
 *   **Navigation :** Rapports > Rapports comptables > Rapports comptables
 *   **Objectif :** Fournir une assistance pour la gestion comptable de l'officine.
+*   **Concepts liés :** 
+*   **Actions rapides :** Accès à la comptabilité, Gestion comptable, Utilisation des identifiants
+
 *   **Procédure d'accès :**
     1.  **URL :** Se rendre sur `https://macompta.sobrus.com` ou utiliser la navigation interne.
     2.  **Action :** Cliquer sur `Accédez à MaCompta`, puis sur `Se connecter`.
     3.  **Connexion :** Utiliser les identifiants Sobrus habituels.
+*   **Concepts liés :** , 
+*   **Actions rapides :** Navigation vers MaCompta, Connexion sécurisée, Utilisation des identifiants
+*   **Temps estimé :** 5-10 minutes par connexion
 
 ---
 
 #### **Titre : Exports - Présentation**
+
+**ID : RAPPORT_EXPORTS_007**
+**Type : FONCTIONNALITE_AVANCEE**
+**Priorité : MOYENNE**
+**Mots-clés : exports, données détaillées, stock, achats, ventes, clients, gestion des données**
+
 *   **Objectif :** Outil de gestion pour générer des vues détaillées et exportables des données clés de l'officine (stock, achats, ventes, clients).
+*   **Concepts liés :** [Module Stock]
+*   **Actions rapides :** Exportation des données, Génération de vues détaillées, Gestion des exports
 
 ---
 
 #### **Titre : Export - Exporter le stock**
+
+**ID : RAPPORT_EXPORT_STOCK_008**
+**Type : FONCTIONNALITE_AVANCEE**
+**Priorité : MOYENNE**
+**Mots-clés : export stock, Excel, CSV, PDF, codes à barres, péremption, zones, galénique**
+
 *   **Navigation :** Rapports > Export > Exporter le stock
 *   **Objectif :** Obtenir une vue détaillée du stock en format Excel (CSV) ou PDF.
+*   **Concepts liés :** 
+*   **Actions rapides :** Exportation du stock, Choix du format, Téléchargement des données
+
 *   **Informations Incluses (CSV) :** ID produit, catégorie, TVA, PPH, PPV, zone, date de péremption, stocks min/max, codes à barres. Le PDF n'inclut pas les codes à barres.
 *   **Procédure :**
     1.  **Accès :** Aller à `Rapports > Export` et cliquer sur `Exporter le stock`.
     2.  **Configuration :** Choisir la date, le classement (ex: ordre alphabétique), la zone, la forme galénique.
     3.  **Format :** Cocher `Télécharger en CSV` pour Excel, ou décocher pour PDF.
-    4.  **Action :** Cliquer sur `Télécharger`.
-*   **Mise en Garde :** Si le téléchargement échoue, vérifier les bloqueurs de pop-ups du navigateur.
+*   **Concepts liés :** , 
+*   **Actions rapides :** Configuration de l'export, Choix du format, Téléchargement
+*   **Temps estimé :** 10-15 minutes par export
 
 ---
 
